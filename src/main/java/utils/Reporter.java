@@ -1,11 +1,13 @@
 package utils;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -38,6 +40,20 @@ public abstract class Reporter {
 	    test.assignAuthor(author);
 	    test.assignCategory(category);  
 	}
+	
+	@BeforeTest
+	public void Deleteimages() 
+	{
+	File file = new File("C:\\DC\\NVKIDS_Selenium_Framework\\NVKIDS\\reports\\images");      
+    String[] myFiles;    
+        if(file.isDirectory()){
+            myFiles = file.list();
+            for (int i=0; i<myFiles.length; i++) {
+                File myFile = new File(file, myFiles[i]); 
+                myFile.delete();
+            }
+            }
+         }
     
     public abstract long takeSnap();
 	
