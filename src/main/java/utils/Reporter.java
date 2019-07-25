@@ -44,7 +44,7 @@ public abstract class Reporter {
 	@BeforeTest
 	public void Deleteimages() 
 	{
-	File file = new File("C:\\DC\\NVKIDS_Selenium_Framework\\NVKIDS\\reports\\images");      
+	File file = new File("./../reports/images");      
     String[] myFiles;    
         if(file.isDirectory()){
             myFiles = file.list();
@@ -66,7 +66,7 @@ public abstract class Reporter {
 			snapNumber=takeSnap();
 			try
 			{
-				img=MediaEntityBuilder.createScreenCaptureFromPath("./../reports/"+snapNumber+".jpg").build();
+				img=MediaEntityBuilder.createScreenCaptureFromPath("./../reports/images/"+snapNumber+".jpg").build();
 			}
 			catch(IOException e)
 			{
