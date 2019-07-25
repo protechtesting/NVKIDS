@@ -158,8 +158,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;PRODCWS-13&apos;, ip: &apos;192.168.111.183&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\SNADAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1ebae141f82b6ef0b575e87fbfcd977d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\SNADAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 94c4e08582770c5fa1dceb9cc30a3624
 *** Element info: {Using=xpath, value=//table/tbody/tr/td[1]/span[text()=&apos; NVB0014 &apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -177,7 +177,7 @@ Session ID: 1ebae141f82b6ef0b575e87fbfcd977d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
 	at com.protech.selenium.api.base.SeleniumBase.getElementText(SeleniumBase.java:124)
 	at com.protech.nvkids.pages.PARM_HomePage.getResult(PARM_HomePage.java:51)
 	at com.protech.nvkids.testcases.PARM_TestCases.TC_001_inquireAndValidate(PARM_TestCases.java:39)
@@ -355,17 +355,17 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_001_inquireAndValidate')
 data.setCell(0, 2, 'com.protech.nvkids.testcases.PARM_TestCases')
-data.setCell(0, 3, 22612);
+data.setCell(0, 3, 22781);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC_004_VerifyFieldsLocation')
 data.setCell(1, 2, 'com.protech.nvkids.testcases.PARM_TestCases')
 data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_002_VerifyFieldsPresent')
+data.setCell(2, 1, 'TC_003_VerifyFieldsLength')
 data.setCell(2, 2, 'com.protech.nvkids.testcases.PARM_TestCases')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_003_VerifyFieldsLength')
+data.setCell(3, 1, 'TC_002_VerifyFieldsPresent')
 data.setCell(3, 2, 'com.protech.nvkids.testcases.PARM_TestCases')
 data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
@@ -403,47 +403,51 @@ return data;
                 <span class="method-name">startReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">Deleteimages</span>
+                <span class="method-start">171 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">172 ms</span>
+                <span class="method-start">234 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC_001_inquireAndValidate</span>
-                <span class="method-start">10922 ms</span>
+                <span class="method-start">11109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">33534 ms</span>
+                <span class="method-start">33890 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC_002_VerifyFieldsPresent</span>
-                <span class="method-start">43672 ms</span>
+                <span class="method-start">44000 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">43688 ms</span>
+                <span class="method-start">44015 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC_003_VerifyFieldsLength</span>
-                <span class="method-start">53735 ms</span>
+                <span class="method-start">54172 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">53751 ms</span>
+                <span class="method-start">54172 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_004_VerifyFieldsLocation</span>
-                <span class="method-start">63922 ms</span>
+                <span class="method-start">64312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">stopReport</span>
-                <span class="method-start">63969 ms</span>
+                <span class="method-start">64364 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

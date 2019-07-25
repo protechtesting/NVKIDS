@@ -66,7 +66,7 @@ public abstract class Reporter {
 			snapNumber=takeSnap();
 			try
 			{
-				img=MediaEntityBuilder.createScreenCaptureFromPath("./../reports/images/"+snapNumber+".jpg").build();
+				img=MediaEntityBuilder.createScreenCaptureFromPath("./../reports/"+snapNumber+".jpg").build();
 			}
 			catch(IOException e)
 			{
