@@ -30,7 +30,8 @@ public abstract class Reporter {
 	public void startReport() {
 		reporter = new ExtentHtmlReporter("./reports/result.html");
 		reporter.setAppendExisting(false); 
-		extent   = new ExtentReports();
+		
+		extent   = new ExtentReports();		
 		extent.attachReporter(reporter);
 	}
 	

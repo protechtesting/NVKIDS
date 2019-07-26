@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchWindowException;
@@ -28,8 +29,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.paulhammant.ngwebdriver.ByAngular;
+import com.paulhammant.ngwebdriver.NgWebDriver;
 import com.protech.selenium.api.design.Browser;
 import com.protech.selenium.api.design.Element;
+
 
 import utils.Reporter;
 
@@ -282,8 +286,10 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 				System.setProperty("webdriver.chrome.driver",
 						"./drivers/chromedriver.exe");
 				driver = new ChromeDriver();
-				 //NgWebDriver ngWebDriver = new NgWebDriver(driver);
-				  //ngWebDriver.waitForAngularRequestsToFinish();
+				//NgWebDriver ngdriver = new NgWebDriver((JavascriptExecutor) driver);
+				 NgWebDriver ngWebDriver = new NgWebDriver(driver);
+				  ngWebDriver.waitForAngularRequestsToFinish();
+				 // driver.findElement(ByAngular.(“name”)).sendKeys(“NSE”);
 			} else if(browser.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver",
 						"./drivers/geckodriver.exe");
