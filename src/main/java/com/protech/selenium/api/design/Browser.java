@@ -175,7 +175,7 @@ public interface Browser {
 	 */
 	public void quit();
 	
-	
+	// close all browser
 	
 	
 
