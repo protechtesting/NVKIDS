@@ -17,17 +17,7 @@ public interface Browser {
 	 * @author Santhosh
 	 * @throws MalformedURLException 
 	 */	
-	public void startApp(String url);
 	
-	/**
-	 * This method will launch the Any browser and 
-	 * maximise the browser and set the wait for 30 seconds 
-	 * and load the url
-	 * @param browser - This will load the specified browser
-	 * @param url - This will load the specified url  
-	 * @author Santhosh
-	 * @throws MalformedURLException 
-	 */
 	public void startApp(String browser, String url);
 	/**
 	 * This method will locate the element using any given locator
@@ -106,14 +96,7 @@ public interface Browser {
 	 * @author Santhosh
 	 * @throws NoSuchWindowException
 	 */
-	public void switchToWindow(String title);
 	
-	/**
-	 * This method will switch to the specific frame using index
-	 * @param index   - The int (frame) to be switched
-	 * @author Santhosh
-	 * @throws NoSuchFrameException 
-	 */
 	public void switchToFrame(int index);	
 	
 	/**
@@ -145,7 +128,7 @@ public interface Browser {
 	 * @author Santhosh
 	 * @return true if the given object represents a String equivalent to this url, false otherwise
 	 */
-	public boolean verifyUrl(String url);
+	public void verifyUrl(String url);
 	
 	/**
 	 * This method will verify browser actual title with expected
@@ -153,7 +136,7 @@ public interface Browser {
 	 * @author Santhosh
 	 * @return true if the given object represents a String equivalent to this title, false otherwise
 	 */
-	public boolean verifyTitle(String title);
+	public void verifyTitle(String title);
 	
 	/**
 	 * This method will take snapshot of the browser
@@ -175,8 +158,10 @@ public interface Browser {
 	 */
 	public void quit();
 	
-	// close all browser
 	
+	public void switchTo_AllWindow(String title);
+	
+
 	
 
 	

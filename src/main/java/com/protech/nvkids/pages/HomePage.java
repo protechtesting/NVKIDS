@@ -5,9 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import com.protech.testng.api.base.Annotations;
+import com.protech.selenium.api.base.SeleniumBase;
 
-public class HomePage extends Annotations{ 
+
+public class HomePage extends SeleniumBase{ 
 
 	public HomePage() {
        PageFactory.initElements(driver, this);

@@ -7,9 +7,10 @@ import org.testng.annotations.Test;
 import com.protech.nvkids.pages.HomePage;
 import com.protech.nvkids.pages.LoginPage;
 import com.protech.nvkids.pages.PARM_HomePage;
-import com.protech.testng.api.base.Annotations;
+import com.protech.selenium.api.base.SeleniumBase;
 
-public class PARM_TestCases extends Annotations{
+
+public class PARM_TestCases extends SeleniumBase{
 	
 	
 	

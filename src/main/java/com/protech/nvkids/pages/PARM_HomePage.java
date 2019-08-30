@@ -7,9 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.protech.testng.api.base.Annotations;
+import com.protech.selenium.api.base.SeleniumBase;
 
-public class PARM_HomePage  extends Annotations
+
+public class PARM_HomePage  extends SeleniumBase
 {
 	public PARM_HomePage() 
 	{

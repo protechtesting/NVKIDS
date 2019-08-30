@@ -1,5 +1,7 @@
 package com.protech.selenium.api.design;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -26,15 +28,7 @@ public interface Element {
 	 * @author Santhosh
 	 * @throws ElementNotInteractable,IllegalArgumentException(throws if keysToSend is null)	
 	 */
-	public void append(WebElement ele, String data);
 	
-	/**
-	 * This method will clear the value in the given text field 
-	 * @param ele   - The Webelement (text field) in which the data to be entered
-	 * @see locateElement method in Browser Class
-	 * @author Santhosh
-	 * @throws InvalidElementStateException	(throws if not user-editable element)	 
-	 */
 	public void clear(WebElement ele);
 	
 	/**
@@ -112,7 +106,7 @@ public interface Element {
 	 * @see locateElement method in Browser Class
 	 * @return true if the given object represents a String equivalent to this string, false otherwise
 	 */
-	public boolean verifyExactText(WebElement ele, String expectedText);
+	public void verifyExactText(WebElement ele, String expectedText);
 	
 	/**
 	 * This method will verify given text contains actual text on the given element
@@ -145,7 +139,7 @@ public interface Element {
 	 * @return true if this String represents the same sequence of characters as the specified value, false otherwise
 	 * 
 	 */
-	public void verifyPartialAttribute(WebElement ele, String attribute, String value);
+	public boolean verifyPartialAttribute(WebElement ele, String attribute, String value);
 	
 	/**
 	 * This method will verify if the element is visible in the DOM
@@ -184,5 +178,44 @@ public interface Element {
 	 * @return True if the element is currently selected or checked, false otherwise.
 	 */
 	public boolean verifySelected(WebElement ele);
+
+
+	void verifyRequiredField(WebElement ele);
+
+
+	void verifyOptionalField(WebElement ele);
+
+
+	String decode(String data);
+
+
+	void clickOffset(WebElement ele, int xOffset, int yOffset);
+
+
+	void doDoubleClick(WebElement ele);
+
+
+	void setFocus(WebElement ele);
+
+
+	public ArrayList<String> findAllLinksOnPage();
+
+
+	void verifyAssociatedScreensOnPage(WebElement[] screens);
+
+
+	int getTotalDropDownOptions(WebElement ele);
+
+
+	void getElementWidth(WebElement ele);
+
+
+	void getElementHeight(WebElement ele);
+
+
+	boolean VerifyElementHasAttribute(WebElement ele, String attribute);
+
+
+
 	
 }
