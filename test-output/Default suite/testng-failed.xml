@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.protech.nvkids.testcases.TestCase">
+      <class name="com.protech.nvkids.testcases.BSTL_Testscript">
         <methods>
-          <include name="testUntitledTestCase"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="verifyCURSORfocus_SET"/>
+          <include name="stopReport"/>
+          <include name="Deleteimages"/>
+          <include name="afterMethod"/>
+          <include name="startReport"/>
         </methods>
-      </class> <!-- com.protech.nvkids.testcases.TestCase -->
+      </class> <!-- com.protech.nvkids.testcases.BSTL_Testscript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

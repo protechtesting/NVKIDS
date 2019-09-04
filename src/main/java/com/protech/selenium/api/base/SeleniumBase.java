@@ -25,15 +25,12 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -43,11 +40,10 @@ import org.testng.annotations.BeforeMethod;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.paulhammant.ngwebdriver.NgWebDriver;
-import com.protech.nvkids.pages.ASelbasePage;
 import com.protech.selenium.api.design.Browser;
 import com.protech.selenium.api.design.Element;
 
+import utils.DataLibrary;
 import utils.Reporter;
 
 public class SeleniumBase extends Reporter implements Browser, Element {
@@ -55,6 +51,8 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 	public static RemoteWebDriver driver;
 	public static WebDriverWait wait;
 	int i = 1;
+	
+	int l=1,m=1,n=2;
 
 	public ExtentReports extent;
 	ExtentTest logger;
@@ -65,19 +63,26 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 
 	}
 
-	// @BeforeMethod
-	public void beforeMethod() {
+	@BeforeMethod
+	public void beforeMethod() throws IOException {
+		
+		
 
-		startApp("chrome", "http://intranet.protechsolutions.com/issuetracker/Login.aspx");
+		startApp("chrome", "http://192.168.111.183:81/#/login");
+		testcaseName = DataLibrary.readdata("Test Execution", 0, l, m);
+		testcaseDec = DataLibrary.readdata("Test Execution", 0, l, n);
+		l++;
 
 	}
 
 	// ******INITIAL SETUP************
 
-	@Override
+	
 	public void startApp(String browser, String url) {
 
-		try {
+		try { 
+			
+		
 
 			if (browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
@@ -94,16 +99,19 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 				driver = new InternetExplorerDriver();
 			}
 			driver.navigate().to(url);
+			
+			System.out.println("URL PASSED");
 
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
-			new ASelbasePage();
-
-			reportStep("The Browser Launched successfully", "pass");
+			driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		
+			//reportStep("The Browser Launched successfully", "pass");
+			System.out.println("end start appp");
 		} catch (Exception e) {
-			reportStep("TThe Browser Could not be Launched. Hence Failed", "fail");
 			System.err.println("The Browser Could not be Launched. Hence Failed");
-			throw new RuntimeException();
+			//reportStep("TThe Browser Could not be Launched. Hence Failed", "fail");
+			
+			
 		} finally {
 			takeSnap();
 		}
@@ -119,7 +127,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 			wait = new WebDriverWait(driver, 10);
 			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			ele.click();
-			reportStep("The Element " + ele + " clicked", "pass");
+			reportStep("The Element " + ele.toString().substring(68) + " clicked", "pass");
 
 		} catch (Exception e) {
 
@@ -252,6 +260,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 	@Override
 	public void switchToAlert() {
 
+		
 		try {
 			Alert alert = driver.switchTo().alert();
 
@@ -1284,5 +1293,33 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		}
 
 	}
+	
+	
+	public void verifycursorfocus(WebElement ele) throws IOException, InterruptedException {
+		Thread.sleep(3000);
+	
+	WebElement focusedElement = driver.switchTo().activeElement();	
+			
+	
+	//System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbb");
+	
+	if (focusedElement.equals(ele))
+	{	
+			System.out.println("username focused");
+			reportStep("cursor focus  in the "+ele, "pass");
+	}
+	else if(focusedElement!=(ele))
+	{
+		    System.out.println("username not in focus");
+		    reportStep("cursor focus not in the "+ele, "fail");
+			}
+	else {
+		
+	}
+	
+		
+	
+
+}
 
 }

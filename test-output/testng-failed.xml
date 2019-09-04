@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.listener.AnnotationTransformer"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.protech.nvkids.testcases.ASelbaseTest">
+      <class name="com.protech.nvkids.testcases.BSTL_Testscript">
         <methods>
-          <include name="Test_Click_Functionality"/>
+          <include name="verifyCURSORfocus_SET"/>
           <include name="stopReport"/>
           <include name="Deleteimages"/>
           <include name="afterMethod"/>
+          <include name="VerifyLogin"/>
+          <include name="beforeCLASS"/>
           <include name="startReport"/>
-          <include name="Test_Selectdorpdownvalue_using_value"/>
-          <include name="Test_VerifySwitchTO_AlertWindow"/>
-          <include name="Test_Selectdorpdownvalue_usingIndex"/>
-          <include name="Test_Selectdorpdownvalue_usingText"/>
-          <include name="Test_Clear_Functionality"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.protech.nvkids.testcases.ASelbaseTest -->
+      </class> <!-- com.protech.nvkids.testcases.BSTL_Testscript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

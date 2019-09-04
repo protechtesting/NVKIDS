@@ -36,7 +36,7 @@ public abstract class Reporter {
 	}
 	
     
-	public void report() throws IOException {
+	public void report()  {
 		test = extent.createTest(testcaseName, testcaseDec);
 	    test.assignAuthor(author);
 	    test.assignCategory(category);  
@@ -81,7 +81,7 @@ public abstract class Reporter {
 		}
 		else if(status.equalsIgnoreCase("fail"))
 		{
-			System.out.println("reached fail block");
+		
 			test.fail(desc,img);
 		}
 		else if(status.equalsIgnoreCase("INFO"))
@@ -92,7 +92,7 @@ public abstract class Reporter {
 	
 	public void reportStep(String desc,String status)
 	{
-		System.out.println("reached report block");
+	
 		reportStep(desc,status,true);
 	}
     
