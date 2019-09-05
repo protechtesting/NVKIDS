@@ -24,10 +24,11 @@ public class BSTL_Testscript extends SeleniumBase {
 	
 	@Test
 	public void VerifyLogin() throws IOException {		
-				
 			
-		System.out.println(testcaseName);
-		System.out.println(testcaseDec);
+		
+	
+		  testcaseName = "VerifyLogin"; 
+		  testcaseDec = "VerifyLogin successful";
 		
 		
 		report();
@@ -38,9 +39,11 @@ public class BSTL_Testscript extends SeleniumBase {
 	@Test
 	public void verifyCURSORfocus_SET() throws IOException, InterruptedException {
 			
-		
-		System.out.println(testcaseName);
-		System.out.println(testcaseDec);
+
+
+		  testcaseName = "verifyCURSORfocus_SET"; 
+		  testcaseDec =		 "Verify cursor focus in from date field";
+		 
 	
 		report();
 		new LOGIN_Page().login().navigatetoBSTL().verifyCURSORfocus();

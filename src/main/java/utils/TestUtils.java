@@ -74,6 +74,30 @@ public class TestUtils {
 		catch(FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		
+		System.out.println("************testCases***********");
+		for(String s :testCases) {
+			System.out.println(s);
+		}
+		System.out.println("************testDescription***********");
+		for(String s :testDescription) {
+			System.out.println(s);
+		}
+		
+		System.out.println("************RUN STATUS***********");
+		for(String s :runStatus) {
+			System.out.println(s);
+		}
+		
+		System.out.println("************invocationCount***********");
+		for(String s :invocationCount) {
+			System.out.println(s);
+		}
+		
+		System.out.println("************priority***********");
+		for(String s :priority) {
+			System.out.println(s);
+		}
 
 	}
 
