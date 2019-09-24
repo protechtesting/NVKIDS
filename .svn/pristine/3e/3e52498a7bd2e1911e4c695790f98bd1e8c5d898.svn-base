@@ -1,0 +1,129 @@
+package com.protech.nvkids.pages.bstl;
+
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class BatchErrorsPage extends SeleniumBase 
+{
+	public BatchErrorsPage() 
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	BatchStatusLogsPage bsl=new BatchStatusLogsPage();
+	
+	//Filter Section
+	@FindBy(xpath="//span[text()='Batch Status Logs and Errors']") WebElement elelnkBSTL_batchstatuslogs;		
+	@FindBy(id="effectiveRunDate") WebElement eledtProcessDate;	
+	@FindBy(xpath="//span[text()='Search']") WebElement elebtnSearch;
+	@FindBy(xpath="//span[text()='Clear']") WebElement elebtnClear;
+	
+	//Grid Section
+	@FindBy(xpath="//span[text()=' Process Date ']") WebElement elehdrProcessDate;
+	@FindBy(xpath="//span[text()=' Job ID ']") WebElement elehdrJobID;
+	@FindBy(xpath="//span[text()=' Job Description ']") WebElement elehdrJobDescription;
+	@FindBy(xpath="//span[text()=' Batch Name ']") WebElement elehdrBatchName;
+	@FindBy(xpath="//span[text()=' Message Type ']") WebElement elehdrMessageType;
+	@FindBy(xpath="//span[text()=' Create Date ']") WebElement elehdrCreateDate;
+	
+	//Grid Accordion section
+	@FindBy(xpath="//label[text()=' Key Values']") WebElement eledispKeyValues;
+	@FindBy(xpath="//label[text()=' Error Description ']") WebElement eledispErrorDescription;
+	
+	//Error Panel
+	@FindBy(xpath="//div[@class='messagetextrow'][2]/span") WebElement eleErrorPanel;
+	
+	
+	//Screen functions
+	@FindBy(xpath = "//span[text()='Print Queue Errors']") WebElement elePrintQueueErrors;
+	@FindBy(xpath = "//span[text()='Batch Status Logs']") WebElement eleBatchStatusLogs;
+		
+	
+	
+	public BatchErrorsPage verifyFieldsPresent() throws Exception
+	{
+		clickIcon(bsl.eleicnSelectFilter, bsl.elelblSelectFilter);
+		verifyDisplayed(eledtProcessDate);
+		//verifyDisplayed(elehdrJobID);
+		verifyDisplayed(elebtnSearch);
+		verifyDisplayed(elebtnClear);
+		//verifyDisplayed(elebtnClear);
+		
+		
+		verifyDisplayed(elehdrProcessDate);
+		//verifyDisplayed(elehdrJobID);
+		verifyDisplayed(elehdrJobDescription);
+		verifyDisplayed(elehdrBatchName);
+		verifyDisplayed(elehdrMessageType);
+		verifyDisplayed(elehdrCreateDate);
+	
+		return this;
+		
+	}
+	
+	
+	public PrintQueueErrorsPage navigateToPrintQueueErrors() throws InterruptedException 
+	{
+		clickLink(elePrintQueueErrors);
+		Thread.sleep(3000);
+		return new PrintQueueErrorsPage();
+	}
+	
+	public BatchStatusLogsPage navigateToBatchStatusLogs() throws InterruptedException 
+	{
+		clickLink(eleBatchStatusLogs);
+		Thread.sleep(3000);
+		return new BatchStatusLogsPage();
+	}
+	
+	
+	public void verifyError_NullProcessDate()
+	{
+		clickIcon(bsl.eleicnSelectFilter, bsl.elelblSelectFilter);
+		clear(eledtProcessDate);
+		click(elebtnSearch);
+		verifyPartialText(eleErrorPanel, "ENTER REQUIRED FIELDS");
+	}
+	
+	
+	
+	public void verifyInvalidProcessDate()
+	{
+		clickIcon(bsl.eleicnSelectFilter, bsl.elelblSelectFilter);
+		clearAndType(eledtProcessDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "INVALID VALUE");
+	}
+	
+	
+	public void verifyFutureProcessdate()
+	{
+		clickIcon(bsl.eleicnSelectFilter, bsl.elelblSelectFilter);
+		clearAndType(eledtProcessDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "FUTURE DATE NOT ALLOWED");
+	}
+	
+	public void verifyNoMatchRecords()
+	{
+		clickIcon(bsl.eleicnSelectFilter, bsl.elelblSelectFilter);
+		clearAndType(eledtProcessDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "NO MATCHING RECORDS");
+	}
+	
+	public void verifySuccessfulInquiry()
+	{
+		clickIcon(bsl.eleicnSelectFilter, bsl.elelblSelectFilter);
+		clearAndType(eledtProcessDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "Done");
+	}
+
+
+
+}

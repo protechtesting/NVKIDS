@@ -1,0 +1,191 @@
+package com.protech.nvkids.pages.bstl;
+
+
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class BatchStatusLogsPage extends SeleniumBase 
+{
+	public BatchStatusLogsPage() 
+	{
+		PageFactory.initElements(driver, this);
+	}
+		
+	//Filter Section
+	@FindBy(xpath="//a[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted']") WebElement eleicnSelectFilter;
+	@FindBy(xpath="//a[text()='Filter ']") WebElement elelblSelectFilter;
+	@FindBy(xpath="//span[text()='Batch Status Logs and Errors']") WebElement elelnkBSTL_batchstatuslogs;		
+	@FindBy(id="fromDate") WebElement eledtFromDate;
+	@FindBy(id="toDate") WebElement eledtToDate;	
+	@FindBy(xpath="//span[text()='Search']") WebElement elebtnSearch;
+	@FindBy(xpath="//span[text()='Clear']") WebElement elebtnClear;
+	
+	//Grid Section
+	@FindBy(xpath="//span[text()=' Process Date ']") WebElement elehdrProcessDate;
+	@FindBy(xpath="//span[text()=' Job ID ']") WebElement elehdrJobID;	
+	@FindBy(xpath="//span[text()=' Job Description ']") WebElement elehdrJobDescription;
+	@FindBy(xpath="//span[text()=' Batch Name ']") WebElement elehdrBatchName;
+	@FindBy(xpath="//span[text()=' Start Time ']") WebElement elehdrStartTime;
+	@FindBy(xpath="//span[text()=' End Time ']") WebElement elehdrEndTime;
+	@FindBy(xpath="//span[text()=' Record Count ']") WebElement elehdrRecordCount;
+	@FindBy(xpath="//span[text()=' Batch Status ']") WebElement elehdrBatchStatus;
+	
+	
+	//Grid Accordion section
+	@FindBy(xpath="//label[text()=' Procedure Name ']") WebElement eledispProcedureName;
+	@FindBy(xpath="//label[text()=' Error/Seq ']") WebElement eledispErrorSEQ;
+	@FindBy(xpath="//label[text()=' Worker ']") WebElement eledispWorker;
+	@FindBy(xpath="//label[text()=' Cursor Location ']") WebElement eledispCursorLocation;
+	@FindBy(xpath="//label[text()=' Execution Location ']") WebElement eledispExecutionLocation;
+	@FindBy(xpath="//label[text()=' Key Values ']") WebElement eledispKeyValues;
+	@FindBy(xpath="//label[text()=' Error Description ']") WebElement eledispErrorDescription;
+	
+	//Error Panel
+	@FindBy(xpath="//div[@class='messagetextrow'][2]/span") WebElement eleErrorPanel;
+	
+		
+	//Screen Functions
+	@FindBy(xpath = "//span[text()='Batch Errors']") WebElement eleBatchErrors;	
+	@FindBy(xpath = "//span[text()='Print Queue Errors']") WebElement elePrintQueueErrors;
+		
+	
+	public BatchErrorsPage navigatetoBatchErrors() throws InterruptedException 
+	{
+		clickLink(eleBatchErrors);
+		Thread.sleep(3000);
+		return new BatchErrorsPage();
+	}
+	
+	
+	public PrintQueueErrorsPage navigatetoPrintQueueErrors() throws InterruptedException 
+	{
+		clickLink(elePrintQueueErrors);
+		Thread.sleep(3000);
+		return new PrintQueueErrorsPage();
+	}
+	
+	public BatchStatusLogsPage verifyFieldsPresent() throws Exception
+	{
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);
+		verifyDisplayed(eledtFromDate);
+		verifyDisplayed(eledtToDate);
+		verifyDisplayed(elebtnSearch);
+		verifyDisplayed(elebtnClear);
+		verifyDisplayed(eledtFromDate);
+		
+	
+		verifyDisplayed(elehdrProcessDate);
+		//verifyDisplayed(elehdrJobID);
+		verifyDisplayed(elehdrJobDescription);
+		verifyDisplayed(elehdrBatchName);
+		verifyDisplayed(elehdrStartTime);
+		verifyDisplayed(elehdrEndTime);
+		verifyDisplayed(elehdrRecordCount);
+		verifyDisplayed(elehdrBatchStatus);
+		
+		
+		/*verifyDisplayed(eledispProcedureName);
+		verifyDisplayed(eledispErrorSEQ);
+		verifyDisplayed(eledispWorker);
+		verifyDisplayed(eledispCursorLocation);
+		verifyDisplayed(eledispExecutionLocation);
+		verifyDisplayed(eledispKeyValues);
+		verifyDisplayed(eledispErrorDescription);*/
+		
+		return this;
+	}
+	
+	public void verifyError_NullFromDate()
+	{
+		
+		clear(eledtFromDate);
+		click(elebtnSearch);
+		
+		verifyPartialText(eleErrorPanel, "ENTER REQUIRED FIELDS");
+			
+		
+	}
+	
+	public void verifyInvalidToDate()
+	{
+		clearAndType(eledtToDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "INVALID VALUE");
+			
+		
+	}
+	
+	public void verifyInvalidFromDate()
+	{
+		clearAndType(eledtFromDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "INVALID VALUE");
+			
+		
+	}
+	
+	
+	
+	public void verifyFutureFromDate()
+	{
+		
+		clearAndType(eledtFromDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "FUTURE DATE NOT ALLOWED");
+			
+		
+	}
+	
+	public void verifyFutureToDate()
+	{
+		
+		clearAndType(eledtToDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "FUTURE DATE NOT ALLOWED");
+			
+		
+	}
+	
+	
+	public void verifyGreaterThroughDate()
+	{
+		clearAndType(eledtFromDate, "321321");
+		clearAndType(eledtToDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "THROUGH DATE must be greater than or equal to from date");
+			
+		
+	}
+
+	public void verifyNoMatchRecords()
+	{
+		
+		clearAndType(eledtFromDate, "321321");
+		clearAndType(eledtToDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "NO MATCHING RECORDS");
+			
+		
+	}
+	
+	
+	public void verifySuccesfulInquiry()
+	{
+		
+		clearAndType(eledtFromDate, "321321");
+		clearAndType(eledtToDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "Done");
+			
+		
+	}
+	
+	
+	
+	
+
+}

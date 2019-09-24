@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36375" started-at="2019-09-17T09:38:57Z" finished-at="2019-09-17T09:39:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36375" started-at="2019-09-17T09:38:57Z" finished-at="2019-09-17T09:39:33Z">
+      <class name="com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@feb982]" name="startReport" is-config="true" duration-ms="178" started-at="2019-09-17T09:38:57Z" finished-at="2019-09-17T09:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@feb982]" name="Deleteimages" is-config="true" duration-ms="7" started-at="2019-09-17T09:38:57Z" finished-at="2019-09-17T09:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleteimages -->
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@feb982]" name="beforeclass" is-config="true" duration-ms="0" started-at="2019-09-17T09:38:57Z" finished-at="2019-09-17T09:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@feb982]" name="beforeMethod" is-config="true" duration-ms="18032" started-at="2019-09-17T09:38:57Z" finished-at="2019-09-17T09:39:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Inquirewith_nullFromDate()[pri:2, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@feb982]" name="Inquirewith_nullFromDate" duration-ms="16082" started-at="2019-09-17T09:39:15Z" finished-at="2019-09-17T09:39:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inquirewith_nullFromDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@feb982]" name="afterMethod" is-config="true" duration-ms="2232" started-at="2019-09-17T09:39:31Z" finished-at="2019-09-17T09:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@feb982]" name="stopReport" is-config="true" duration-ms="330" started-at="2019-09-17T09:39:33Z" finished-at="2019-09-17T09:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

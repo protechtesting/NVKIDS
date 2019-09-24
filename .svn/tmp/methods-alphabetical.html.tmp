@@ -1,0 +1,53 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Default suite</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<<<<<<< .mine
+<tr bgcolor="9898eb">  <td>19/09/20 15:15:58</td>   <td>0</td> <td>&nbsp;</td><td title="&gt;&gt;Reporter.Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&gt;&gt;Deleteimages</td> 
+||||||| .r31349
+=======
+<tr bgcolor="9898eb">  <td>19/09/20 15:25:40</td>   <td>0</td> <td>&nbsp;</td><td title="&gt;&gt;Reporter.Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&gt;&gt;Deleteimages</td> 
+>>>>>>> .r31355
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@8864840</td>   <td></td> </tr>
+<<<<<<< .mine
+<tr bgcolor="b3f17c">  <td>19/09/20 15:16:07</td>   <td>8454</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&lt;&lt;afterMethod</td> 
+||||||| .r31349
+=======
+<tr bgcolor="b3f17c">  <td>19/09/20 15:26:14</td>   <td>33645</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&lt;&lt;afterMethod</td> 
+>>>>>>> .r31355
+<td>&nbsp;</td>  <td>main@8864840</td>   <td></td> </tr>
+<<<<<<< .mine
+<tr bgcolor="b3f17c">  <td>19/09/20 15:15:58</td>   <td>31</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&gt;&gt;beforeMethod</td> 
+||||||| .r31349
+=======
+<tr bgcolor="b3f17c">  <td>19/09/20 15:25:40</td>   <td>21</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&gt;&gt;beforeMethod</td> 
+>>>>>>> .r31355
+<td>&nbsp;</td>  <td>main@8864840</td>   <td></td> </tr>
+<<<<<<< .mine
+<tr bgcolor="b3f17c">  <td>19/09/20 15:15:58</td>   <td>9</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeclass()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&gt;&gt;beforeclass</td> 
+||||||| .r31349
+=======
+<tr bgcolor="b3f17c">  <td>19/09/20 15:25:40</td>   <td>8</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeclass()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&gt;&gt;beforeclass</td> 
+>>>>>>> .r31355
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@8864840</td>   <td></td> </tr>
+<<<<<<< .mine
+<tr bgcolor="9898eb">  <td>19/09/20 15:15:58</td>   <td>-232</td> <td title="&gt;&gt;Reporter.startReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&gt;&gt;startReport</td> 
+||||||| .r31349
+=======
+<tr bgcolor="9898eb">  <td>19/09/20 15:25:40</td>   <td>-189</td> <td title="&gt;&gt;Reporter.startReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&gt;&gt;startReport</td> 
+>>>>>>> .r31355
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@8864840</td>   <td></td> </tr>
+<<<<<<< .mine
+<tr bgcolor="9898eb">  <td>19/09/20 15:16:07</td>   <td>8580</td> <td title="&lt;&lt;Reporter.stopReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&lt;&lt;stopReport</td> 
+||||||| .r31349
+=======
+<tr bgcolor="9898eb">  <td>19/09/20 15:26:16</td>   <td>35863</td> <td title="&lt;&lt;Reporter.stopReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">&lt;&lt;stopReport</td> 
+>>>>>>> .r31355
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@8864840</td>   <td></td> </tr>
+<<<<<<< .mine
+<tr bgcolor="8da5ba">  <td>19/09/20 15:16:07</td>   <td>8424</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="LoginTestcase.verifyNullUsernameAndPassword()[pri:3, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">verifyNullUsernameAndPassword</td> 
+||||||| .r31349
+=======
+<tr bgcolor="8da5ba">  <td>19/09/20 15:26:14</td>   <td>33576</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="LoginTestcase.verifyNullUsernameAndPassword()[pri:3, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]">verifyNullUsernameAndPassword</td> 
+>>>>>>> .r31355
+  <td>main@8864840</td>   <td></td> </tr>
+</table>

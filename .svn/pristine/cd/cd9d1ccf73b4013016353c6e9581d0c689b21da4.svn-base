@@ -1,0 +1,856 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>NVKIDS Application Log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Sep 13 15:42:05 IST 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>NVKIDS Application Log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Sep 13 15:42:05 IST 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:106</td>
+<td title="Message">Chrome Browser launched</td>
+</tr>
+
+<tr>
+<td>19458</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:126</td>
+<td title="Message">URL Passed</td>
+</tr>
+
+<tr>
+<td>20615</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:129</td>
+<td title="Message">Window Maximized</td>
+</tr>
+
+<tr>
+<td>21107</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:143</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>21365</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:184</td>
+<td title="Message">The Element 'By logging in, I accept the terms above' is clicked</td>
+</tr>
+
+<tr>
+<td>22362</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:199</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>22415</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:285</td>
+<td title="Message">The field is cleared Successfully</td>
+</tr>
+
+<tr>
+<td>22605</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:287</td>
+<td title="Message">The data KDUMANSKI is entered into the field Successfully</td>
+</tr>
+
+<tr>
+<td>23590</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:299</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>23656</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:285</td>
+<td title="Message">The field is cleared Successfully</td>
+</tr>
+
+<tr>
+<td>23878</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:287</td>
+<td title="Message">The data password is entered into the field Successfully</td>
+</tr>
+
+<tr>
+<td>24837</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:299</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>25037</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:157</td>
+<td title="Message">The Button 'Login' is clicked</td>
+</tr>
+
+<tr>
+<td>26036</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:171</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>30510</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:157</td>
+<td title="Message">The Button 'Batch Status Logs and Errors' is clicked</td>
+</tr>
+
+<tr>
+<td>31811</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:171</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>32208</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:184</td>
+<td title="Message">The Element 'Filter' is clicked</td>
+</tr>
+
+<tr>
+<td>33218</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:199</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>33299</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; id: fromDate] displayed</td>
+</tr>
+
+<tr>
+<td>34325</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>34407</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; id: toDate] displayed</td>
+</tr>
+
+<tr>
+<td>35456</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>35541</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; xpath: //span[text()='Search']] displayed</td>
+</tr>
+
+<tr>
+<td>36598</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>36694</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; xpath: //span[text()='Clear']] displayed</td>
+</tr>
+
+<tr>
+<td>37805</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>37871</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; id: fromDate] displayed</td>
+</tr>
+
+<tr>
+<td>38897</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>38982</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; xpath: //span[text()=' Process Date ']] displayed</td>
+</tr>
+
+<tr>
+<td>40023</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>40131</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; xpath: //span[text()=' Job Description ']] displayed</td>
+</tr>
+
+<tr>
+<td>41140</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>41225</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; xpath: //span[text()=' Batch Name ']] displayed</td>
+</tr>
+
+<tr>
+<td>42263</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>42352</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; xpath: //span[text()=' Start Time ']] displayed</td>
+</tr>
+
+<tr>
+<td>43400</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>43592</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; xpath: //span[text()=' End Time ']] displayed</td>
+</tr>
+
+<tr>
+<td>44684</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>44779</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; xpath: //span[text()=' Record Count ']] displayed</td>
+</tr>
+
+<tr>
+<td>45822</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>45906</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -&gt; xpath: //span[text()=' Batch Status ']] displayed</td>
+</tr>
+
+<tr>
+<td>46942</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>NVKIDS Application Log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Sep 13 16:58:24 IST 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>NVKIDS Application Log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Sep 13 16:58:24 IST 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:106</td>
+<td title="Message">Chrome Browser launched</td>
+</tr>
+
+<tr>
+<td>16904</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:126</td>
+<td title="Message">URL Passed</td>
+</tr>
+
+<tr>
+<td>18083</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:129</td>
+<td title="Message">Window Maximized</td>
+</tr>
+
+<tr>
+<td>18620</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:143</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>19077</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:184</td>
+<td title="Message">The Element 'By logging in, I accept the terms above' is clicked</td>
+</tr>
+
+<tr>
+<td>20119</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:199</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>20176</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:285</td>
+<td title="Message">The field is cleared Successfully</td>
+</tr>
+
+<tr>
+<td>20448</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:287</td>
+<td title="Message">The data KDUMANSKI is entered into the field Successfully</td>
+</tr>
+
+<tr>
+<td>21393</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:299</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>21441</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:285</td>
+<td title="Message">The field is cleared Successfully</td>
+</tr>
+
+<tr>
+<td>21588</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:287</td>
+<td title="Message">The data password is entered into the field Successfully</td>
+</tr>
+
+<tr>
+<td>22576</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:299</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>22740</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:157</td>
+<td title="Message">The Button 'Login' is clicked</td>
+</tr>
+
+<tr>
+<td>23725</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:171</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>30397</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:157</td>
+<td title="Message">The Button 'Batch Status Logs and Errors' is clicked</td>
+</tr>
+
+<tr>
+<td>31692</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:171</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>32062</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:184</td>
+<td title="Message">The Element 'Filter' is clicked</td>
+</tr>
+
+<tr>
+<td>33161</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:199</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>33235</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; id: fromDate] displayed</td>
+</tr>
+
+<tr>
+<td>34273</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>34345</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; id: toDate] displayed</td>
+</tr>
+
+<tr>
+<td>35366</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>35441</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; xpath: //span[text()='Search']] displayed</td>
+</tr>
+
+<tr>
+<td>36467</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>36544</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; xpath: //span[text()='Clear']] displayed</td>
+</tr>
+
+<tr>
+<td>37569</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>37624</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; id: fromDate] displayed</td>
+</tr>
+
+<tr>
+<td>38613</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>38689</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; xpath: //span[text()=' Process Date ']] displayed</td>
+</tr>
+
+<tr>
+<td>39693</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>39792</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; xpath: //span[text()=' Job Description ']] displayed</td>
+</tr>
+
+<tr>
+<td>40820</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>40896</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; xpath: //span[text()=' Batch Name ']] displayed</td>
+</tr>
+
+<tr>
+<td>41912</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>41985</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; xpath: //span[text()=' Start Time ']] displayed</td>
+</tr>
+
+<tr>
+<td>42997</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>43082</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; xpath: //span[text()=' End Time ']] displayed</td>
+</tr>
+
+<tr>
+<td>44136</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>44227</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; xpath: //span[text()=' Record Count ']] displayed</td>
+</tr>
+
+<tr>
+<td>45270</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>
+
+<tr>
+<td>45344</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1484</td>
+<td title="Message">Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -&gt; xpath: //span[text()=' Batch Status ']] displayed</td>
+</tr>
+
+<tr>
+<td>46386</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase category">com.protech.nvkids.testcases.bstl.BatchErrorsTestcase</td>
+<td>SeleniumBase.java:1492</td>
+<td title="Message">Screenshot taken</td>
+</tr>

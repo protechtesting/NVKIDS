@@ -4,7 +4,7 @@
 
 
 <head>
-	<meta charset='utf-8' /> 
+	<meta charset='UTF-8' /> 
 	<meta name='description' content='' />
 	<meta name='robots' content='noodp, noydir' />
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -15,13 +15,19 @@
 
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
-	<title>ExtentReports</title>
+	<title>NVKIDS - Automation Test Report</title>
 
 	<style type='text/css'>
+			h5{font-size: 0px;}h5::after{content:'LOGN Tests';font-size: 1.64rem; line-height: 110%;margin: 0.82rem 0 0.656rem 0;}
+			
+            
+                .report-name { padding-left: 10px; } .report-name > img { float: left;height: 90%;margin-left: 30px;margin-top: 2px;width: auto; }
+            
+		
 	</style>
 </head>
 
-	<body class='extent standard default hide-overflow '>
+	<body class='extent dark default hide-overflow '>
 		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
 			<span><i class='material-icons'>desktop_windows</i></span>
 		</div>
@@ -33,13 +39,12 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+							<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
-		<span class='report-name'>ExtentReports</span>
+		<span class='report-name'>LOGN Screen Test Report</span>
 		
 		<!-- report headline -->
 		<span class='report-headline'></span>
@@ -48,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 4, 2019 06:32:50 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 23, 2019 05:42:01 PM</span>
 				</a>
 			</li>
 			<li>
@@ -74,7 +79,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -82,16 +86,6 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
-			<div class='chip transparent'>
-				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
-					<i class='material-icons'>local_offer</i> Category
-				</a>
-				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>smoke</a></li>
-					<li class='divider'></li>
-					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
-				</ul>
-			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -126,41 +120,6 @@
 	</section>
 
 
-<div id='test-view-charts' class='subview-full'>
-	<div id='charts-row' class='row nm-v nm-h'>
-		<div class='col s12 m6 l6 np-h'>
-			<div class='card-panel nm-v'>
-				<div class='left panel-name'>Tests</div>
-				<div class='chart-box'>
-					<canvas id='parent-analysis' width='100' height='80'></canvas>
-				</div>
-				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
-				</div>
-				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
-				</div>
-			</div>
-		</div>
-		
-		<div class='col s12 m6 l6 np-h'>
-			<div class='card-panel nm-v'>
-				<div class='left panel-name'>Steps</div>
-				<div class='chart-box'>
-					<canvas id='child-analysis' width='100' height='80'></canvas>
-				</div>
-				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='71.429%'><span class='strong'>10</span> step(s) passed</span>
-				</div>
-				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>4</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
-				</div>
-			</div>
-		</div>
-		
-	</div>
-</div>
-
 	<div class='subview-left left'>
 		
 		<div class='view-summary'>
@@ -168,25 +127,22 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>This Testcase helps to verify the system successfully</span>
-						<span class='test-time'>Sep 4, 2019 06:32:57 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Inquirewith_nullFromDate</span>
+						<span class='test-time'>Sep 23, 2019 05:42:28 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 4, 2019 06:32:57 AM</span>
-	<span class='label end-time'>Sep 4, 2019 06:33:22 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+296ms</span>
+	<span class='label start-time'>Sep 23, 2019 05:42:28 PM</span>
+	<span class='label end-time'>Sep 23, 2019 05:42:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+314ms</span>
 </div>
-	<div class='test-desc'>No </div>
+	<div class='test-desc'>verify the fields present in Batch Status Logs screen <br /><br />OS Name: Windows 7, OS Version: 6.1, OS Architecture: x86 <br />Browser Name: chrome , Browser Version: 77.0.3865.75<br />Execution TimeZone: India Standard Time </div>
 	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>smoke</span>
-			</div>
 			<div class='author-list'>
-				<span class='author label white-text'>ProtechTesting</span>
+				<span class='author label white-text'>duraipandi</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -201,38 +157,38 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:32:58 AM</td>
-					<td class='step-details'>The Element xpath: //div[@ng-reflect-klass='ui-chkbox-box ui-widget ui-cor']] clicked<img data-featherlight='./../reports/images/15438125.jpg' width='10%' src='./../reports/images/15438125.jpg' data-src='./../reports/images/15438125.jpg'></td>
+					<td class='timestamp'>5:42:29 PM</td>
+					<td class='step-details'>The checkbox 'By logging in, I accept the terms above' is clicked<img data-featherlight='./../reports/images/677431497.jpg' width='10%' src='./../reports/images/677431497.jpg' data-src='./../reports/images/677431497.jpg'></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:32:59 AM</td>
-					<td class='step-details'>The Data :KDUMANSKI entered Successfully<img data-featherlight='./../reports/images/338294900.jpg' width='10%' src='./../reports/images/338294900.jpg' data-src='./../reports/images/338294900.jpg'></td>
+					<td class='timestamp'>5:42:30 PM</td>
+					<td class='step-details'>The Data 'KDUMANSKI' entered Successfully in the 'User Name*' field<img data-featherlight='./../reports/images/266942028.jpg' width='10%' src='./../reports/images/266942028.jpg' data-src='./../reports/images/266942028.jpg'></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:33:00 AM</td>
-					<td class='step-details'>The Data :password entered Successfully<img data-featherlight='./../reports/images/645069467.jpg' width='10%' src='./../reports/images/645069467.jpg' data-src='./../reports/images/645069467.jpg'></td>
+					<td class='timestamp'>5:42:31 PM</td>
+					<td class='step-details'>The Data 'password' entered Successfully in the 'Password*' field<img data-featherlight='./../reports/images/397003306.jpg' width='10%' src='./../reports/images/397003306.jpg' data-src='./../reports/images/397003306.jpg'></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:33:01 AM</td>
-					<td class='step-details'>The Element xpath: //span[text()='Login']] clicked<img data-featherlight='./../reports/images/607339167.jpg' width='10%' src='./../reports/images/607339167.jpg' data-src='./../reports/images/607339167.jpg'></td>
+					<td class='timestamp'>5:42:32 PM</td>
+					<td class='step-details'>The Button 'Login' is clicked<img data-featherlight='./../reports/images/439675434.jpg' width='10%' src='./../reports/images/439675434.jpg' data-src='./../reports/images/439675434.jpg'></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:33:02 AM</td>
-					<td class='step-details'>The Element xpath: //span[text()='Batch Status Logs and Errors']] clicked<img data-featherlight='./../reports/images/106871132.jpg' width='10%' src='./../reports/images/106871132.jpg' data-src='./../reports/images/106871132.jpg'></td>
+					<td class='timestamp'>5:42:38 PM</td>
+					<td class='step-details'>The Link 'Batch Status Logs and Errors' is clicked<img data-featherlight='./../reports/images/336591225.jpg' width='10%' src='./../reports/images/336591225.jpg' data-src='./../reports/images/336591225.jpg'></td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:33:19 AM</td>
-					<td class='step-details'>The Element Proxy element for: DefaultElementLocator 'By.className: pull-right bold text-dark-blue selectFilterbtn ng-star-inserted' could not be clicked - org.openqa.selenium.TimeoutException:<img data-featherlight='./../reports/images/579838663.jpg' width='10%' src='./../reports/images/579838663.jpg' data-src='./../reports/images/579838663.jpg'></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:42:39 PM</td>
+					<td class='step-details'>The Icon 'Filter' is clicked<img data-featherlight='./../reports/images/542651400.jpg' width='10%' src='./../reports/images/542651400.jpg' data-src='./../reports/images/542651400.jpg'></td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:33:22 AM</td>
-					<td class='step-details'>cursor focus not in the [[ChromeDriver: chrome on XP (f2d63b91969a731596b13624469fcccc)] -> id: fromDate]<img data-featherlight='./../reports/images/630249741.jpg' width='10%' src='./../reports/images/630249741.jpg' data-src='./../reports/images/630249741.jpg'></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:42:40 PM</td>
+					<td class='step-details'>The data in the 'fromDate' field cleared Successfully<img data-featherlight='./../reports/images/820764196.jpg' width='10%' src='./../reports/images/820764196.jpg' data-src='./../reports/images/820764196.jpg'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -241,74 +197,23 @@
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify whether the cursor focus in FROM Date field of Filter section</span>
-						<span class='test-time'>Sep 4, 2019 06:33:31 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>verifyNullUsernameAndPassword</span>
+						<span class='test-time'>Sep 23, 2019 05:43:15 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 4, 2019 06:33:31 AM</span>
-	<span class='label end-time'>Sep 4, 2019 06:33:56 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+547ms</span>
+	<span class='label start-time'>Sep 23, 2019 05:43:15 PM</span>
+	<span class='label end-time'>Sep 23, 2019 05:43:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
-	<div class='test-desc'>Yes </div>
+	<div class='test-desc'>verify login with null username and password <br /><br />OS Name: Windows 7, OS Version: 6.1, OS Architecture: x86 <br />Browser Name: chrome , Browser Version: 77.0.3865.75<br />Execution TimeZone: India Standard Time </div>
 	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>smoke</span>
-			</div>
 			<div class='author-list'>
-				<span class='author label white-text'>ProtechTesting</span>
+				<span class='author label white-text'>duraipandi</span>
 			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:33:31 AM</td>
-					<td class='step-details'>The Element xpath: //div[@ng-reflect-klass='ui-chkbox-box ui-widget ui-cor']] clicked<img data-featherlight='./../reports/images/880826424.jpg' width='10%' src='./../reports/images/880826424.jpg' data-src='./../reports/images/880826424.jpg'></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:33:32 AM</td>
-					<td class='step-details'>The Data :KDUMANSKI entered Successfully<img data-featherlight='./../reports/images/59085049.jpg' width='10%' src='./../reports/images/59085049.jpg' data-src='./../reports/images/59085049.jpg'></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:33:33 AM</td>
-					<td class='step-details'>The Data :password entered Successfully<img data-featherlight='./../reports/images/622641486.jpg' width='10%' src='./../reports/images/622641486.jpg' data-src='./../reports/images/622641486.jpg'></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:33:34 AM</td>
-					<td class='step-details'>The Element xpath: //span[text()='Login']] clicked<img data-featherlight='./../reports/images/837465055.jpg' width='10%' src='./../reports/images/837465055.jpg' data-src='./../reports/images/837465055.jpg'></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:33:35 AM</td>
-					<td class='step-details'>The Element xpath: //span[text()='Batch Status Logs and Errors']] clicked<img data-featherlight='./../reports/images/864150008.jpg' width='10%' src='./../reports/images/864150008.jpg' data-src='./../reports/images/864150008.jpg'></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:33:53 AM</td>
-					<td class='step-details'>The Element Proxy element for: DefaultElementLocator 'By.className: pull-right bold text-dark-blue selectFilterbtn ng-star-inserted' could not be clicked - org.openqa.selenium.TimeoutException:<img data-featherlight='./../reports/images/235051083.jpg' width='10%' src='./../reports/images/235051083.jpg' data-src='./../reports/images/235051083.jpg'></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:33:56 AM</td>
-					<td class='step-details'>cursor focus not in the [[ChromeDriver: chrome on XP (ee2a57b884e8c350946ee20182b96a71)] -> id: fromDate]<img data-featherlight='./../reports/images/425686670.jpg' width='10%' src='./../reports/images/425686670.jpg' data-src='./../reports/images/425686670.jpg'></td>
-				</tr>
-			</tbody>
-		</table>
 	</div>
 					</div>
 				</li>
@@ -335,83 +240,43 @@
 	</div>
 	<!-- subview right -->
 
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>7</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
 </div>
 <!-- test view -->
-<div id='category-view' class='view hide'>
-
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-					<i class='material-icons'>search</i> Search
-				</a>
-				
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-				
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-
-	<div class='subview-left left'>
-		
-		<div class='view-summary'>
-			<h5>Categories</h3>
-			<ul id='category-collection' class='category-collection'>
-				
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>smoke</span>
-						<span class='category-status right'>
-							<span class='label fail'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Sep 4, 2019 06:32:57 AM</td>
-										<td class='linked' test-id='1'>This Testcase helps to verify the system successfully</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Sep 4, 2019 06:33:31 AM</td>
-										<td class='linked' test-id='2'>Verify whether the cursor focus in FROM Date field of Filter section</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-
-			</ul>
-		</div>
-	</div>
-
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='category-name'></h5>
-		</div>
-	</div>
-</div>
 <!-- category view -->
 <div id='author-view' class='view hide'>
     <section id='controls'>
@@ -439,15 +304,15 @@
 
                         <li class='author displayed active'>
                             <div class='author-heading'>
-                                <span class='author-name'>ProtechTesting</span>
+                                <span class='author-name'>duraipandi</span>
                                 <span class='author-status right'>
-                                        <span class='label fail'>2</span>
+                                        <span class='label pass'>2</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 2</span>
                                     
-                                    <span class='label red lighten-1 white-text'>Failed: 2</span>
                                     
                                 </div>
 
@@ -462,14 +327,14 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Sep 4, 2019 06:32:57 AM</td>
-                                                <td class='linked' test-id='1'>This Testcase helps to verify the system successfully</td>
-                                                <td><span class='test-status fail'>fail</span></td>
+                                                <td>Sep 23, 2019 05:42:28 PM</td>
+                                                <td class='linked' test-id='1'>Inquirewith_nullFromDate</td>
+                                                <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Sep 4, 2019 06:33:31 AM</td>
-                                                <td class='linked' test-id='2'>Verify whether the cursor focus in FROM Date field of Filter section</td>
-                                                <td><span class='test-status fail'>fail</span></td>
+                                                <td>Sep 23, 2019 05:43:15 PM</td>
+                                                <td class='linked' test-id='2'>verifyNullUsernameAndPassword</td>
+                                                <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -502,49 +367,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>14</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 4, 2019 06:32:50 AM</div>
+					<div class='panel-lead'>Sep 23, 2019 05:42:01 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 4, 2019 06:33:59 AM</div>
+			 		<div class='panel-lead'>Sep 23, 2019 05:43:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 8s+472ms</div>
-				</div>
-			</div>
-			<div class='col s6'>
-				<div class='card-panel dashboard-categories'>
-					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
-					
-					<table>
-						<tr>
-							<th>Name</th>
-							<th>Passed</th>
-							<th>Failed</th>
-							<th>Others</th>
-							<th>Passed %</th>
-						</tr>
-						<tr>
-							<td>smoke</td>
-							<td>0</td>
-							<td>2</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-					</table>
+					<div class='panel-lead'>0h 1m 16s+803ms</div>
 				</div>
 			</div>
 		</div>
@@ -557,22 +398,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 2,
+				passParent: 2,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 0,
 				
-				passChild: 10,
-				failChild: 4,
+				passChild: 7,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 4,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
@@ -589,6 +430,15 @@
 		
 		
  		<script type='text/javascript'>
+ 			
+      
+        $(document).ready(function() 
+        {
+         $('.brand-logo.blue.darken-3').text('Protech');
+         document.getElementsByClassName("label blue darken-3")[1].remove()
+        });
+      
+		
  		</script>
 	</body>
 	

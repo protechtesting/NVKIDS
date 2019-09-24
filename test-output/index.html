@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\IID_User01\git\NVKIDS\BSTL.xml</span>
+                    <span>D:\NVKIDS_V1 Workspace\NVKIDS_SeleniumFramework\BSTL_Runner.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,24 +102,24 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.protech.nvkids.testcases.BSTL_Testscript" hash-for-method="VerifyLogin">VerifyLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase" hash-for-method="Inquirewith_nullFromDate">Inquirewith_nullFromDate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.protech.nvkids.testcases.BSTL_Testscript" hash-for-method="verifyCURSORfocus_SET">verifyCURSORfocus_SET</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.protech.nvkids.testcases.logn.LoginTestcase" hash-for-method="verifyNullUsernameAndPassword">verifyNullUsernameAndPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -134,76 +134,74 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.protech.nvkids.testcases.BSTL_Testscript</span>
+              <span class="class-name">com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyLogin">
-                  </a> <!-- VerifyLogin -->
-                  <span class="method-name">VerifyLogin</span>
-                  <div class="stack-trace">java.lang.RuntimeException: Unexpected result for screenshot command: null
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:304)
-	at com.protech.selenium.api.base.SeleniumBase.takeSnap(SeleniumBase.java:432)
-	at com.protech.selenium.api.base.SeleniumBase.click(SeleniumBase.java:145)
-	at com.protech.nvkids.pages.LOGIN_Page.login(LOGIN_Page.java:32)
-	at com.protech.nvkids.testcases.BSTL_Testscript.VerifyLogin(BSTL_Testscript.java:34)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.protech.nvkids.testcases.BSTL_Testscript</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCURSORfocus_SET">
-                  </a> <!-- verifyCURSORfocus_SET -->
-                  <span class="method-name">verifyCURSORfocus_SET</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=76.0.3809.132)
+                  <a name="Inquirewith_nullFromDate">
+                  </a> <!-- Inquirewith_nullFromDate -->
+                  <span class="method-name">Inquirewith_nullFromDate</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button/span[text()=&apos;Search&apos;]&quot;}
+  (Session info: chrome=77.0.3865.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PROIIDWS-01&apos;, ip: &apos;192.168.111.150&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;PROBS-165&apos;, ip: &apos;192.168.185.192&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_74&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\IID_US~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a560d4d8f943af6286be410c6ac999e7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DURAIP~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 550be6a31842bf7c6219edd449714762
+*** Element info: {Using=xpath, value=//button/span[text()=&apos;Search&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.protech.selenium.api.base.SeleniumBase.afterMethod(SeleniumBase.java:62)
-... Removed 32 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.getText(Unknown Source)
+	at com.protech.selenium.api.base.SeleniumBase.click(SeleniumBase.java:225)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyError_NullFromDate(BatchStatusLogsPage.java:127)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.Inquirewith_nullFromDate(BatchStatusLogsTestcase.java:45)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.protech.nvkids.testcases.logn.LoginTestcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullUsernameAndPassword">
+                  </a> <!-- verifyNullUsernameAndPassword -->
+                  <span class="method-name">verifyNullUsernameAndPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\IID_User01\git\NVKIDS\BSTL.xml</span>
+            <span class="header-content">D:\NVKIDS_V1 Workspace\NVKIDS_SeleniumFramework\BSTL_Runner.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.listener.AnnotationTransformer&quot;/&gt;
-  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.protech.nvkids.testcases.BSTL_Testscript&quot;/&gt;
+      &lt;class name=&quot;com.protech.nvkids.testcases.logn.LoginTestcase&quot;/&gt;
+      &lt;class name=&quot;com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -217,7 +215,7 @@ Session ID: a560d4d8f943af6286be410c6ac999e7
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,18 +243,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyLogin')
-data.setCell(0, 2, 'com.protech.nvkids.testcases.BSTL_Testscript')
-data.setCell(0, 3, 3515);
+data.setCell(0, 1, 'Inquirewith_nullFromDate')
+data.setCell(0, 2, 'com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase')
+data.setCell(0, 3, 15847);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyCURSORfocus_SET')
-data.setCell(1, 2, 'com.protech.nvkids.testcases.BSTL_Testscript')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'verifyNullUsernameAndPassword')
+data.setCell(1, 2, 'com.protech.nvkids.testcases.logn.LoginTestcase')
+data.setCell(1, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -271,9 +269,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">stopReport</span>
+                <br/>
+                <span class="ignored-method-name">Deleteimages</span>
+                <br/>
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -282,43 +291,59 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.protech.nvkids.testcases.BSTL_Testscript</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.protech.nvkids.testcases.logn.LoginTestcase</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">Deleteimages</span>
-                <span class="method-start">78 ms</span>
+                <span class="method-start">221 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">beforeCLASS</span>
-                <span class="method-start">94 ms</span>
+                <span class="method-name">beforeclass</span>
+                <span class="method-start">239 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">94 ms</span>
+                <span class="method-name">beforeMethod(public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.Inquirewith_nullFromDate() thr...)</span>
+                <span class="method-start">252 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">VerifyLogin</span>
-                <span class="method-start">7011 ms</span>
+                <span class="method-name">Inquirewith_nullFromDate</span>
+                <span class="method-start">27343 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">10528 ms</span>
+                <span class="method-start">43196 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.protech.nvkids.testcases.logn.LoginTestcase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeclass</span>
+                <span class="method-start">43402 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.protech.nvkids.testcases.logn.LoginTestcase.verifyNullUsernameAndPassword() throws j...)</span>
+                <span class="method-start">43406 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullUsernameAndPassword</span>
+                <span class="method-start">74671 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">74673 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">stopReport</span>
-                <span class="method-start">10636 ms</span>
+                <span class="method-start">76913 ms</span>
               </div> <!-- configuration-suite after -->
-              <div class="test-method">
-                <span class="method-name">verifyCURSORfocus_SET</span>
-                <span class="method-start">-1567599705194 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

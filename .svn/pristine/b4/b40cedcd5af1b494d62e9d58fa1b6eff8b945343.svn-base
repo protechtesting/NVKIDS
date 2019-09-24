@@ -1,0 +1,186 @@
+package utils;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Paths;
+import java.util.Calendar;
+import java.util.TimeZone;
+
+import javax.imageio.ImageIO;
+
+import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.MediaEntityModelProvider;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+public abstract class Reporter {
+	
+	public static RemoteWebDriver driver=null;
+	
+	public static ExtentHtmlReporter reporter;
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	public static ExtentTest logger;
+	
+	public String testcaseName, testcaseDec, author; 
+	
+	public String category="";
+	public static  String excelFileName;
+	public static String extentreportpath;
+	
+	@BeforeSuite
+	public void startReport() throws IOException {
+		
+		
+		String reportName=this.getClass().getName().substring(29, 33).toUpperCase() +" Screen Test Report";
+		 try
+	        { 
+	            Files.deleteIfExists(Paths.get("C:/NVLogo.jpg")); 
+	        } 
+	        catch(NoSuchFileException e) 
+	        { 
+	            System.out.println("No such file/directory exists"); 
+	        }
+		
+		
+		
+		File source = new File("./logo/NVLogo.jpg");
+        File dest = new File("C:/NVLogo.jpg");
+        Long start = System.nanoTime();
+        Files.copy(source.toPath(), dest.toPath());
+		
+        
+        
+		 extentreportpath="./reports/result.html";
+		reporter = new ExtentHtmlReporter(extentreportpath);
+		
+		reporter.setAppendExisting(false); 
+		
+		extent   = new ExtentReports();	
+		
+		extent.attachReporter(reporter);
+		reporter.loadXMLConfig(new File("./Resources/extent-config.xml"));
+		reporter.config().setTheme(Theme.DARK);
+		reporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
+		reporter.config().setReportName(reportName);
+		//extent.setSystemInfo("User Name", System.getProperty("user.name"));
+	}
+	
+    
+	public void report()  {
+		
+		Capabilities browserCap = driver.getCapabilities();
+		String browserName = browserCap.getBrowserName();
+		String browserVersion = browserCap.getVersion();
+		String osname= System.getProperty("os.name");
+		String osversion= System.getProperty("os.version");
+		String osarch= System.getProperty("os.arch");
+		
+		//get Calendar instance
+	    Calendar now = Calendar.getInstance();
+	    
+	    //get current TimeZone using getTimeZone method of Calendar class
+	    TimeZone timeZone = now.getTimeZone();
+	    
+	    String executionLocation =timeZone.getDisplayName();
+	    
+	  
+		
+		test = extent.createTest(testcaseName, testcaseDec+" <br /><br />OS Name: "+osname + ", OS Version: "
+				+ ""+osversion+", OS Architecture: "+osarch+" <br />Browser Name: "+browserName+" "
+						+ ", Browser Version: "+browserVersion+ "<br />Execution TimeZone: "+executionLocation);
+	    test.assignAuthor(author);
+	    test.assignCategory(category);  
+	
+	}
+	
+	@BeforeTest
+	public void Deleteimages() 
+	{
+	File file = new File("./reports/images");      
+    String[] myFiles;    
+        if(file.isDirectory()){
+            myFiles = file.list();
+            for (int i=0; i<myFiles.length; i++) {
+                File myFile = new File(file, myFiles[i]); 
+                myFile.delete();
+            }
+            }
+         }
+    
+    public abstract long takeSnap();
+	
+	public void reportStep(String desc,String status,boolean bSnap)
+	{
+		MediaEntityModelProvider img=null;
+		if(bSnap && !status.equalsIgnoreCase("INFO"))
+		{
+			long snapNumber=100000L;
+			snapNumber=takeSnap();
+			try
+			{
+				img=MediaEntityBuilder.createScreenCaptureFromPath("./../reports/images/"+snapNumber+".jpg").build();
+			}
+			catch(IOException e)
+			{
+				
+			}
+		}
+		if(status.equalsIgnoreCase("pass"))
+		{
+			test.pass(desc,img);
+			
+		}
+		else if(status.equalsIgnoreCase("fail"))
+		{
+		
+			test.fail(desc,img);
+		}
+		else if(status.equalsIgnoreCase("INFO"))
+		{
+			test.pass(desc);
+		}
+	}
+	
+	public void reportStep(String desc,String status)
+	{
+	
+		reportStep(desc,status,true);
+	}
+	
+	
+    @AfterSuite
+    public void stopReport() throws Exception {
+    	System.out.println("Entered into Aftersuite");
+    	extent.flush();
+    	//TestUtils.sendEmailWithResults();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
