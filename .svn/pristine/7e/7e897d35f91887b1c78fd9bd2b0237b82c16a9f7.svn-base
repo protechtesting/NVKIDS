@@ -1,0 +1,128 @@
+package com.protech.nvkids.testcases.ptre;
+
+import org.testng.annotations.Test;
+
+import com.protech.nvkids.pages.login.LoginPage;
+import com.protech.nvkids.pages.ptre.ViewProcessDetails;
+import com.protech.selenium.api.base.SeleniumBase;
+
+import utils.CommonLocators;
+
+public class EditProcessDetails extends SeleniumBase  {
+
+	CommonLocators  cloc = new CommonLocators();
+
+
+	//@Test(priority=1,description="NavigateToViewProcessDetails and Verify the fields in Edit Process Details screen")
+	public void verifyEditProcessDetailsAppearance() throws Exception
+	{
+		com.protech.nvkids.pages.ptre.EditProcessDetails editPTRE = new LoginPage().login().quickNavigation_PTRE().navigateToEditProcessDetails();
+
+		//editPTRE.verifyPanelFields(" Process ID "," Process "," Category "," Updated On "," Updated By ");	
+		editPTRE.verifyPanelFields("Process ID","Process","Category","Updated On","Updated By");
+		verifyDisplayed(editPTRE.eleManualStart, editPTRE.eleManualStart);
+		verifyDisplayed(editPTRE.eleAllowedRadioBtn, editPTRE.eleAllowedRadioBtn);
+		verifyDisplayed(editPTRE.eleNotAllowedRadioBtn, editPTRE.eleNotAllowedRadioBtn);
+		verifyDisplayed(editPTRE.eleSave, editPTRE.eleSave);
+		verifyDisplayed(editPTRE.eleRefresh, editPTRE.eleRefresh);
+		verifyDisplayed(editPTRE.eleCloseIcon, editPTRE.eleCloseIcon);
+
+	}
+
+
+	//@Test(priority=2,description="Edit without making any changes")
+	public void verifyUpdateWithoutChanges() throws Exception
+	{
+		com.protech.nvkids.pages.ptre.EditProcessDetails editPTRE = new LoginPage().login().quickNavigation_PTRE().navigateToEditProcessDetails();
+
+		editPTRE.clickSave();
+		verifyExactText(editPTRE.eleEditPTREStatusBar, "No Value Was Changed or Added or Deleted");
+
+	}
+
+
+
+	//@Test(priority=3,description="Edit with making any changes")
+	public void verifyUpdateWithChanges() throws Exception
+	{   
+
+		com.protech.nvkids.pages.ptre.EditProcessDetails editPTRE = new LoginPage().login().quickNavigation_PTRE().navigateToEditProcessDetails();
+
+		if(editPTRE.eleAllowedRadioBtnclick.getAttribute("class").contains("ui-label-active") == true){
+			editPTRE.selectNotAllowed();
+		}
+		else{
+			editPTRE.selectAllowed();
+		}
+
+		editPTRE.clickSave();
+		verifyExactText(editPTRE.eleEditPTREStatusBar, "Saved Successfully.");
+	}
+
+	//@Test(priority=4,description="Click Refresh withoutSaving  changes")
+	public void clickRefershwithoutSavingChanges() throws Exception
+	{   
+
+		com.protech.nvkids.pages.ptre.EditProcessDetails editPTRE = new LoginPage().login().quickNavigation_PTRE().navigateToEditProcessDetails();
+
+		if(editPTRE.eleAllowedRadioBtnclick.getAttribute("class").contains("ui-label-active") == true){
+			editPTRE.selectNotAllowed();
+		}
+		else{
+			editPTRE.selectAllowed();
+		}
+
+		editPTRE.clickRefersh();
+	    verifyExactText(editPTRE.elePopUpTitle, "Unsaved Information");
+		verifyDisplayed(editPTRE.elePopUpCloseIcon, editPTRE.elePopUpCloseIcon);
+		verifyExactText(editPTRE.elePopuContent, "You have unsaved information. Do you want to Refresh anyway?");
+		verifyDisplayed(editPTRE.eleYesIcon, editPTRE.eleYesIcon);
+		verifyDisplayed(editPTRE.eleNoIcon, editPTRE.eleNoIcon);
+
+	}
+
+	//@Test(priority=5,description="Click Refresh without Any  changes")
+	public void clickRefershwithoutAnyChanges() throws Exception
+	{   
+
+		com.protech.nvkids.pages.ptre.EditProcessDetails editPTRE = new LoginPage().login().quickNavigation_PTRE().navigateToEditProcessDetails();
+		editPTRE.clickRefersh();
+		verifyExactText(editPTRE.eleEditPTREStatusBarDone, " Done");
+
+	}
+	//@Test(priority=6,description="Click close without Save changes")
+	public void clickCancelwithoutSavingChanges() throws Exception
+	{   
+
+		com.protech.nvkids.pages.ptre.EditProcessDetails editPTRE = new LoginPage().login().quickNavigation_PTRE().navigateToEditProcessDetails();
+
+		if(editPTRE.eleAllowedRadioBtnclick.getAttribute("class").contains("ui-label-active") == true){
+			editPTRE.selectNotAllowed();
+		}
+		else{
+			editPTRE.selectAllowed();
+		}
+
+		editPTRE.clickCloseIcon();
+		Thread.sleep(3000);
+		verifyExactText(editPTRE.elePopUpTitle, "Screen Navigation");
+		verifyDisplayed(editPTRE.elePopUpCloseIcon, editPTRE.elePopUpCloseIcon);
+		verifyExactText(editPTRE.elePopuContent, "You have unsaved information. Do you want to navigate anyway?");
+		verifyDisplayed(editPTRE.eleYesIcon, editPTRE.eleYesIcon);
+		verifyDisplayed(editPTRE.eleNoIcon, editPTRE.eleNoIcon);
+
+	}
+
+	//@Test(priority=7,description="Click close without any  changes")
+	public void clickCancelwithoutAnyChanges() throws Exception
+	{   
+
+		com.protech.nvkids.pages.ptre.EditProcessDetails editPTRE = new LoginPage().login().quickNavigation_PTRE().navigateToEditProcessDetails();
+		editPTRE.clickCloseIcon();
+		verifyExactText(editPTRE.eleEditPTREStatusBarDone, " Done");
+		
+	}
+	
+
+	
+}

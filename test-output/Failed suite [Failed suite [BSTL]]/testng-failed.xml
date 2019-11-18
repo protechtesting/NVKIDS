@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [BSTL]]]">
+  <test name="Test(failed)(failed)(failed)">
+    <classes>
+      <class name="com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase">
+        <methods>
+          <include name="stopReport"/>
+          <include name="Deleteimages"/>
+          <include name="afterMethod"/>
+          <include name="TC8_verify_NoMatchingRecords"/>
+          <include name="startReport"/>
+          <include name="beforeclass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase -->
+    </classes>
+  </test> <!-- Test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [BSTL]]] -->

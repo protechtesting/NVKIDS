@@ -1,0 +1,24 @@
+package com.protech.nvkids.testcases.rstr;
+
+import org.testng.annotations.Test;
+
+import com.protech.nvkids.pages.login.LoginPage;
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class EditHighProfileRestrictedCasesTestCase extends SeleniumBase
+
+{
+	//@Test(priority=1,description="Navigate to Edit High Profile Restricted Cases screen function")
+	public void navigateToEditHighProfileRestrictedCases() throws Exception 
+	{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoEditHighRSTR().verifyFieldsPresent();
+	}
+	//@Test(priority=2,description="Change Status to Inactive")
+	public void EditStatus() throws Exception 
+	{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoEditHighRSTR().EditStatus();
+	}
+	
+	
+	
+}

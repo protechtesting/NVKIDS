@@ -1,0 +1,198 @@
+package com.protech.nvkids.testcases.ptre;
+
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import com.protech.nvkids.pages.login.LoginPage;
+import com.protech.nvkids.pages.ptre.EditProcessDetails;
+import com.protech.nvkids.pages.ptre.ViewProcessDetails;
+import com.protech.selenium.api.base.SeleniumBase;
+
+import utils.CommonLocators;
+
+public class ViewTaskDetails extends SeleniumBase{
+
+	CommonLocators  cloc = new CommonLocators();
+
+	//@Test(priority=1,description="NavigateToViewProcessDetails and Verify the fields in View Task Details screen")
+	public void VerifyScreenFields() throws Exception
+	{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Thread.sleep(3000);
+		verifyDisplayed(Task.eleFilterIcn,Task.eleFilterIcn);
+		verifyAssociatedScreens("Maintain Process","Case Processor");
+		verifyGridHeaders(" Task ID "," Task "," No. of Days to Complete "," Task Type "," Updated On "," Updated By ");
+		//verifyAssociatedScreens("Maintain Process","Case Processor");
+
+	}
+
+	//@Test(priority=2,description="Undock Filter Section and verify fields")
+	public void VerifySelectFilters() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Thread.sleep(3000);
+		Task.openFilter();
+		Task.verifyDisplayed(Task.eleSearchFilter,Task.eleSearchFilter);
+		Task.verifyDisplayed(Task.eleClearFilter,Task.eleClearFilter);
+		Task.verifyDisplayed(Task.eleFltrTask,Task.eleFltrTask);
+	}
+	//@Test(priority=3,description="Verify field size allowance in TASK LOV field")
+	public void VerifySizeAllowanceinTask() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Task.openFilter();
+		verifyFieldLength(Task.eleFltrTask, "ADASFSADFSDFAS", 5);
+
+	}
+
+	//@Test(priority=4,description="Verify alpha characters allowance in TASK LOV field")
+	public void VerifyAlphaCharAllowanceinTask() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Task.openFilter();
+		VerifyChar_allowance(Task.eleFltrTask, "AGDDC");
+	}
+
+
+	//@Test(priority=5,description="Verify numeric characters allowance in TASK LOV field")
+	public void VerifyNumericCharAllowanceinTask() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Task.openFilter();
+		VerifyChar_allowance(Task.eleFltrTask, "12345");
+	}
+
+	//@Test(priority=6,description="Verify Special characters allowance in TASK LOV field")
+	public void VerifySpecialCharAllowanceinTask() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Task.openFilter();
+		VerifyChar_NotAllowance(Task.eleFltrTask, "@#^$%");
+	}
+
+	//@Test(priority=7,description="Inquire with InvalidValue in TASK ID field")
+	public void InquireInvalidValueinTask() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Task.openFilter();
+		setFocus(Task.eleFltrTask);
+		Task.enterTask("abcd");
+		click(Task.eleSearchFilter);
+		verifyExactText(cloc.eleStatusBar, "Task ID :  Invalid Task Code");
+		verifyBorderColor(Task.eleFltrTask);
+
+	}
+	//@Test(priority=8,description="Inquire with InvalidValue in TASK Description field")
+	public void InquireInvalidValueinProcessDescription() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Thread.sleep(3000);
+		Task.openFilter();
+		setFocus(Task.eleFltrTask);
+		Task.enterTask("VPSSN");
+		Task.eleFltrTask.sendKeys(Keys.TAB);
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_SHIFT);
+		Task.eleFltrTask.sendKeys(Keys.TAB);
+		Thread.sleep(1000);
+		robot.keyRelease(KeyEvent.VK_SHIFT);
+		Thread.sleep(1000);
+		Task.eleFltrTask.sendKeys(Keys.ARROW_RIGHT);
+		Thread.sleep(1000);
+		Task.eleFltrTask.sendKeys(Keys.BACK_SPACE);			
+		Thread.sleep(1000);
+		click(Task.eleSearchFilter);
+		verifyExactText(Task.eleTasStatusBar, "Task ID :  Invalid Value");
+		verifyBorderColor(Task.eleFltrTask);
+
+	}
+
+	//@Test(priority=9,description="VerifyClearIcon in SelectFilters")
+	public void VerifyClearValueinFilter() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Task.openFilter();
+		Task.enterTask("AGDC");
+		Task.clickClear();
+		verifyFieldIsEmpty(Task.eleFltrTask);
+
+	}
+	//@Test(priority=10,description="Verify ShowColumns")
+	public void VerifyGridOptions() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		click(Task.eleGridOptions);
+
+		Task.verifyGridOptions("Show Columns","Expand All","Download File");
+	}
+
+	//@Test(priority=11,description="VerifyClearIcon in SelectFilters")
+	public void InquireValidValue() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		Task.openFilter();
+		Task.enterTask("ADCAP");
+		Task.clickSearch();
+		Thread.sleep(3000);
+		verifyInquiredGridResult("ADCAP");
+
+
+	}
+
+	//@Test(priority=12,description="Expanding the grid and verify")
+	public void VerifyInnderGrid() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		if(Task.eleExpandCollapse.getAttribute("class").contains("chevron-down")){
+			click(Task.eleExpandCollapse);
+			reportStep("Grid Expanded Successfully", "pass");
+		}
+		else{
+			reportStep("Grid Already Expanded", "fail");
+
+		}
+		
+		verifyInnerGridHeaders(" Role Code "," Role "," Category code "," Category "," Process Code "," Process ");
+
+	}
+
+	@Test(priority=13,description="Collapse the grid and verify")
+	public void VerifyCollapseGrid() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewTaskDetails Task = new LoginPage().login().quickNavigation_PTRE().navigateToViewTaskDetails();
+		if(Task.eleExpandCollapse.getAttribute("class").contains("chevron-down")){
+			click(Task.eleExpandCollapse);
+			reportStep("Grid Expanded Successfully", "pass");
+			click(Task.eleExpandCollapse);
+			reportStep("Grid Collapsed Successfully", "pass");
+		}
+		else if (Task.eleExpandCollapse.getAttribute("class").contains("chevron-down")){
+			click(Task.eleExpandCollapse);
+			reportStep("Grid Collapsed Successfully", "pass");
+		}
+		else{
+			reportStep("Grid Already Collapsed", "fail");
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+}

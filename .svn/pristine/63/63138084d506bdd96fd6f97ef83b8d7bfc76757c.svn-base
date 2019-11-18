@@ -1,0 +1,120 @@
+package com.protech.nvkids.testcases.bstl;
+
+import org.testng.annotations.Test;
+
+import com.protech.nvkids.pages.login.LoginPage;
+import com.protech.selenium.api.base.SeleniumBase;
+
+
+
+public class BatchErrorsTestcase extends SeleniumBase 
+{
+	
+	//@Test(priority=1)
+	public void verifyfieldspresent() throws Exception
+	{
+		
+			testcaseDec = "verify the fields present in Batch Errors screen";
+		report();
+		
+		new LoginPage().login().Quicknavigation("BSTL").navigatetoBatchErrors().verifyFieldsPresent();
+			//new BatchStatusLogs_page().VerifyFieldspresent();
+	}
+	
+	
+	
+	public void VerifyCharAllowance_PositiveScenario() throws Exception
+	{
+			
+		testcaseDec = "VerifyAlphaCharAllowanceFromDate";		
+		report();	
+			
+		new LoginPage().login().Quicknavigation("BSTL").navigatetoBatchErrors().verifyCharecterAllowancePositiveScenario();
+	
+	}
+	
+	//@Test(priority=3)
+	public void VerifyCharAllowance_NegativeScenario() throws Exception
+	{
+			
+		testcaseDec = "VerifyAlphaCharAllowanceFromDate";		
+		report();	
+			
+		new LoginPage().login().Quicknavigation("BSTL").navigatetoBatchErrors().verifyCharecterAllowanceNegativeScenario();
+	
+	}
+	
+	
+	public void VerifyFieldsLength() throws Exception
+	{
+			
+		testcaseDec = "VerifyFieldsLength";		
+		report();	
+			
+		new LoginPage().login().Quicknavigation("BSTL").navigatetoBatchErrors().VerifyFieldLength();
+	
+	}
+	
+	
+	//@Test(priority=2)
+	public void verifyNullProcessDate() throws Exception
+	{
+		
+		testcaseDec = "verify the fields present in Batch Status Logs screen";
+		report();
+		
+		new LoginPage().login().Quicknavigation("BSTL").navigatetoBatchErrors().verifyError_NullProcessDate();
+		//new BatchStatusLogs_page().VerifyFieldspresent();
+	}
+	
+	@Test(priority=3)
+	public void verifyInvalidProcessDate() throws Exception
+	{
+	
+		testcaseDec = "verify the fields with verifyInvalidToDate";
+		report();
+		
+		new LoginPage().login().Quicknavigation("BSTL").navigatetoBatchErrors().verifyInvalidProcessDate();
+		//new BatchStatusLogs_page().VerifyFieldspresent();
+	}
+	
+	
+	//@Test(priority=4)
+	public void verifyValidation_VerifyFutureProcessDate() throws Exception
+	{
+		
+		testcaseDec = "verifyValidation_VerifyFutureProcessDate";
+		report();
+		
+		new LoginPage().login().Quicknavigation("BSTL").navigatetoBatchErrors().verifyFutureProcessdate();
+		//new BatchStatusLogs_page().VerifyFieldspresent();
+	}
+	
+	
+	//@Test(priority=5)
+	public void verify_NoMatchingRecords() throws Exception
+	{
+
+		testcaseDec = "verify the fields with _NoMatchingRecords";
+		report();
+		
+		new LoginPage().login().Quicknavigation("BSTL").navigatetoBatchErrors().verifyNoMatchRecords();
+		//new BatchStatusLogs_page().VerifyFieldspresent();
+	}
+	
+	
+	@Test(priority=6)
+	public void verify_SuccessfulInquiry() throws Exception
+	{
+		
+		testcaseDec = "verify whether the successful inquiry was happended";
+		report();
+		
+		new LoginPage().login().Quicknavigation("BSTL").navigatetoBatchErrors().verifySuccessfulInquiry();
+		//new BatchStatusLogs_page().VerifyFieldspresent();
+	}
+	
+
+}
+
+

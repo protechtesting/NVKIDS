@@ -1,0 +1,18 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Suite</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="a485d2">  <td>19/09/18 19:12:40</td>   <td>0</td> <td>&nbsp;</td><td title="&gt;&gt;Reporter.Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]">&gt;&gt;Deleteimages</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@26379843</td>   <td></td> </tr>
+<tr bgcolor="dfaefb">  <td>19/09/18 19:13:19</td>   <td>39228</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="LoginTestcase.VerifyLogin()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]">VerifyLogin</td> 
+  <td>main@26379843</td>   <td></td> </tr>
+<tr bgcolor="a48474">  <td>19/09/18 19:13:24</td>   <td>44149</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@26379843</td>   <td></td> </tr>
+<tr bgcolor="a48474">  <td>19/09/18 19:12:40</td>   <td>24</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@26379843</td>   <td></td> </tr>
+<tr bgcolor="a48474">  <td>19/09/18 19:12:40</td>   <td>11</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeclass()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]">&gt;&gt;beforeclass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@26379843</td>   <td></td> </tr>
+<tr bgcolor="a485d2">  <td>19/09/18 19:12:40</td>   <td>-217</td> <td title="&gt;&gt;Reporter.startReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]">&gt;&gt;startReport</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@26379843</td>   <td></td> </tr>
+<tr bgcolor="a485d2">  <td>19/09/18 19:13:24</td>   <td>44326</td> <td title="&lt;&lt;Reporter.stopReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]">&lt;&lt;stopReport</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@26379843</td>   <td></td> </tr>
+</table>

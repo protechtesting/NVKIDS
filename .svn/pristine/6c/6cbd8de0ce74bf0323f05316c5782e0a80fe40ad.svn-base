@@ -1,0 +1,40 @@
+package com.protech.nvkids.pages.home;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.protech.nvkids.pages.bstl.BatchErrorsPage;
+import com.protech.nvkids.pages.bstl.BatchStatusLogsPage;
+import com.protech.nvkids.pages.bstl.PrintQueueErrorsPage;
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class HomePage extends SeleniumBase{
+	
+	
+	public HomePage() 
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+
+	// screen & screen function name links
+	@FindBy(xpath = "//span[text()='Batch Status Logs and Errors']") WebElement eleBSTLLink;
+	@FindBy(xpath = "//span[@title='Quick Navigation']") WebElement eleQuickNavigation;
+	
+	@FindBy(xpath = "(//input[@type='text'])[2]") WebElement eletxtQuickNavigationText;
+	
+	
+	
+
+
+
+	
+	public BatchStatusLogsPage Quicknavigation(String ScreenName)
+	{
+		click(eleQuickNavigation);
+		clearAndType(eletxtQuickNavigationText, ScreenName);
+		return  new BatchStatusLogsPage();
+	}
+
+}

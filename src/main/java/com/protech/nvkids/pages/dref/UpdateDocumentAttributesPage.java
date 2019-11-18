@@ -1,0 +1,54 @@
+package com.protech.nvkids.pages.dref;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class UpdateDocumentAttributesPage extends SeleniumBase
+{
+	public UpdateDocumentAttributesPage() 
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	//Screen functions
+	@FindBy(xpath="//span[text()='Batch Status Logs and Errors']") WebElement elelnkBSTL_batchstatuslogs;
+	@FindBy(xpath = "//span[text()='Print Queue Errors']") WebElement elePrintQueueErrors;
+	@FindBy(xpath = "//span[text()='Batch Status Logs']") WebElement eleBatchStatusLogs;
+	
+	//Filter Section
+	
+	@FindBy(xpath = "//span[@class='fa fa-angle-double-down downIcon']")  WebElement eleicnSelectFilter;	
+	@FindBy(xpath="//a[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted'][contains(text(),'Filter')]") WebElement elelblSelectFilter;
+	
+	@FindBy(id="effectiveRunDate") WebElement eledtProcessDate;
+	@FindBy(xpath="//label[text()='Process Date' ]") WebElement eledtlblProcessDate;
+	
+	@FindBy(xpath="//span[text()='Search']") WebElement elebtnSearch;
+	@FindBy(xpath="//span[text()='Clear']") WebElement elebtnClear;
+	
+	//Grid Section
+	@FindBy(xpath="//span[text()=' Process Date ']") WebElement elehdrProcessDate;
+	@FindBy(xpath="//span[text()=' Job ID ']") WebElement elehdrJobID;
+	@FindBy(xpath="//span[text()=' Job Description ']") WebElement elehdrJobDescription;
+	@FindBy(xpath="//span[text()=' Batch Name ']") WebElement elehdrBatchName;
+	@FindBy(xpath="//span[text()=' Message Type ']") WebElement elehdrMessageType;
+	@FindBy(xpath="//span[text()=' Create Date ']") WebElement elehdrCreateDate;
+	
+	//Grid Accordion section
+	@FindBy(xpath="//label[text()=' Key Values']") WebElement eledispKeyValues;
+	@FindBy(xpath="//label[text()=' Error Description ']") WebElement eledispErrorDescription;
+	
+	//Error Panel
+	@FindBy(xpath="//div[@class='messagetextrow'][2]/span") WebElement eleErrorPanel;
+	
+	
+	//Filter and Accordion icon
+		@FindBy(xpath = "//span[@class='fa fa-angle-double-down downIcon']") WebElement EleicnOpenFilter;
+		@FindBy(xpath = "(//i[contains(@class,'pi pi-chevron-down')])[1]") WebElement Eleicnaccordion;
+			
+	
+}

@@ -1,0 +1,76 @@
+package com.protech.nvkids.testcases.rstr;
+
+import org.testng.annotations.Test;
+
+import com.protech.nvkids.pages.login.LoginPage;
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class AddFamilialRestrictedCasesTestCase extends SeleniumBase
+{
+
+	@Test(priority=25,description="Navigate to Add Familial Restricted Cases screen function")
+	
+		public void navigateToAddFamilialRestrictedCases() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().NavigatetoAddFamilialRSTR().verifyFieldsPresent();
+		}
+		
+	 @Test(priority=26,description="Add without entering the required fields")
+		
+		public void Addwithnullfields() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().NavigatetoAddFamilialRSTR().AddwithNullfields();
+		}
+	   @Test(priority=27,description="Check Case field")
+		
+		public void CheckParticipantTab() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().NavigatetoAddFamilialRSTR().CheckParticipantTab();
+		}
+	   @Test(priority=28,description="Check Participant field")
+		
+		public void CheckCaseTab() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().NavigatetoAddFamilialRSTR().CheckCaseTab();
+		}
+		@Test(priority=29,description="Add with value in the CASE field")
+		
+		public void AddwithCase() throws Exception 
+			{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().NavigatetoAddFamilialRSTR().AddwithCase();
+				
+			}
+			
+		@Test(priority=30,description="Add with value in the USER field")
+			
+		public void AddwithUser() throws Exception 
+			{
+				new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().NavigatetoAddFamilialRSTR().AddwithUser();
+				
+			}
+			
+		
+		@Test(priority=31,description="Add with value in the PARTICIPANT field")
+		
+		public void AddwithParticipant() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().NavigatetoAddFamilialRSTR().AddwithParticipant();
+			
+			
+		}
+	    @Test(priority=32,description="Add with CASE and Multiple PARTICIPANT's")
+		
+		public void AddwithMultiParticipant() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().NavigatetoAddFamilialRSTR().AddwithMultiParticipant();
+			
+			
+		}
+		
+	  @Test(priority=33,description="Add with PARTICIPANT and Multiple CASE's")
+
+	   public void AddwithMultiCase() throws Exception 
+	   {
+		new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().NavigatetoAddFamilialRSTR().AddwithMultiCase();
+	    }
+}

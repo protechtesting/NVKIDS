@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase">
+        <methods>
+          <include name="stopReport"/>
+          <include name="Deleteimages"/>
+          <include name="afterMethod"/>
+          <include name="startReport"/>
+          <include name="beforeclass"/>
+          <include name="navigateToAddReferenceCodes"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

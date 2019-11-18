@@ -1,0 +1,79 @@
+package com.protech.nvkids.pages.refm;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.protech.selenium.api.base.SeleniumBase;
+
+import utils.CommonLocators;
+
+public class EditReferenceCodesPage extends SeleniumBase
+{
+	public EditReferenceCodesPage()
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	ViewReferenceCodesPage v=new ViewReferenceCodesPage();
+	AddReferenceCodesPage a=new AddReferenceCodesPage();
+	CommonLocators cloc=new CommonLocators();
+	
+	@FindBy(xpath="//label[text()='Reference Entity']") WebElement elelblReferenceEntity;
+	@FindBy(xpath="//label[text()='Reference Attribute']") WebElement elelblReferenceAttribute;
+	@FindBy(xpath="//label[text()='Reference Description']") WebElement elelblReferenceDescription;
+	@FindBy(xpath="//label[text()='Code']") WebElement elelblCode;
+	@FindBy(xpath="//label[text()='Code Description']") WebElement elelblCodeDescription;
+	
+	public EditReferenceCodesPage verifyEditReferenceCodeFields() throws Exception
+	{
+		verifyDisplayed(elelblReferenceEntity,v.eletxtReferenceEntity);
+		verifyDisplayed(elelblReferenceAttribute,v.eletxtReferenceAttribute);
+		verifyDisplayed(elelblReferenceDescription,v.eletxtReferenceDescription);
+		verifyDisplayed(elelblCode,a.eletxtCode);
+		verifyDisplayed(elelblCodeDescription,a.eletxtCodeDescription);
+		return this;
+	}
+	
+	public EditReferenceCodesPage verifyMaxLengthOfCodeDescription() throws Exception
+	{
+		clear(a.eletxtCodeDescription);
+		verifyFieldLength(a.eletxtCodeDescription, "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRST", 70);
+		return this;
+	}
+	
+	public EditReferenceCodesPage verifyEditWithExistingCodeDescription() throws Exception
+	{
+		clearAndType(a.eletxtCodeDescription,"PROVIDE");
+		clickIcon(cloc.eleSave, cloc.eleSave);
+		verifyExactText(cloc.eleErrStatusBar, "Code Description :  Code Description Already Exists for the Selected Reference Entity and Reference Attribute");
+		return this;
+		
+	}
+	
+	public EditReferenceCodesPage verifyEditWithNullCodeDescription() throws Exception
+	{
+		clear(a.eletxtCodeDescription);
+		clickIcon(cloc.eleSave, cloc.eleSave);
+		verifyExactText(cloc.eleErrStatusBar, "Code Description :  Enter Required Fields");
+		return this;
+		
+	}
+	
+	public EditReferenceCodesPage verifyEditWithNoChanges() throws Exception
+	{
+		clickIcon(cloc.eleSave, cloc.eleSave);
+		verifyExactText(cloc.eleErrStatusBar, "No Value Was Changed or Added or Deleted");
+		return this;
+		
+	}
+	
+	public ViewReferenceCodesPage verifyEditWithValidValues() throws Exception
+	{
+		clearAndType(a.eletxtCodeDescription,"TEST");
+		clickIcon(cloc.eleSave, cloc.eleSave);
+		verifyExactText(cloc.eleErrStatusBar, "Saved Successfully.");
+		return new ViewReferenceCodesPage();
+		
+	}
+}

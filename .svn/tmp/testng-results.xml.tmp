@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+<<<<<<< .mine
+  <suite name="Default suite" duration-ms="8558" started-at="2019-09-20T09:45:58Z" finished-at="2019-09-20T09:46:07Z">
+||||||| .r31349
+=======
+  <suite name="Default suite" duration-ms="35763" started-at="2019-09-20T09:55:40Z" finished-at="2019-09-20T09:56:16Z">
+>>>>>>> .r31355
+    <groups>
+    </groups>
+<<<<<<< .mine
+    <test name="Default test" duration-ms="8558" started-at="2019-09-20T09:45:58Z" finished-at="2019-09-20T09:46:07Z">
+||||||| .r31349
+=======
+    <test name="Default test" duration-ms="35763" started-at="2019-09-20T09:55:40Z" finished-at="2019-09-20T09:56:16Z">
+>>>>>>> .r31355
+      <class name="com.protech.nvkids.testcases.logn.LoginTestcase">
+<<<<<<< .mine
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="startReport" is-config="true" duration-ms="237" started-at="2019-09-20T09:45:58Z" finished-at="2019-09-20T09:45:58Z">
+||||||| .r31349
+=======
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="startReport" is-config="true" duration-ms="195" started-at="2019-09-20T09:55:40Z" finished-at="2019-09-20T09:55:40Z">
+>>>>>>> .r31355
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+<<<<<<< .mine
+        <test-method status="PASS" signature="Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="Deleteimages" is-config="true" duration-ms="1" started-at="2019-09-20T09:45:58Z" finished-at="2019-09-20T09:45:58Z">
+||||||| .r31349
+=======
+        <test-method status="PASS" signature="Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="Deleteimages" is-config="true" duration-ms="1" started-at="2019-09-20T09:55:40Z" finished-at="2019-09-20T09:55:40Z">
+>>>>>>> .r31355
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleteimages -->
+<<<<<<< .mine
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="beforeclass" is-config="true" duration-ms="3" started-at="2019-09-20T09:45:58Z" finished-at="2019-09-20T09:45:58Z">
+||||||| .r31349
+=======
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="beforeclass" is-config="true" duration-ms="3" started-at="2019-09-20T09:55:40Z" finished-at="2019-09-20T09:55:40Z">
+>>>>>>> .r31355
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+<<<<<<< .mine
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="beforeMethod" is-config="true" duration-ms="8395" started-at="2019-09-20T09:45:58Z" finished-at="2019-09-20T09:46:07Z">
+||||||| .r31349
+=======
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="beforeMethod" is-config="true" duration-ms="33556" started-at="2019-09-20T09:55:40Z" finished-at="2019-09-20T09:56:14Z">
+>>>>>>> .r31355
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.logn.LoginTestcase.verifyNullUsernameAndPassword() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+<<<<<<< .mine
+        <test-method status="PASS" signature="verifyNullUsernameAndPassword()[pri:3, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="verifyNullUsernameAndPassword" duration-ms="19" started-at="2019-09-20T09:46:07Z" finished-at="2019-09-20T09:46:07Z">
+||||||| .r31349
+=======
+        <test-method status="PASS" signature="verifyNullUsernameAndPassword()[pri:3, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="verifyNullUsernameAndPassword" duration-ms="66" started-at="2019-09-20T09:56:14Z" finished-at="2019-09-20T09:56:14Z">
+>>>>>>> .r31355
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullUsernameAndPassword -->
+<<<<<<< .mine
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="afterMethod" is-config="true" duration-ms="102" started-at="2019-09-20T09:46:07Z" finished-at="2019-09-20T09:46:07Z">
+||||||| .r31349
+=======
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="afterMethod" is-config="true" duration-ms="2114" started-at="2019-09-20T09:56:14Z" finished-at="2019-09-20T09:56:16Z">
+>>>>>>> .r31355
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+<<<<<<< .mine
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="stopReport" is-config="true" duration-ms="448" started-at="2019-09-20T09:46:07Z" finished-at="2019-09-20T09:46:07Z">
+||||||| .r31349
+=======
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@14c4973]" name="stopReport" is-config="true" duration-ms="593" started-at="2019-09-20T09:56:16Z" finished-at="2019-09-20T09:56:17Z">
+>>>>>>> .r31355
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- com.protech.nvkids.testcases.logn.LoginTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

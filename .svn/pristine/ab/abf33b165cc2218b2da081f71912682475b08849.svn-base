@@ -1,0 +1,60 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Default suite</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="9898eb">  <td>19/09/17 16:04:38</td>   <td>0</td> <td>&nbsp;</td><td title="&gt;&gt;Reporter.Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;Deleteimages</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="8da5ba">  <td>19/09/17 16:08:11</td>   <td>213282</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BatchStatusLogsTestcase.InquireWith_FutureFromDate()[pri:5, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">InquireWith_FutureFromDate</td> 
+  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="8da5ba">  <td>19/09/17 16:06:58</td>   <td>140720</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BatchStatusLogsTestcase.Inquirewith_InvalidFromDate()[pri:3, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">Inquirewith_InvalidFromDate</td> 
+  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="8da5ba">  <td>19/09/17 16:07:35</td>   <td>177833</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BatchStatusLogsTestcase.Inquirewith_InvalidToDate()[pri:4, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">Inquirewith_InvalidToDate</td> 
+  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="8da5ba">  <td>19/09/17 16:06:20</td>   <td>102368</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BatchStatusLogsTestcase.Inquirewith_nullFromDate()[pri:2, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">Inquirewith_nullFromDate</td> 
+  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:05:59</td>   <td>81681</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:06:39</td>   <td>120940</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:07:13</td>   <td>155821</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:07:51</td>   <td>192945</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:08:26</td>   <td>228574</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:09:07</td>   <td>269586</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:09:43</td>   <td>305316</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:10:22</td>   <td>344500</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:04:38</td>   <td>42</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:06:01</td>   <td>83900</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:06:39</td>   <td>121153</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:07:16</td>   <td>157930</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:07:51</td>   <td>193187</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:08:26</td>   <td>228736</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:09:07</td>   <td>269738</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:09:45</td>   <td>307435</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="b3f17c">  <td>19/09/17 16:04:38</td>   <td>30</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeclass()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;beforeclass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="9898eb">  <td>19/09/17 16:04:37</td>   <td>-173</td> <td title="&gt;&gt;Reporter.startReport()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&gt;&gt;startReport</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="9898eb">  <td>19/09/17 16:10:24</td>   <td>346615</td> <td title="&lt;&lt;Reporter.stopReport()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">&lt;&lt;stopReport</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="8da5ba">  <td>19/09/17 16:08:51</td>   <td>253081</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BatchStatusLogsTestcase.verifyValidation_VerifygGreaterThroughDate()[pri:6, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">verifyValidation_VerifygGreaterThroughDate</td> 
+  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="8da5ba">  <td>19/09/17 16:09:27</td>   <td>288979</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BatchStatusLogsTestcase.verify_NoMatchingRecords()[pri:7, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">verify_NoMatchingRecords</td> 
+  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="8da5ba">  <td>19/09/17 16:10:06</td>   <td>328487</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BatchStatusLogsTestcase.verify_SuccesfulInquiry()[pri:8, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">verify_SuccesfulInquiry</td> 
+  <td>main@2642469</td>   <td></td> </tr>
+<tr bgcolor="8da5ba">  <td>19/09/17 16:05:10</td>   <td>32676</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BatchStatusLogsTestcase.verifyfieldspresent()[pri:1, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@765367]">verifyfieldspresent</td> 
+  <td>main@2642469</td>   <td></td> </tr>
+</table>

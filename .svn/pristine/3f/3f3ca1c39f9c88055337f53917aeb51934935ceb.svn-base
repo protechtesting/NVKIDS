@@ -1,0 +1,304 @@
+package com.protech.nvkids.pages.bstl;
+
+
+import java.awt.AWTException;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class BatchStatusLogsPage extends SeleniumBase 
+{
+	public BatchStatusLogsPage() 
+	{
+		PageFactory.initElements(driver, this);
+	}
+		
+	//Filter Section
+	@FindBy(xpath = "//a[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted']")  WebElement eleicnSelectFilter;	
+	@FindBy(xpath="//a[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted'][contains(text(),'Filter')]") WebElement elelblSelectFilter;	
+	@FindBy(xpath="//span[text()='Batch Status Logs and Errors']")  WebElement elelnkBSTL_batchstatuslogs;		
+	@FindBy(id="fromDate") WebElement eledtFromDate;	
+	@FindBy(xpath="//label[text()='From Date' ]") WebElement eledtlblFromDate;
+	@FindBy(id="toDate")  WebElement eledtToDate;	
+	@FindBy(xpath="//label[text()='Through Date' ]") WebElement eledtlblToDate;
+	@FindBy(xpath="//button/span[text()='Search']") WebElement elebtnSearch;
+	@FindBy(xpath="//button/span[text()='Clear']") WebElement elebtnClear;
+	
+	//Grid Section
+	@FindBy(xpath="//label[text()=' Process Date ']") WebElement elehdrProcessDate;	
+	@FindBy(xpath="//label[text()=' Job ID ']") WebElement elehdrJobID;	
+	@FindBy(xpath="//label[text()=' Job Description ']") WebElement elehdrJobDescription;
+	@FindBy(xpath="//label[text()=' Batch Name ']") WebElement elehdrBatchName;
+	@FindBy(xpath="//label[text()=' Start Time ']") WebElement elehdrStartTime;
+	@FindBy(xpath="//label[text()=' End Time ']") WebElement elehdrEndTime;
+	@FindBy(xpath="//label[text()=' Record Count ']") WebElement elehdrRecordCount;
+	@FindBy(xpath="//label[text()=' Batch Status ']") WebElement elehdrBatchStatus;
+	
+	
+	//Grid Accordion section
+	@FindBy(xpath="//label[text()=' Procedure Name ']") WebElement eledispProcedureName;
+	@FindBy(xpath="//label[text()=' Error/Seq ']") WebElement eledispErrorSEQ;
+	@FindBy(xpath="//label[text()=' Worker ']") WebElement eledispWorker;
+	@FindBy(xpath="//label[text()=' Cursor Location ']") WebElement eledispCursorLocation;
+	@FindBy(xpath="//label[text()=' Execution Location ']") WebElement eledispExecutionLocation;
+	@FindBy(xpath="//label[text()=' Key Values ']") WebElement eledispKeyValues;
+	@FindBy(xpath="//label[text()=' Error Description ']") WebElement eledispErrorDescription;
+	
+	//Error Panel
+	//@FindBy(xpath="//div[@class='messagetextrow'][2]/span") WebElement eleErrorPanel;	
+	@FindBy(xpath = "//span[@class='ng-star-inserted'][2]")  public WebElement eleErrorPanel;
+	
+	@FindBy(xpath = "//span[@class='ng-star-inserted']")  public WebElement eleErrorPanelNoMatch;
+	
+	
+		
+	//Screen Functions
+	@FindBy(xpath = "//span[text()='Batch Status Logs and Errors']") WebElement eleBatchErrorsExpandLink;
+	@FindBy(xpath = "//span[text()='Batch Errors']") WebElement eleBatchErrors;	
+	@FindBy(xpath = "//span[text()='Print Queue Errors']") WebElement elePrintQueueErrors;
+	
+	//Filter and Accordion icon
+	@FindBy(xpath = "//span[@class='fa fa-angle-double-down downIcon']") WebElement EleicnOpenFilter;
+	
+	//@FindBy(xpath = "//span[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted']") WebElement EleicnOpenFilter;
+	
+	@FindBy(xpath = "(//i[contains(@class,'pi pi-chevron-down')])[1]") WebElement Eleicnaccordion;
+	
+	// Grid Data
+	
+	@FindBy(xpath = "//table/tbody/tr/td/span") WebElement EleGridData;
+	
+
+	
+	public BatchErrorsPage navigatetoBatchErrors() throws InterruptedException 
+	{
+		clickLink(eleBatchErrorsExpandLink);
+		clickLink(eleBatchErrors);
+		Thread.sleep(3000);
+		return new BatchErrorsPage();
+	}
+	
+	
+	public PrintQueueErrorsPage navigatetoPrintQueueErrors() throws InterruptedException 
+	{
+		clickLink(eleBatchErrorsExpandLink);
+		clickLink(elePrintQueueErrors);
+		Thread.sleep(3000);
+		return new PrintQueueErrorsPage();
+	}
+	
+	public BatchStatusLogsPage verifyFieldsPresent() throws Exception
+	{
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);
+		verifyDisplayed(eledtFromDate);
+		verifyDisplayed(eledtToDate);
+		verifyDisplayed(elebtnSearch);
+		verifyDisplayed(elebtnClear);
+		verifyDisplayed(eledtFromDate);
+		
+	
+		verifyDisplayed(elehdrProcessDate);
+		//verifyDisplayed(elehdrJobID);
+		verifyDisplayed(elehdrJobDescription);
+		verifyDisplayed(elehdrBatchName);
+		verifyDisplayed(elehdrStartTime);
+		verifyDisplayed(elehdrEndTime);
+		verifyDisplayed(elehdrRecordCount);
+		verifyDisplayed(elehdrBatchStatus);
+		
+		inquirewithFromDate();
+		click(Eleicnaccordion);
+		
+		verifyDisplayed(eledispProcedureName);
+		verifyDisplayed(eledispErrorSEQ);
+		verifyDisplayed(eledispWorker);
+		verifyDisplayed(eledispCursorLocation);
+		verifyDisplayed(eledispExecutionLocation);
+		verifyDisplayed(eledispKeyValues);
+		verifyDisplayed(eledispErrorDescription);
+		
+		return this;
+	}
+	
+	public void verifyCharecterAllowancePositiveScenario(){
+		
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);		
+		VerifyChar_allowance(eledtFromDate,"12526985");
+		VerifyChar_allowance(eledtToDate,"12526985");
+		
+	}
+	
+	
+	public void verifyCharecterAllowanceNegativeScenario(){
+		
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);
+		
+		
+		VerifyChar_NotAllowance(eledtFromDate,"abcd");
+		VerifyChar_NotAllowance(eledtFromDate,"^*&&*^*");
+		VerifyChar_NotAllowance(eledtToDate,"abcd");
+		VerifyChar_NotAllowance(eledtToDate,"^*&&*^*");
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	public void VerifyFieldLength(){
+		
+		verifyFieldLength(eledtFromDate, "12345678", 8);
+		verifyFieldLength(eledtToDate, "12345678", 8);
+		
+	}
+	
+	public void VerifyCopyPasteAllowance() throws AWTException{
+		
+		copypaste(eledtFromDate, "12345678", 8);
+		copypaste(eledtToDate, "12345678", 8);
+		
+	}
+	
+	
+	
+	public void inquirewithFromDate(){
+		
+			
+		clearAndType(eledtFromDate,eledtlblFromDate, "10312019");
+		setPastDate(eledtToDate);
+		
+		//eledtToDate.sendKeys("09302019");
+		//selectDateFromCalendar(eledtToDate);
+		
+		
+		click(elebtnSearch);
+		
+	}
+	
+	
+	
+	public void verifyError_NullFromDate() throws InterruptedException
+	{
+		
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);
+		clear(eledtFromDate);
+		Thread.sleep(1000);
+		click(elebtnSearch);
+			
+		verifyPartialText(eleErrorPanel, "Enter Required Fields");
+			
+		
+	}
+	
+	public void verifyInvalidFromDate()
+	{
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);
+		clearAndType(eledtFromDate,eledtlblFromDate, "321321");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "Invalid Date");
+			
+		
+	}
+	
+	
+	public void verifyInvalidToDate()
+	{
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);
+		System.out.println("********1***************");
+		setPastDate(eledtFromDate);
+		
+		
+		clearAndType(eledtToDate,eledtlblToDate, "34/53/4534");
+		System.out.println("********2***************");
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "Invalid Date");
+			
+		
+	}
+	
+
+	
+	
+	public void verifyFutureFromDate()
+	{
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);		
+		setFutureDate(eledtFromDate);
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "Future Date is not Allowed");
+			
+		
+	}
+	
+	public void verifyFutureToDate()
+	{
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);	
+	
+		setPastDate(eledtFromDate);
+		setFutureDate(eledtToDate);
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "Future Date is not Allowed");
+			
+		
+	}
+	
+	
+	public void verifyGreaterThroughDate()
+	{
+		
+		
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);		
+		
+		
+		
+		setCurrentDate(eledtFromDate);
+		setPastDate(eledtToDate);	
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanel, "Through Date Must be Greater than or Equal to From Date");
+			
+		
+	}
+
+	public void verifyNoMatchRecords()
+	{
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);
+
+			
+		setCurrentDate(eledtFromDate);
+		setCurrentDate(eledtToDate);
+
+		click(elebtnSearch);		
+		verifyPartialText(eleErrorPanelNoMatch, "Not Matching Records Found");
+			
+		
+	}
+	
+	
+	public void verifySuccesfulInquiry() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		clickIcon(eleicnSelectFilter, elelblSelectFilter);
+	
+		
+		clearAndType(eledtFromDate,eledtlblFromDate, "10012019");
+		clearAndType(eledtToDate,eledtlblFromDate, "10312019");
+		
+	
+		click(elebtnSearch);
+		
+		VerifyGridHasData(EleGridData);
+		
+			
+		
+	}
+	
+	
+	
+	
+
+}

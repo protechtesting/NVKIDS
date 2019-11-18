@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase">
+        <methods>
+          <include name="stopReport"/>
+          <include name="Inquirewith_nullFromDate"/>
+          <include name="Deleteimages"/>
+          <include name="afterMethod"/>
+          <include name="startReport"/>
+          <include name="beforeclass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

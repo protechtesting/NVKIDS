@@ -1,0 +1,1207 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Sep 17, 2019 04:04:37 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>smoke</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>8</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>79</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>TC001_verify the fields present in Batch Status Logs screen</span>
+						<span class='test-time'>Sep 17, 2019 04:05:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 17, 2019 04:05:10 PM</span>
+	<span class='label end-time'>Sep 17, 2019 04:05:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+636ms</span>
+</div>
+	<div class='test-desc'>Navigate to BSTL  - Batch Status Logs screen function and verify all the fields present </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>ProtechTesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:11 PM</td>
+					<td class='step-details'>The checkbox 'By logging in, I accept the terms above' is clicked<img data-featherlight='./../reports/images/304400758.jpg' width='10%' src='./../reports/images/304400758.jpg' data-src='./../reports/images/304400758.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:13 PM</td>
+					<td class='step-details'>The Data 'KDUMANSKI' entered Successfully in the 'userName' field<img data-featherlight='./../reports/images/602256696.jpg' width='10%' src='./../reports/images/602256696.jpg' data-src='./../reports/images/602256696.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:14 PM</td>
+					<td class='step-details'>The Data 'password' entered Successfully in the 'password' field<img data-featherlight='./../reports/images/844812803.jpg' width='10%' src='./../reports/images/844812803.jpg' data-src='./../reports/images/844812803.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:15 PM</td>
+					<td class='step-details'>The Button 'Login' is clicked<img data-featherlight='./../reports/images/550214312.jpg' width='10%' src='./../reports/images/550214312.jpg' data-src='./../reports/images/550214312.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:21 PM</td>
+					<td class='step-details'>The Link 'Batch Status Logs and Errors' is clicked<img data-featherlight='./../reports/images/722200976.jpg' width='10%' src='./../reports/images/722200976.jpg' data-src='./../reports/images/722200976.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:24 PM</td>
+					<td class='step-details'>The Icon 'Filter' is clicked<img data-featherlight='./../reports/images/208048871.jpg' width='10%' src='./../reports/images/208048871.jpg' data-src='./../reports/images/208048871.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:25 PM</td>
+					<td class='step-details'>The field 'fromDate'is  displayed in the screen<img data-featherlight='./../reports/images/715966192.jpg' width='10%' src='./../reports/images/715966192.jpg' data-src='./../reports/images/715966192.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:27 PM</td>
+					<td class='step-details'>The field 'toDate'is  displayed in the screen<img data-featherlight='./../reports/images/832314368.jpg' width='10%' src='./../reports/images/832314368.jpg' data-src='./../reports/images/832314368.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:28 PM</td>
+					<td class='step-details'>The field 'Search'is  displayed in the screen<img data-featherlight='./../reports/images/866111173.jpg' width='10%' src='./../reports/images/866111173.jpg' data-src='./../reports/images/866111173.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:29 PM</td>
+					<td class='step-details'>The field 'Clear'is  displayed in the screen<img data-featherlight='./../reports/images/607113786.jpg' width='10%' src='./../reports/images/607113786.jpg' data-src='./../reports/images/607113786.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:30 PM</td>
+					<td class='step-details'>The field 'fromDate'is  displayed in the screen<img data-featherlight='./../reports/images/842214835.jpg' width='10%' src='./../reports/images/842214835.jpg' data-src='./../reports/images/842214835.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:32 PM</td>
+					<td class='step-details'>The field 'Process Date'is  displayed in the screen<img data-featherlight='./../reports/images/581053312.jpg' width='10%' src='./../reports/images/581053312.jpg' data-src='./../reports/images/581053312.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:33 PM</td>
+					<td class='step-details'>The field 'Job Description'is  displayed in the screen<img data-featherlight='./../reports/images/689104796.jpg' width='10%' src='./../reports/images/689104796.jpg' data-src='./../reports/images/689104796.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:34 PM</td>
+					<td class='step-details'>The field 'Batch Name'is  displayed in the screen<img data-featherlight='./../reports/images/778839169.jpg' width='10%' src='./../reports/images/778839169.jpg' data-src='./../reports/images/778839169.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:35 PM</td>
+					<td class='step-details'>The field 'Start Time'is  displayed in the screen<img data-featherlight='./../reports/images/825903306.jpg' width='10%' src='./../reports/images/825903306.jpg' data-src='./../reports/images/825903306.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:36 PM</td>
+					<td class='step-details'>The field 'End Time'is  displayed in the screen<img data-featherlight='./../reports/images/37092705.jpg' width='10%' src='./../reports/images/37092705.jpg' data-src='./../reports/images/37092705.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:37 PM</td>
+					<td class='step-details'>The field 'Record Count'is  displayed in the screen<img data-featherlight='./../reports/images/24829034.jpg' width='10%' src='./../reports/images/24829034.jpg' data-src='./../reports/images/24829034.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:39 PM</td>
+					<td class='step-details'>The field 'Batch Status'is  displayed in the screen<img data-featherlight='./../reports/images/433979597.jpg' width='10%' src='./../reports/images/433979597.jpg' data-src='./../reports/images/433979597.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:41 PM</td>
+					<td class='step-details'>The Data '09/16/2019' entered Successfully in the 'fromDate' field<img data-featherlight='./../reports/images/211469135.jpg' width='10%' src='./../reports/images/211469135.jpg' data-src='./../reports/images/211469135.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:05:42 PM</td>
+					<td class='step-details'>The Button 'Search' is clicked<img data-featherlight='./../reports/images/817892561.jpg' width='10%' src='./../reports/images/817892561.jpg' data-src='./../reports/images/817892561.jpg'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>TC002_verifyNullFromDate</span>
+						<span class='test-time'>Sep 17, 2019 04:06:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 17, 2019 04:06:20 PM</span>
+	<span class='label end-time'>Sep 17, 2019 04:06:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+50ms</span>
+</div>
+	<div class='test-desc'>verify the fields present in Batch Status Logs screen </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>ProtechTesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:21 PM</td>
+					<td class='step-details'>The checkbox 'By logging in, I accept the terms above' is clicked<img data-featherlight='./../reports/images/591697047.jpg' width='10%' src='./../reports/images/591697047.jpg' data-src='./../reports/images/591697047.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:22 PM</td>
+					<td class='step-details'>The Data 'KDUMANSKI' entered Successfully in the 'userName' field<img data-featherlight='./../reports/images/796963528.jpg' width='10%' src='./../reports/images/796963528.jpg' data-src='./../reports/images/796963528.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>The Data 'password' entered Successfully in the 'password' field<img data-featherlight='./../reports/images/375944128.jpg' width='10%' src='./../reports/images/375944128.jpg' data-src='./../reports/images/375944128.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:24 PM</td>
+					<td class='step-details'>The Button 'Login' is clicked<img data-featherlight='./../reports/images/361998642.jpg' width='10%' src='./../reports/images/361998642.jpg' data-src='./../reports/images/361998642.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:32 PM</td>
+					<td class='step-details'>The Link 'Batch Status Logs and Errors' is clicked<img data-featherlight='./../reports/images/156973688.jpg' width='10%' src='./../reports/images/156973688.jpg' data-src='./../reports/images/156973688.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:34 PM</td>
+					<td class='step-details'>The Icon 'Filter' is clicked<img data-featherlight='./../reports/images/506589186.jpg' width='10%' src='./../reports/images/506589186.jpg' data-src='./../reports/images/506589186.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:35 PM</td>
+					<td class='step-details'>The data in the 'fromDate' field cleared Successfully<img data-featherlight='./../reports/images/423976206.jpg' width='10%' src='./../reports/images/423976206.jpg' data-src='./../reports/images/423976206.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:38 PM</td>
+					<td class='step-details'>The Button 'Search' is clicked<img data-featherlight='./../reports/images/411809113.jpg' width='10%' src='./../reports/images/411809113.jpg' data-src='./../reports/images/411809113.jpg'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>TC003_verifyInvalidFromDate</span>
+						<span class='test-time'>Sep 17, 2019 04:06:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 17, 2019 04:06:58 PM</span>
+	<span class='label end-time'>Sep 17, 2019 04:07:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+605ms</span>
+</div>
+	<div class='test-desc'>verify the fields with verifyInvalidToDate </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>ProtechTesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:59 PM</td>
+					<td class='step-details'>The checkbox 'By logging in, I accept the terms above' is clicked<img data-featherlight='./../reports/images/827806030.jpg' width='10%' src='./../reports/images/827806030.jpg' data-src='./../reports/images/827806030.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:00 PM</td>
+					<td class='step-details'>The Data 'KDUMANSKI' entered Successfully in the 'userName' field<img data-featherlight='./../reports/images/357182652.jpg' width='10%' src='./../reports/images/357182652.jpg' data-src='./../reports/images/357182652.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:01 PM</td>
+					<td class='step-details'>The Data 'password' entered Successfully in the 'password' field<img data-featherlight='./../reports/images/627759770.jpg' width='10%' src='./../reports/images/627759770.jpg' data-src='./../reports/images/627759770.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:03 PM</td>
+					<td class='step-details'>The Button 'Login' is clicked<img data-featherlight='./../reports/images/718114781.jpg' width='10%' src='./../reports/images/718114781.jpg' data-src='./../reports/images/718114781.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:08 PM</td>
+					<td class='step-details'>The Link 'Batch Status Logs and Errors' is clicked<img data-featherlight='./../reports/images/341348785.jpg' width='10%' src='./../reports/images/341348785.jpg' data-src='./../reports/images/341348785.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:10 PM</td>
+					<td class='step-details'>The Icon 'Filter' is clicked<img data-featherlight='./../reports/images/382205482.jpg' width='10%' src='./../reports/images/382205482.jpg' data-src='./../reports/images/382205482.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:12 PM</td>
+					<td class='step-details'>The Data '321321' entered Successfully in the 'fromDate' field<img data-featherlight='./../reports/images/825733033.jpg' width='10%' src='./../reports/images/825733033.jpg' data-src='./../reports/images/825733033.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:13 PM</td>
+					<td class='step-details'>The Button 'Search' is clicked<img data-featherlight='./../reports/images/468119206.jpg' width='10%' src='./../reports/images/468119206.jpg' data-src='./../reports/images/468119206.jpg'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>TC004_verifyInvalidToDate</span>
+						<span class='test-time'>Sep 17, 2019 04:07:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 17, 2019 04:07:35 PM</span>
+	<span class='label end-time'>Sep 17, 2019 04:07:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+625ms</span>
+</div>
+	<div class='test-desc'>verify the fields with verifyInvalidToDate </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>ProtechTesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:36 PM</td>
+					<td class='step-details'>The checkbox 'By logging in, I accept the terms above' is clicked<img data-featherlight='./../reports/images/616628761.jpg' width='10%' src='./../reports/images/616628761.jpg' data-src='./../reports/images/616628761.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:37 PM</td>
+					<td class='step-details'>The Data 'KDUMANSKI' entered Successfully in the 'userName' field<img data-featherlight='./../reports/images/338725147.jpg' width='10%' src='./../reports/images/338725147.jpg' data-src='./../reports/images/338725147.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:39 PM</td>
+					<td class='step-details'>The Data 'password' entered Successfully in the 'password' field<img data-featherlight='./../reports/images/513814401.jpg' width='10%' src='./../reports/images/513814401.jpg' data-src='./../reports/images/513814401.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:40 PM</td>
+					<td class='step-details'>The Button 'Login' is clicked<img data-featherlight='./../reports/images/622797121.jpg' width='10%' src='./../reports/images/622797121.jpg' data-src='./../reports/images/622797121.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:45 PM</td>
+					<td class='step-details'>The Link 'Batch Status Logs and Errors' is clicked<img data-featherlight='./../reports/images/182661361.jpg' width='10%' src='./../reports/images/182661361.jpg' data-src='./../reports/images/182661361.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:47 PM</td>
+					<td class='step-details'>The Icon 'Filter' is clicked<img data-featherlight='./../reports/images/475546091.jpg' width='10%' src='./../reports/images/475546091.jpg' data-src='./../reports/images/475546091.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:49 PM</td>
+					<td class='step-details'>The Data '321321' entered Successfully in the 'toDate' field<img data-featherlight='./../reports/images/293783743.jpg' width='10%' src='./../reports/images/293783743.jpg' data-src='./../reports/images/293783743.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:07:50 PM</td>
+					<td class='step-details'>The Button 'Search' is clicked<img data-featherlight='./../reports/images/305282467.jpg' width='10%' src='./../reports/images/305282467.jpg' data-src='./../reports/images/305282467.jpg'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>TC005_NoMatchingRecords</span>
+						<span class='test-time'>Sep 17, 2019 04:08:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 17, 2019 04:08:11 PM</span>
+	<span class='label end-time'>Sep 17, 2019 04:08:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+790ms</span>
+</div>
+	<div class='test-desc'>verify the NoMatchingRecords </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>ProtechTesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:12 PM</td>
+					<td class='step-details'>The checkbox 'By logging in, I accept the terms above' is clicked<img data-featherlight='./../reports/images/709539869.jpg' width='10%' src='./../reports/images/709539869.jpg' data-src='./../reports/images/709539869.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:13 PM</td>
+					<td class='step-details'>The Data 'KDUMANSKI' entered Successfully in the 'userName' field<img data-featherlight='./../reports/images/781009385.jpg' width='10%' src='./../reports/images/781009385.jpg' data-src='./../reports/images/781009385.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:14 PM</td>
+					<td class='step-details'>The Data 'password' entered Successfully in the 'password' field<img data-featherlight='./../reports/images/685399736.jpg' width='10%' src='./../reports/images/685399736.jpg' data-src='./../reports/images/685399736.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:15 PM</td>
+					<td class='step-details'>The Button 'Login' is clicked<img data-featherlight='./../reports/images/186526861.jpg' width='10%' src='./../reports/images/186526861.jpg' data-src='./../reports/images/186526861.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:21 PM</td>
+					<td class='step-details'>The Link 'Batch Status Logs and Errors' is clicked<img data-featherlight='./../reports/images/89074308.jpg' width='10%' src='./../reports/images/89074308.jpg' data-src='./../reports/images/89074308.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:23 PM</td>
+					<td class='step-details'>The Icon 'Filter' is clicked<img data-featherlight='./../reports/images/895138170.jpg' width='10%' src='./../reports/images/895138170.jpg' data-src='./../reports/images/895138170.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:25 PM</td>
+					<td class='step-details'>future date successfully entered<img data-featherlight='./../reports/images/899249086.jpg' width='10%' src='./../reports/images/899249086.jpg' data-src='./../reports/images/899249086.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:26 PM</td>
+					<td class='step-details'>The Button 'Search' is clicked<img data-featherlight='./../reports/images/251666016.jpg' width='10%' src='./../reports/images/251666016.jpg' data-src='./../reports/images/251666016.jpg'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>TC005_VerifyFuturetodate</span>
+						<span class='test-time'>Sep 17, 2019 04:08:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 17, 2019 04:08:51 PM</span>
+	<span class='label end-time'>Sep 17, 2019 04:09:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+13ms</span>
+</div>
+	<div class='test-desc'>VerifyFuturetodate </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>ProtechTesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:51 PM</td>
+					<td class='step-details'>The checkbox 'By logging in, I accept the terms above' is clicked<img data-featherlight='./../reports/images/524103995.jpg' width='10%' src='./../reports/images/524103995.jpg' data-src='./../reports/images/524103995.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:53 PM</td>
+					<td class='step-details'>The Data 'KDUMANSKI' entered Successfully in the 'userName' field<img data-featherlight='./../reports/images/572732182.jpg' width='10%' src='./../reports/images/572732182.jpg' data-src='./../reports/images/572732182.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:54 PM</td>
+					<td class='step-details'>The Data 'password' entered Successfully in the 'password' field<img data-featherlight='./../reports/images/537548606.jpg' width='10%' src='./../reports/images/537548606.jpg' data-src='./../reports/images/537548606.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:08:55 PM</td>
+					<td class='step-details'>The Button 'Login' is clicked<img data-featherlight='./../reports/images/536191022.jpg' width='10%' src='./../reports/images/536191022.jpg' data-src='./../reports/images/536191022.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:01 PM</td>
+					<td class='step-details'>The Link 'Batch Status Logs and Errors' is clicked<img data-featherlight='./../reports/images/449397765.jpg' width='10%' src='./../reports/images/449397765.jpg' data-src='./../reports/images/449397765.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:02 PM</td>
+					<td class='step-details'>The Icon 'Filter' is clicked<img data-featherlight='./../reports/images/186403134.jpg' width='10%' src='./../reports/images/186403134.jpg' data-src='./../reports/images/186403134.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:04 PM</td>
+					<td class='step-details'>Current date successfully entered<img data-featherlight='./../reports/images/770074551.jpg' width='10%' src='./../reports/images/770074551.jpg' data-src='./../reports/images/770074551.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:06 PM</td>
+					<td class='step-details'>Past date successfully entered<img data-featherlight='./../reports/images/17034249.jpg' width='10%' src='./../reports/images/17034249.jpg' data-src='./../reports/images/17034249.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:07 PM</td>
+					<td class='step-details'>The Button 'Search' is clicked<img data-featherlight='./../reports/images/675420147.jpg' width='10%' src='./../reports/images/675420147.jpg' data-src='./../reports/images/675420147.jpg'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>TC004_verify_NoMatchingRecords</span>
+						<span class='test-time'>Sep 17, 2019 04:09:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 17, 2019 04:09:27 PM</span>
+	<span class='label end-time'>Sep 17, 2019 04:09:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+859ms</span>
+</div>
+	<div class='test-desc'>verify the fields with _NoMatchingRecords </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>ProtechTesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:27 PM</td>
+					<td class='step-details'>The checkbox 'By logging in, I accept the terms above' is clicked<img data-featherlight='./../reports/images/654905991.jpg' width='10%' src='./../reports/images/654905991.jpg' data-src='./../reports/images/654905991.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:29 PM</td>
+					<td class='step-details'>The Data 'KDUMANSKI' entered Successfully in the 'userName' field<img data-featherlight='./../reports/images/409123568.jpg' width='10%' src='./../reports/images/409123568.jpg' data-src='./../reports/images/409123568.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:30 PM</td>
+					<td class='step-details'>The Data 'password' entered Successfully in the 'password' field<img data-featherlight='./../reports/images/520864217.jpg' width='10%' src='./../reports/images/520864217.jpg' data-src='./../reports/images/520864217.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:31 PM</td>
+					<td class='step-details'>The Button 'Login' is clicked<img data-featherlight='./../reports/images/856509310.jpg' width='10%' src='./../reports/images/856509310.jpg' data-src='./../reports/images/856509310.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:36 PM</td>
+					<td class='step-details'>The Link 'Batch Status Logs and Errors' is clicked<img data-featherlight='./../reports/images/784823643.jpg' width='10%' src='./../reports/images/784823643.jpg' data-src='./../reports/images/784823643.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:38 PM</td>
+					<td class='step-details'>The Icon 'Filter' is clicked<img data-featherlight='./../reports/images/416644297.jpg' width='10%' src='./../reports/images/416644297.jpg' data-src='./../reports/images/416644297.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:40 PM</td>
+					<td class='step-details'>Current date successfully entered<img data-featherlight='./../reports/images/691703268.jpg' width='10%' src='./../reports/images/691703268.jpg' data-src='./../reports/images/691703268.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:41 PM</td>
+					<td class='step-details'>Current date successfully entered<img data-featherlight='./../reports/images/588570083.jpg' width='10%' src='./../reports/images/588570083.jpg' data-src='./../reports/images/588570083.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:09:42 PM</td>
+					<td class='step-details'>The Button 'Search' is clicked<img data-featherlight='./../reports/images/142733793.jpg' width='10%' src='./../reports/images/142733793.jpg' data-src='./../reports/images/142733793.jpg'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>TC004_verify_NoMatchingRecords</span>
+						<span class='test-time'>Sep 17, 2019 04:10:06 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 17, 2019 04:10:06 PM</span>
+	<span class='label end-time'>Sep 17, 2019 04:10:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+533ms</span>
+</div>
+	<div class='test-desc'>verify the fields with _NoMatchingRecords </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>ProtechTesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:10:07 PM</td>
+					<td class='step-details'>The checkbox 'By logging in, I accept the terms above' is clicked<img data-featherlight='./../reports/images/522485769.jpg' width='10%' src='./../reports/images/522485769.jpg' data-src='./../reports/images/522485769.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:10:08 PM</td>
+					<td class='step-details'>The Data 'KDUMANSKI' entered Successfully in the 'userName' field<img data-featherlight='./../reports/images/798225407.jpg' width='10%' src='./../reports/images/798225407.jpg' data-src='./../reports/images/798225407.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:10:09 PM</td>
+					<td class='step-details'>The Data 'password' entered Successfully in the 'password' field<img data-featherlight='./../reports/images/287527861.jpg' width='10%' src='./../reports/images/287527861.jpg' data-src='./../reports/images/287527861.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:10:11 PM</td>
+					<td class='step-details'>The Button 'Login' is clicked<img data-featherlight='./../reports/images/299515535.jpg' width='10%' src='./../reports/images/299515535.jpg' data-src='./../reports/images/299515535.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:10:16 PM</td>
+					<td class='step-details'>The Link 'Batch Status Logs and Errors' is clicked<img data-featherlight='./../reports/images/732638394.jpg' width='10%' src='./../reports/images/732638394.jpg' data-src='./../reports/images/732638394.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:10:17 PM</td>
+					<td class='step-details'>The Icon 'Filter' is clicked<img data-featherlight='./../reports/images/70655187.jpg' width='10%' src='./../reports/images/70655187.jpg' data-src='./../reports/images/70655187.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:10:19 PM</td>
+					<td class='step-details'>Current date successfully entered<img data-featherlight='./../reports/images/224549656.jpg' width='10%' src='./../reports/images/224549656.jpg' data-src='./../reports/images/224549656.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:10:21 PM</td>
+					<td class='step-details'>Current date successfully entered<img data-featherlight='./../reports/images/54681862.jpg' width='10%' src='./../reports/images/54681862.jpg' data-src='./../reports/images/54681862.jpg'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:10:22 PM</td>
+					<td class='step-details'>The Button 'Search' is clicked<img data-featherlight='./../reports/images/39284838.jpg' width='10%' src='./../reports/images/39284838.jpg' data-src='./../reports/images/39284838.jpg'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>smoke</span>
+						<span class='category-status right'>
+							<span class='label pass'>8</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 8</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 17, 2019 04:05:10 PM</td>
+										<td class='linked' test-id='1'>TC001_verify the fields present in Batch Status Logs screen</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 17, 2019 04:06:20 PM</td>
+										<td class='linked' test-id='2'>TC002_verifyNullFromDate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 17, 2019 04:06:58 PM</td>
+										<td class='linked' test-id='3'>TC003_verifyInvalidFromDate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 17, 2019 04:07:35 PM</td>
+										<td class='linked' test-id='4'>TC004_verifyInvalidToDate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 17, 2019 04:08:11 PM</td>
+										<td class='linked' test-id='5'>TC005_NoMatchingRecords</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 17, 2019 04:08:51 PM</td>
+										<td class='linked' test-id='6'>TC005_VerifyFuturetodate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 17, 2019 04:09:27 PM</td>
+										<td class='linked' test-id='7'>TC004_verify_NoMatchingRecords</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 17, 2019 04:10:06 PM</td>
+										<td class='linked' test-id='8'>TC004_verify_NoMatchingRecords</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='author-view' class='view hide'>
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Authors' title='Search Authors'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Authors...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Authors</h5>
+                <ul id='author-collection' class='author-collection'>
+
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>ProtechTesting</span>
+                                <span class='author-status right'>
+                                        <span class='label pass'>8</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 8</span>
+                                    
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Sep 17, 2019 04:05:10 PM</td>
+                                                <td class='linked' test-id='1'>TC001_verify the fields present in Batch Status Logs screen</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sep 17, 2019 04:06:20 PM</td>
+                                                <td class='linked' test-id='2'>TC002_verifyNullFromDate</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sep 17, 2019 04:06:58 PM</td>
+                                                <td class='linked' test-id='3'>TC003_verifyInvalidFromDate</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sep 17, 2019 04:07:35 PM</td>
+                                                <td class='linked' test-id='4'>TC004_verifyInvalidToDate</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sep 17, 2019 04:08:11 PM</td>
+                                                <td class='linked' test-id='5'>TC005_NoMatchingRecords</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sep 17, 2019 04:08:51 PM</td>
+                                                <td class='linked' test-id='6'>TC005_VerifyFuturetodate</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sep 17, 2019 04:09:27 PM</td>
+                                                <td class='linked' test-id='7'>TC004_verify_NoMatchingRecords</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sep 17, 2019 04:10:06 PM</td>
+                                                <td class='linked' test-id='8'>TC004_verify_NoMatchingRecords</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='author-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>8</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>79</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Sep 17, 2019 04:04:37 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Sep 17, 2019 04:10:24 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 5m 46s+707ms</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>smoke</td>
+							<td>8</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 8,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 79,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 0,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

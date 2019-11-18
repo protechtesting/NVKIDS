@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [REFM]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.protech.nvkids.testcases.refm.ViewReferenceCodesTestcase">
+        <methods>
+          <include name="stopReport"/>
+          <include name="inquireWithNullReferenceEntity"/>
+          <include name="Deleteimages"/>
+          <include name="afterMethod"/>
+          <include name="startReport"/>
+          <include name="beforeclass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.protech.nvkids.testcases.refm.ViewReferenceCodesTestcase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [REFM] -->

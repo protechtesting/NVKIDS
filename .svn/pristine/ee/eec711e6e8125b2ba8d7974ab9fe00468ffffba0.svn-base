@@ -1,0 +1,1507 @@
+2019-09-13 15:42:19,095 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-13 15:42:38,553 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-13 15:42:39,710 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-13 15:42:40,202 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:40,460 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-13 15:42:41,457 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:41,510 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-13 15:42:41,700 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-13 15:42:42,685 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:42,751 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-13 15:42:42,973 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-13 15:42:43,932 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:44,132 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-13 15:42:45,131 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:49,605 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-13 15:42:50,906 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:51,303 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'Filter' is clicked
+2019-09-13 15:42:52,313 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:52,394 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> id: fromDate] displayed
+2019-09-13 15:42:53,420 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:53,502 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> id: toDate] displayed
+2019-09-13 15:42:54,551 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:54,636 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> xpath: //span[text()='Search']] displayed
+2019-09-13 15:42:55,693 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:55,789 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> xpath: //span[text()='Clear']] displayed
+2019-09-13 15:42:56,900 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:56,966 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> id: fromDate] displayed
+2019-09-13 15:42:57,992 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:58,077 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-13 15:42:59,118 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:42:59,226 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-13 15:43:00,235 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:43:00,320 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-13 15:43:01,358 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:43:01,447 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-13 15:43:02,495 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:43:02,687 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-13 15:43:03,779 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:43:03,874 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-13 15:43:04,917 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 15:43:05,001 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (dc886613514f3fa1c805c61ec2ebe383)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-13 15:43:06,037 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:58:39,246 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-13 16:58:56,150 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-13 16:58:57,329 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-13 16:58:57,866 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:58:58,323 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-13 16:58:59,365 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:58:59,422 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-13 16:58:59,694 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-13 16:59:00,639 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:00,687 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-13 16:59:00,834 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-13 16:59:01,822 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:01,986 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-13 16:59:02,971 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:09,643 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-13 16:59:10,938 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:11,308 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'Filter' is clicked
+2019-09-13 16:59:12,407 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:12,481 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> id: fromDate] displayed
+2019-09-13 16:59:13,519 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:13,591 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> id: toDate] displayed
+2019-09-13 16:59:14,612 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:14,687 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> xpath: //span[text()='Search']] displayed
+2019-09-13 16:59:15,713 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:15,790 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> xpath: //span[text()='Clear']] displayed
+2019-09-13 16:59:16,815 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:16,870 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> id: fromDate] displayed
+2019-09-13 16:59:17,859 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:17,935 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-13 16:59:18,939 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:19,038 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-13 16:59:20,066 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:20,142 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-13 16:59:21,158 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:21,231 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-13 16:59:22,243 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:22,328 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-13 16:59:23,382 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:23,473 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-13 16:59:24,516 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-13 16:59:24,590 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (ac073c9eb574902bd20099f19f534b06)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-13 16:59:25,632 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-16 19:35:58,052 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 19:45:06,316 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 19:47:04,371 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 19:49:14,837 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 19:50:41,259 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 19:59:49,501 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:00:22,075 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:01:59,301 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:04:06,834 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:04:06,839 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-16 20:04:07,003 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-16 20:08:34,790 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:17:34,394 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:18:41,854 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:22:46,434 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:23:17,531 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:43:33,670 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-16 20:43:57,820 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-16 20:44:03,859 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-16 20:44:09,869 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-16 20:44:27,981 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:40:18,562 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 09:40:46,617 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 09:40:47,780 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 09:40:48,321 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:40:48,706 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 09:40:49,724 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:40:49,786 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:40:50,030 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 09:40:51,032 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:40:51,087 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:40:51,248 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 09:40:52,223 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:40:52,411 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 09:40:53,415 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:40:57,784 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 09:40:59,233 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:40:59,908 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 09:41:01,019 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:01,110 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> id: fromDate] displayed
+2019-09-17 09:41:02,311 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:02,396 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> id: toDate] displayed
+2019-09-17 09:41:03,538 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:03,633 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 09:41:04,812 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:04,902 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 09:41:06,071 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:06,142 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> id: fromDate] displayed
+2019-09-17 09:41:07,262 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:07,351 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 09:41:08,517 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:08,605 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 09:41:09,743 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:09,832 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 09:41:10,955 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:11,045 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 09:41:12,175 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:12,263 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 09:41:13,405 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:13,491 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 09:41:14,616 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:41:14,704 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a2d2cdefb4ec20224c1c6c8a5b36280a)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 09:41:15,855 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:45:29,072 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 09:45:47,701 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 09:45:48,879 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 09:45:49,385 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:45:49,689 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 09:45:50,722 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:45:50,771 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:45:50,966 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 09:45:51,969 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:45:52,020 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:45:52,155 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 09:45:53,112 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:45:53,311 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 09:45:54,352 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:45:58,593 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 09:46:00,169 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:00,506 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 09:46:01,753 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:01,844 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> id: fromDate] displayed
+2019-09-17 09:46:02,982 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:03,068 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> id: toDate] displayed
+2019-09-17 09:46:04,248 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:04,335 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 09:46:05,515 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:05,600 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 09:46:06,765 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:06,834 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> id: fromDate] displayed
+2019-09-17 09:46:08,016 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:08,105 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 09:46:09,268 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:09,357 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 09:46:10,513 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:10,613 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 09:46:11,793 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:11,886 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 09:46:13,111 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:13,202 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 09:46:14,346 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:14,437 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 09:46:15,625 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:15,712 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (f7c54af8bdb67c8e4e61ddcb59723a1b)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 09:46:16,880 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:21,743 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 09:46:37,070 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 09:46:38,213 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 09:46:38,730 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:38,982 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 09:46:40,103 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:40,159 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:46:40,467 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 09:46:41,420 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:41,471 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:46:41,668 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 09:46:42,679 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:42,860 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 09:46:43,841 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:48,153 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 09:46:49,573 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:52,144 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:46:55,092 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 09:47:11,641 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 09:47:12,789 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 09:47:13,270 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:13,491 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 09:47:14,519 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:14,566 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:47:14,757 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 09:47:15,762 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:15,810 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:47:15,949 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 09:47:16,931 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:17,105 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 09:47:18,075 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:22,663 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 09:47:24,234 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:26,832 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - The Element is not Interactable
+2019-09-17 09:47:27,387 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:29,937 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 09:47:45,466 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 09:47:46,631 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 09:47:47,132 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:47,361 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 09:47:48,339 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:48,386 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:47:48,561 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 09:47:49,597 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:49,647 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:47:49,841 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 09:47:50,834 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:51,029 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 09:47:52,038 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:47:56,345 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 09:47:57,626 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:48:00,342 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - The Element is not Interactable
+2019-09-17 09:48:00,889 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:48:05,422 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 09:48:38,263 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 09:48:39,463 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 09:48:39,938 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:48:40,164 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 09:48:41,121 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:48:41,168 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:48:41,348 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 09:48:42,323 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:48:42,372 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:48:42,501 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 09:48:43,522 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:48:43,762 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 09:48:44,724 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:48:49,001 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 09:48:50,239 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:48:52,967 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - The Element is not Interactable
+2019-09-17 09:48:53,479 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:48:57,928 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 09:49:24,733 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 09:49:25,888 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 09:49:26,365 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:49:26,594 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 09:49:27,616 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:49:27,664 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:49:27,875 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 09:49:28,969 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:49:29,103 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:49:29,350 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 09:49:30,426 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:49:30,663 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 09:49:31,683 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:49:36,405 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 09:49:37,929 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:49:40,503 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - The Element is not Interactable
+2019-09-17 09:49:41,021 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:49:43,985 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 09:50:14,439 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 09:50:15,842 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 09:50:16,486 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:16,769 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 09:50:17,950 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:18,010 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:50:18,270 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 09:50:19,331 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:19,396 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:50:19,580 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 09:50:20,686 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:20,934 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 09:50:22,092 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:26,464 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 09:50:28,076 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:30,842 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - The Element is not Interactable
+2019-09-17 09:50:31,386 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:34,298 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 09:50:51,766 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 09:50:52,917 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 09:50:53,420 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:53,646 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 09:50:54,644 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:54,690 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:50:54,882 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 09:50:55,847 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:55,897 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 09:50:56,031 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 09:50:57,037 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:50:57,220 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 09:50:58,184 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:51:02,477 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 09:51:03,733 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 09:51:06,407 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - The Element is not Interactable
+2019-09-17 09:51:06,917 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:16:20,432 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 10:16:42,818 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 10:16:44,281 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 10:16:44,814 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:16:45,197 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 10:16:46,263 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:16:46,320 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:16:46,620 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 10:16:47,590 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:16:47,666 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:16:47,848 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 10:16:48,982 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:16:49,218 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 10:16:50,348 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:16:54,929 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 10:16:56,468 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:16:57,193 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 10:16:58,527 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:16:58,639 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> id: fromDate] displayed
+2019-09-17 10:16:59,885 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:16:59,984 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> id: toDate] displayed
+2019-09-17 10:17:01,202 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:01,299 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 10:17:02,526 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:02,615 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 10:17:03,857 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:03,929 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> id: fromDate] displayed
+2019-09-17 10:17:05,155 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:05,246 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 10:17:06,469 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:06,558 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 10:17:07,772 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:07,863 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 10:17:09,052 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:09,153 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 10:17:10,372 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:10,461 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 10:17:11,679 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:11,768 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 10:17:12,969 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:13,072 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 10:17:14,287 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:15,016 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - The Button '' is not clicked
+2019-09-17 10:17:15,589 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:15,867 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:17:16,887 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 10:17:17,957 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:18,294 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 10:17:19,428 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:19,771 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 10:17:20,863 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:20,953 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 10:17:22,064 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:22,157 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 10:17:23,287 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:23,378 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 10:17:24,500 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:24,589 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 10:17:25,712 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:25,801 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 10:17:26,945 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:27,035 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 10:17:28,239 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:17:28,328 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a3f5fa3244ba3662f5fc015b9ace703e)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 10:17:29,445 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:20:21,230 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 10:20:55,313 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 10:20:56,466 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 10:20:56,988 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:20:57,293 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 10:20:58,323 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:20:58,373 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:20:58,558 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 10:20:59,565 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:20:59,618 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:20:59,771 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 10:21:00,767 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:00,954 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 10:21:01,985 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:06,512 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 10:21:08,001 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:08,522 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 10:21:09,619 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:09,706 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> id: fromDate] displayed
+2019-09-17 10:21:10,837 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:10,921 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> id: toDate] displayed
+2019-09-17 10:21:12,043 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:12,129 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 10:21:13,271 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:13,359 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 10:21:14,506 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:14,574 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> id: fromDate] displayed
+2019-09-17 10:21:15,720 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:15,807 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 10:21:16,965 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:17,051 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 10:21:18,181 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:18,283 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 10:21:19,424 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:19,512 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 10:21:20,682 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:20,769 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 10:21:21,903 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:21,993 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 10:21:23,157 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:23,245 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 10:21:24,375 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:24,676 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:21:25,682 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 10:21:26,733 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:27,119 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 10:21:28,256 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:28,602 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 10:21:29,713 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:29,805 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 10:21:30,935 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:31,026 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 10:21:32,177 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:32,265 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 10:21:33,405 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:33,492 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 10:21:34,612 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:34,699 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 10:21:35,841 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:35,929 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 10:21:37,062 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:21:37,157 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (a755644f2870e0f0513e89d5e3443b5a)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 10:21:38,304 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:28:29,292 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 10:28:54,832 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 10:28:55,983 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 10:28:56,501 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:28:56,817 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 10:28:57,865 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:28:57,914 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:28:58,133 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 10:28:59,115 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:28:59,165 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:28:59,306 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 10:29:00,285 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:00,466 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 10:29:01,498 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:06,070 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 10:29:07,329 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:07,745 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 10:29:08,896 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:08,985 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> id: fromDate] displayed
+2019-09-17 10:29:10,125 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:10,238 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> id: toDate] displayed
+2019-09-17 10:29:11,366 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:11,452 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 10:29:12,603 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:12,689 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 10:29:13,848 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:13,916 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> id: fromDate] displayed
+2019-09-17 10:29:15,035 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:15,123 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 10:29:16,252 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:16,361 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 10:29:17,483 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:17,571 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 10:29:18,719 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:18,817 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 10:29:19,946 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:20,036 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 10:29:21,180 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:21,270 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 10:29:22,420 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:22,519 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 10:29:23,668 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:24,027 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:29:24,945 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 10:29:25,998 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:26,365 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 10:29:27,472 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:27,814 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 10:29:28,912 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:29,003 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 10:29:30,165 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:30,254 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 10:29:31,378 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:31,468 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 10:29:32,599 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:32,690 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 10:29:33,831 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:33,920 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 10:29:35,032 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:35,209 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 10:29:36,515 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:29:36,608 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (16c92a773124cb72ed439a8c69f327bf)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 10:29:37,730 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:32:44,286 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 10:33:05,986 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 10:33:07,991 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 10:33:08,726 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:33:25,600 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:57:11,175 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 10:57:30,077 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 10:57:31,213 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 10:57:31,718 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:57:31,986 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 10:57:33,041 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:57:33,090 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:57:33,292 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 10:57:34,280 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:57:34,331 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:57:34,479 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 10:57:35,440 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:57:35,624 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 10:57:36,675 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:57:40,848 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 10:57:42,340 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:57:42,785 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 10:57:43,858 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:57:45,897 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Errors found and count incremented
+2019-09-17 10:57:50,552 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Proxy element for: DefaultElementLocator 'By.id: fromDate' - No such Element
+2019-09-17 10:57:54,624 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Errors found and count incremented
+2019-09-17 10:57:59,198 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Proxy element for: DefaultElementLocator 'By.id: toDate' - No such Element
+2019-09-17 10:58:03,304 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Errors found and count incremented
+2019-09-17 10:58:07,914 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Search']' - No such Element
+2019-09-17 10:58:12,019 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Errors found and count incremented
+2019-09-17 10:58:16,660 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Clear']' - No such Element
+2019-09-17 10:58:20,737 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Errors found and count incremented
+2019-09-17 10:58:25,296 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Proxy element for: DefaultElementLocator 'By.id: fromDate' - No such Element
+2019-09-17 10:58:27,432 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (2a70818ae3030bf0a5f5216912c255c4)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 10:58:28,630 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:58:28,722 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (2a70818ae3030bf0a5f5216912c255c4)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 10:58:29,852 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:58:29,964 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (2a70818ae3030bf0a5f5216912c255c4)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 10:58:40,746 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 10:58:58,189 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 10:58:59,337 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 10:58:59,848 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:00,158 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 10:59:01,232 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:01,281 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:59:01,468 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 10:59:02,477 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:02,534 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:59:02,676 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 10:59:03,646 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:03,853 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 10:59:04,889 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:08,862 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 10:59:10,117 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:10,553 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 10:59:11,730 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:11,818 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> id: fromDate] displayed
+2019-09-17 10:59:12,961 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:13,046 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> id: toDate] displayed
+2019-09-17 10:59:14,210 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:14,297 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 10:59:15,459 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:15,545 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 10:59:16,705 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:16,772 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> id: fromDate] displayed
+2019-09-17 10:59:17,891 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:17,981 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 10:59:19,152 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:19,239 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 10:59:20,403 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:20,493 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 10:59:21,644 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:21,742 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 10:59:22,890 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:22,979 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 10:59:24,154 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:24,258 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 10:59:25,426 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:25,517 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 10:59:26,677 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:26,944 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 10:59:27,875 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 10:59:28,972 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:29,301 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 10:59:30,458 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:30,907 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 10:59:31,993 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:32,108 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 10:59:33,244 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:33,337 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 10:59:34,498 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:34,590 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 10:59:35,739 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:35,833 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 10:59:37,008 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:37,102 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 10:59:38,245 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:38,336 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 10:59:39,479 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 10:59:39,592 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (cba5595540ccd8ceaf79972b45bf3108)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 10:59:40,750 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:03:50,037 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 11:04:40,628 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 11:04:41,787 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 11:04:42,297 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:04:42,611 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 11:04:43,665 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:04:43,716 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:04:43,910 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 11:04:44,887 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:04:44,939 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:04:45,080 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 11:04:46,139 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:04:46,323 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 11:04:47,381 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:04:54,305 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 11:04:55,736 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:04:56,013 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 11:04:57,201 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:04:57,289 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> id: fromDate] displayed
+2019-09-17 11:04:58,433 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:04:58,539 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> id: toDate] displayed
+2019-09-17 11:04:59,691 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:04:59,783 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 11:05:00,982 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:01,091 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 11:05:02,295 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:02,364 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> id: fromDate] displayed
+2019-09-17 11:05:03,523 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:03,611 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 11:05:04,733 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:04,830 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 11:05:05,985 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:06,073 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 11:05:07,236 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:07,327 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 11:05:08,461 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:08,570 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 11:05:09,711 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:09,813 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 11:05:10,978 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:11,067 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 11:05:12,233 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:12,497 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:05:13,418 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 11:05:14,588 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:15,010 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 11:05:16,174 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:16,513 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 11:05:17,661 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:17,752 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 11:05:18,930 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:19,022 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 11:05:20,182 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:20,271 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 11:05:21,408 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:21,519 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 11:05:22,661 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:22,750 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 11:05:23,898 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:23,988 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 11:05:25,133 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:05:25,222 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (9341c90b0c48d1a7eddc6436db36e088)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 11:05:26,359 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:16:39,344 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 11:16:45,140 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 11:16:45,173 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - Unable to launch browser
+2019-09-17 11:16:45,178 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:16:55,417 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:14,573 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 11:17:38,072 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 11:17:39,219 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 11:17:39,742 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:40,057 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 11:17:41,121 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:41,170 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:17:41,372 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 11:17:42,359 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:42,411 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:17:42,556 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 11:17:43,559 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:43,748 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 11:17:44,783 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:49,001 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 11:17:50,273 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:50,777 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 11:17:51,906 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:51,997 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> id: fromDate] displayed
+2019-09-17 11:17:53,139 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:53,225 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> id: toDate] displayed
+2019-09-17 11:17:54,388 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:54,478 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 11:17:55,640 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:55,725 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 11:17:56,896 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:56,982 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> id: fromDate] displayed
+2019-09-17 11:17:58,110 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:58,204 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 11:17:59,387 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:17:59,473 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 11:18:00,600 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:00,700 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 11:18:01,833 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:01,921 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 11:18:03,068 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:03,154 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 11:18:04,309 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:04,408 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 11:18:05,552 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:05,642 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 11:18:06,825 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:07,080 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:18:07,988 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 11:18:09,082 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:09,426 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 11:18:10,553 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:10,899 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 11:18:12,014 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:12,104 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 11:18:13,252 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:13,340 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 11:18:14,443 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:14,532 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 11:18:15,661 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:15,747 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 11:18:16,884 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:16,972 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 11:18:18,079 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:18,167 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 11:18:19,277 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:18:19,366 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (374d0aa24eaedfae22534e9d029fdca7)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 11:18:20,492 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:09,517 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 11:23:41,989 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 11:23:43,232 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 11:23:43,901 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:44,212 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 11:23:45,434 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:45,483 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:23:45,664 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 11:23:46,752 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:46,801 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:23:46,945 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 11:23:48,008 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:48,192 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 11:23:49,302 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:53,547 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 11:23:54,973 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:55,496 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 11:23:56,726 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:56,813 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> id: fromDate] displayed
+2019-09-17 11:23:58,003 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:58,089 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> id: toDate] displayed
+2019-09-17 11:23:59,265 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:23:59,353 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 11:24:00,569 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:00,657 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 11:24:01,869 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:01,938 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> id: fromDate] displayed
+2019-09-17 11:24:03,104 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:03,219 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 11:24:04,394 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:04,481 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 11:24:05,689 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:05,776 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 11:24:06,967 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:07,057 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 11:24:08,232 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:08,321 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 11:24:09,513 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:09,613 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 11:24:10,812 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:10,903 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 11:24:12,100 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:12,354 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:24:13,249 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 11:24:14,381 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:14,729 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 11:24:15,922 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:16,266 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 11:24:17,384 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:17,472 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 11:24:18,609 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:18,697 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 11:24:19,828 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:19,918 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 11:24:21,029 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:21,118 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 11:24:22,259 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:22,347 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 11:24:23,468 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:23,555 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 11:24:24,662 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:24:24,773 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (d6f9684e88a221527e55e9496395b124)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 11:24:25,902 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:33:22,198 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 11:33:46,472 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 11:33:47,655 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 11:33:48,164 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:33:48,479 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 11:33:49,569 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:33:49,619 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:33:49,815 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 11:33:50,785 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:33:50,838 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:33:50,984 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 11:33:51,941 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:33:52,116 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 11:33:53,262 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:33:59,418 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 11:34:00,880 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:01,138 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 11:34:02,372 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:02,461 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> id: fromDate] displayed
+2019-09-17 11:34:03,640 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:03,752 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> id: toDate] displayed
+2019-09-17 11:34:04,933 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:05,019 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 11:34:06,231 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:06,331 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 11:34:07,571 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:07,640 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> id: fromDate] displayed
+2019-09-17 11:34:08,837 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:08,926 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 11:34:10,108 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:10,197 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 11:34:11,389 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:11,481 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 11:34:12,675 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:12,786 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 11:34:13,966 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:14,055 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 11:34:15,266 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:15,358 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 11:34:16,555 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:16,644 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 11:34:17,846 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:18,299 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:34:19,265 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 11:34:20,319 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:20,688 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 11:34:21,835 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:22,176 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 11:34:23,273 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:23,372 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 11:34:24,536 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:24,632 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 11:34:25,778 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:25,873 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 11:34:27,040 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:27,135 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 11:34:28,275 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:28,370 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 11:34:29,511 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:29,605 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 11:34:30,879 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:34:30,971 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (fe12a4af0ab3a5b8945d2bd0b4a29f4d)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 11:34:32,130 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:36:51,414 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 11:37:10,489 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 11:37:11,629 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 11:37:12,116 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:12,448 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 11:37:13,563 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:13,615 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:37:13,837 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 11:37:14,875 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:14,930 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:37:15,100 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 11:37:16,088 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:16,290 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 11:37:17,338 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:21,969 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 11:37:23,365 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:23,958 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 11:37:25,317 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:25,409 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> id: fromDate] displayed
+2019-09-17 11:37:26,643 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:26,738 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> id: toDate] displayed
+2019-09-17 11:37:27,947 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:28,077 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 11:37:29,322 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:29,413 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 11:37:30,646 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:30,744 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> id: fromDate] displayed
+2019-09-17 11:37:32,159 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:32,273 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 11:37:33,486 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:33,574 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 11:37:34,762 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:34,858 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 11:37:36,105 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:36,195 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 11:37:37,384 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:37,478 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 11:37:38,729 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:38,823 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 11:37:40,075 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:40,184 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (43d7fc9b30442967f48cfa02efa59ce6)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 11:37:41,412 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:41,807 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:37:42,807 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 11:37:43,949 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:44,407 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 11:37:45,595 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:37:46,459 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:39:29,629 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 11:39:44,061 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 11:39:45,211 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 11:39:45,717 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:39:46,033 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 11:39:47,074 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:39:47,123 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:39:47,322 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 11:39:48,328 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:39:48,376 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:39:48,606 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 11:39:49,638 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:39:49,828 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 11:39:50,907 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:39:55,099 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 11:39:56,346 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:39:56,780 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 11:39:58,126 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:39:58,217 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> id: fromDate] displayed
+2019-09-17 11:39:59,390 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:39:59,481 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> id: toDate] displayed
+2019-09-17 11:40:00,627 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:00,716 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 11:40:01,893 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:01,980 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 11:40:03,128 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:03,195 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> id: fromDate] displayed
+2019-09-17 11:40:04,308 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:04,418 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 11:40:05,555 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:05,643 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 11:40:06,789 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:06,878 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 11:40:08,022 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:08,119 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 11:40:09,281 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:09,370 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 11:40:10,523 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:10,612 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 11:40:11,740 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:11,839 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 11:40:13,042 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:13,418 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:40:14,463 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 11:40:15,604 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:15,906 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 11:40:17,146 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:17,488 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 11:40:18,678 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:18,768 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 11:40:19,964 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:20,081 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 11:40:21,274 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:21,403 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 11:40:22,592 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:22,680 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 11:40:23,897 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:23,985 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 11:40:25,174 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:25,262 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 11:40:26,449 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:40:26,537 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (c98836e205c6bacc9580ee6eb180ba36)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 11:40:27,710 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:16,966 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 11:42:40,894 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 11:42:42,123 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 11:42:42,641 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:42,985 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 11:42:44,061 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:44,112 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:42:44,318 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 11:42:45,299 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:45,398 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:42:45,544 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 11:42:46,561 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:46,776 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 11:42:47,829 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:54,089 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 11:42:55,380 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:55,777 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 11:42:57,126 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:57,215 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> id: fromDate] displayed
+2019-09-17 11:42:58,381 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:58,469 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> id: toDate] displayed
+2019-09-17 11:42:59,627 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:42:59,714 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //span[text()='Search']] displayed
+2019-09-17 11:43:00,894 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:00,990 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //span[text()='Clear']] displayed
+2019-09-17 11:43:02,161 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:02,228 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> id: fromDate] displayed
+2019-09-17 11:43:03,352 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:03,460 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //span[text()=' Process Date ']] displayed
+2019-09-17 11:43:04,569 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:04,658 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //span[text()=' Job Description ']] displayed
+2019-09-17 11:43:05,800 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:05,891 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //span[text()=' Batch Name ']] displayed
+2019-09-17 11:43:07,034 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:07,121 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //span[text()=' Start Time ']] displayed
+2019-09-17 11:43:08,273 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:08,359 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //span[text()=' End Time ']] displayed
+2019-09-17 11:43:09,484 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:09,575 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //span[text()=' Record Count ']] displayed
+2019-09-17 11:43:10,701 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:10,809 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //span[text()=' Batch Status ']] displayed
+2019-09-17 11:43:11,963 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:12,293 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:43:13,237 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data 09/16/2019 is entered into the field Successfully
+2019-09-17 11:43:14,317 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:14,671 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 11:43:15,833 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:16,181 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button '' is clicked
+2019-09-17 11:43:17,285 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:17,372 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //label[text()=' Procedure Name ']] displayed
+2019-09-17 11:43:18,509 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:18,597 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //label[text()=' Error/Seq ']] displayed
+2019-09-17 11:43:19,718 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:19,808 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //label[text()=' Worker ']] displayed
+2019-09-17 11:43:20,941 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:21,030 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //label[text()=' Cursor Location ']] displayed
+2019-09-17 11:43:22,169 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:22,257 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //label[text()=' Execution Location ']] displayed
+2019-09-17 11:43:23,370 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:23,457 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //label[text()=' Key Values ']] displayed
+2019-09-17 11:43:24,572 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:43:24,669 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Element [[ChromeDriver: chrome on XP (abbbe0023ef929f15906fd21dd2a8056)] -> xpath: //label[text()=' Error Description ']] displayed
+2019-09-17 11:43:25,806 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:47:44,820 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 11:48:16,833 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 11:48:17,979 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 11:48:18,522 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:48:18,832 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 11:48:19,907 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:48:19,955 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:48:20,149 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 11:48:21,115 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:48:21,165 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:48:21,301 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 11:48:22,312 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:48:22,524 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 11:48:23,565 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:48:27,811 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 11:48:28,986 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:48:30,057 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 11:48:31,289 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:48:31,506 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 11:48:32,591 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:48:32,952 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 11:48:34,222 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 11:48:36,832 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - The expected text doesn't contain the actual ENTER REQUIRED FIELDS
+2019-09-17 12:00:06,493 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:00:39,231 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:00:40,496 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:00:41,169 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:00:41,480 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:00:42,670 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:00:42,719 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:00:42,927 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:00:43,998 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:00:44,051 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:00:44,189 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:00:45,256 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:00:45,477 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:00:46,611 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:00:51,846 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:00:53,268 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:00:53,546 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:00:55,009 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:00:55,229 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:00:56,331 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:00:56,721 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 12:00:57,883 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:01:00,456 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -ERROR - The expected text doesn't contain the actual ENTER REQUIRED FIELDS
+2019-09-17 12:03:34,717 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:03:50,898 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:03:52,043 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:03:52,537 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:03:52,849 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:03:53,902 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:03:53,950 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:03:54,147 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:03:55,142 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:03:55,195 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:03:55,345 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:03:56,344 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:03:56,529 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:03:57,584 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:04:02,115 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:04:03,507 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:04:03,764 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:04:05,119 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:04:05,344 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:04:06,439 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:04:09,858 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 12:04:11,126 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:05:28,836 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:05:44,646 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:05:45,808 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:05:46,327 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:05:46,654 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:05:47,742 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:05:47,793 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:05:48,029 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:05:49,054 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:05:49,110 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:05:49,268 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:05:50,327 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:05:50,533 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:05:51,602 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:05:57,838 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:05:59,123 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:05:59,729 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:06:00,962 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:06:01,181 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:06:02,282 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:06:05,692 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 12:06:06,841 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:07:19,406 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:07:37,659 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:07:38,811 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:07:39,318 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:07:39,633 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:07:40,687 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:07:40,737 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:07:40,931 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:07:41,913 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:07:41,967 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:07:42,115 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:07:43,127 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:07:43,365 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:07:44,429 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:07:48,664 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:07:49,950 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:07:50,341 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:07:51,690 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:07:51,911 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:07:53,104 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:07:56,506 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 12:07:57,919 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:09:50,283 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:10:13,459 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:10:14,630 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:10:15,144 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:10:15,448 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:10:16,503 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:10:16,552 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:10:16,746 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:10:17,740 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:10:17,792 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:10:17,933 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:10:18,913 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:10:19,124 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:10:20,216 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:10:24,386 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:10:26,034 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:10:26,361 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:10:27,556 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:10:27,763 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:10:28,949 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:10:32,363 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 12:10:33,910 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:31:50,522 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:32:06,366 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:32:07,513 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:32:08,023 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:32:08,324 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:32:09,410 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:32:09,459 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:32:09,649 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:32:10,638 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:32:10,689 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:32:10,824 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:32:11,781 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:32:11,969 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:32:13,018 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:32:17,289 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:32:19,313 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:32:19,593 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:32:20,762 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:32:20,982 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:32:22,115 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:32:25,535 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 12:32:26,677 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:39:53,105 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:40:10,594 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:40:11,784 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:40:12,302 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:40:12,615 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:40:13,669 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:40:13,719 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:40:13,906 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:40:14,898 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:40:14,951 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:40:15,099 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:40:16,075 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:40:16,274 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:40:17,364 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:40:22,574 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:40:24,620 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:40:24,868 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:40:25,968 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:40:26,163 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:40:27,201 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:40:30,588 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 12:40:31,659 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:49:13,224 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:49:36,748 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:49:37,920 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:49:38,426 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:49:38,738 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:49:39,781 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:49:39,831 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:49:40,089 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:49:41,072 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:49:41,124 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:49:41,265 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:49:42,291 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:49:42,480 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:49:43,607 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:49:48,143 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:49:50,203 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:49:50,440 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:49:51,635 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:49:52,148 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:52:55,352 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:53:24,186 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:53:25,367 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:53:25,868 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:53:26,183 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:53:27,257 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:53:27,306 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:53:27,502 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:53:28,517 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:53:28,566 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:53:28,703 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:53:29,697 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:53:29,880 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:53:30,948 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:53:35,518 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:53:37,420 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:53:37,669 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:53:38,738 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:53:39,239 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:55:07,290 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 12:55:24,427 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 12:55:25,566 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 12:55:26,068 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:55:26,370 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 12:55:27,441 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:55:27,490 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:55:27,681 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 12:55:28,678 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:55:28,728 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:55:28,866 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 12:55:29,824 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:55:30,029 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 12:55:31,084 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:55:35,387 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 12:55:37,482 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:55:37,730 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 12:55:38,899 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:55:39,099 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 12:55:40,223 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 12:55:43,604 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 12:55:44,833 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:00:36,019 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 13:01:14,259 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 13:01:15,419 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 13:01:16,138 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:01:16,452 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 13:01:17,699 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:01:17,752 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 13:01:17,944 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 13:01:19,017 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:01:19,068 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 13:01:19,201 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 13:01:20,340 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:01:20,587 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 13:01:21,780 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:01:25,910 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 13:01:27,562 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:01:27,886 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 13:01:29,047 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:01:29,257 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 13:01:30,359 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:01:33,748 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 13:01:35,074 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:35:52,749 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 13:36:20,469 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 13:36:21,626 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 13:36:22,136 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:36:22,457 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 13:36:23,509 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:36:23,558 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 13:36:23,753 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 13:36:24,734 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:36:24,787 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 13:36:24,923 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 13:36:25,906 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:36:26,151 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 13:36:27,222 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:36:31,729 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 13:36:33,204 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:36:33,617 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '' is clicked
+2019-09-17 13:36:34,678 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:36:34,872 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 13:36:35,912 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:36:39,289 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 13:36:40,344 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:44:18,295 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 13:44:34,822 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 13:44:35,972 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 13:44:36,502 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:44:36,817 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 13:44:37,891 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:44:37,940 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 13:44:38,127 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 13:44:39,130 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:44:39,182 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 13:44:39,330 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 13:44:40,299 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:44:40,494 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 13:44:41,552 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:44:45,905 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 13:44:47,169 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:44:47,618 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 13:44:48,796 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:44:48,994 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 13:44:50,140 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 13:44:53,524 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 13:44:54,715 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:06:48,044 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 14:07:02,537 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 14:07:03,694 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 14:07:04,201 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:07:04,508 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 14:07:05,578 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:07:05,627 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:07:05,825 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 14:07:06,818 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:07:06,871 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:07:07,006 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 14:07:08,039 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:07:08,304 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 14:07:09,376 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:07:13,626 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 14:07:14,898 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:07:15,880 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:09:10,394 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 14:09:29,807 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 14:09:30,950 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 14:09:31,462 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:09:31,773 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 14:09:32,821 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:09:32,872 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:09:33,057 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 14:09:34,064 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:09:34,117 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:09:34,263 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 14:09:35,228 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:09:35,418 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 14:09:36,485 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:09:40,713 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 14:09:42,236 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:09:42,615 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '' is clicked
+2019-09-17 14:09:43,685 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:09:43,876 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:09:44,923 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:09:48,278 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 14:09:49,679 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:11:49,335 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 14:12:10,826 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 14:12:12,013 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 14:12:12,756 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:12:13,073 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 14:12:14,253 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:12:14,302 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:12:14,494 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 14:12:15,565 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:12:15,614 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:12:15,752 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 14:12:16,826 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:12:17,022 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 14:12:18,161 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:12:22,375 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 14:12:23,632 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:12:24,070 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 14:12:25,428 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:12:25,622 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:12:26,706 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:12:30,086 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 14:12:31,152 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:28:03,390 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 14:28:18,434 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 14:28:19,568 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 14:28:20,075 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:28:20,337 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 14:28:21,404 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:28:21,453 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:28:21,633 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 14:28:22,623 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:28:22,677 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:28:22,816 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 14:28:23,792 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:28:23,990 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 14:28:25,041 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:28:29,994 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 14:28:31,256 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:28:32,431 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:56:00,421 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 14:56:21,023 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 14:56:22,169 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 14:56:22,710 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:56:23,015 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 14:56:24,081 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:56:24,130 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:56:24,318 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 14:56:25,307 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:56:25,363 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:56:25,492 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 14:56:26,506 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:56:26,692 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 14:56:27,814 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:56:31,955 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 14:56:33,212 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:56:33,622 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 14:56:34,816 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:56:35,014 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 14:56:36,118 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 14:56:39,510 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 14:56:40,553 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:02:56,228 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 15:03:12,521 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 15:03:13,701 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 15:03:14,243 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:03:14,552 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 15:03:15,671 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:03:15,720 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 15:03:15,908 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 15:03:16,902 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:03:16,956 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 15:03:17,095 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 15:03:18,128 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:03:18,317 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 15:03:19,368 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:03:23,609 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 15:03:24,845 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:03:25,285 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 15:03:26,453 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:03:26,645 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 15:03:27,686 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:03:29,002 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 15:03:30,108 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:06:42,989 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 15:07:19,794 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 15:07:21,239 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 15:07:22,099 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:07:22,400 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 15:07:23,474 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:07:23,523 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 15:07:23,706 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 15:07:24,755 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:07:24,806 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 15:07:24,941 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 15:07:25,965 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:07:26,146 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 15:07:27,254 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:07:32,197 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 15:07:33,465 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:07:33,923 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 15:07:35,076 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:07:35,266 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 15:07:36,326 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:07:37,645 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 15:07:38,670 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:09:00,402 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Chrome Browser launched
+2019-09-17 15:09:13,603 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - URL Passed
+2019-09-17 15:09:14,769 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Window Maximized
+2019-09-17 15:09:15,260 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:09:15,565 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element 'By logging in, I accept the terms above' is clicked
+2019-09-17 15:09:16,626 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:09:16,677 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 15:09:16,865 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data KDUMANSKI is entered into the field Successfully
+2019-09-17 15:09:17,875 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:09:17,926 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 15:09:18,059 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The data password is entered into the field Successfully
+2019-09-17 15:09:19,079 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:09:19,265 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Login' is clicked
+2019-09-17 15:09:20,345 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:09:24,799 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Batch Status Logs and Errors' is clicked
+2019-09-17 15:09:26,075 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:09:26,484 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Element '1Filter' is clicked
+2019-09-17 15:09:27,661 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:09:27,849 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The field is cleared Successfully
+2019-09-17 15:09:28,933 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken
+2019-09-17 15:09:30,260 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - The Button 'Search' is clicked
+2019-09-17 15:09:31,342 - com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -INFO - Screenshot taken

@@ -1,0 +1,229 @@
+package com.protech.nvkids.testcases.ptre;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.protech.nvkids.pages.login.LoginPage;
+import com.protech.selenium.api.base.SeleniumBase;
+
+
+import utils.CommonLocators;
+
+public class ViewProcessDetails extends SeleniumBase 
+
+{   
+
+	CommonLocators  cloc = new CommonLocators();
+	static com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = null;
+
+
+
+	//@Test(priority=1,description="NavigateToViewProcessDetails and Verify the fields in View Process Details screen")
+	public void VerifyScreenFields() throws Exception
+	{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		verifyDisplayed(cloc.eleFilter);
+		verifyGridHeaders("Process ID","Process","Category","Manual Start","Updated On","Updated By");
+		verifyAssociatedScreens("Maintain Process","Case Processor");
+
+	}
+
+
+
+	//@Test(priority=2,description = "Navigate to the PTRE screen while on the PTRE screenn")
+	public void RenavigationtoPTRE() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.quickNavigation_PTREagain();
+		PTRE.verifyExactText(cloc.eleStatusBar, "You are on this screen");
+
+	}
+
+	//@Test(priority=3,description="Undock Filter Section and verify fields")
+	public void VerifySelectFilters() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.openFilter();
+		PTRE.verifyDisplayed(cloc.eleSearch);
+		PTRE.verifyDisplayed(cloc.eleClear);
+		PTRE.verifyDisplayed(PTRE.eleFltrProcessID);
+	}
+	//@Test(priority=4,description="Verify field size allowance in PROCESS LOV field")
+	public void VerifySizeAllowanceinProcessID() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.openFilter();
+		verifyFieldLength(PTRE.eleFltrProcessID, "ADASFSADFSDFAS", 4);
+
+	}
+
+	//@Test(priority=5,description="Verify alpha characters allowance in PROCESS LOV field")
+	public void VerifyAlphaCharAllowanceinProcessID() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.openFilter();
+		VerifyChar_allowance(PTRE.eleFltrProcessID, "AGDC");
+	}
+
+
+	//@Test(priority=6,description="Verify numeric characters allowance in PROCESS LOV field")
+	public void VerifyNumericCharAllowanceinProcessID() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.openFilter();
+		VerifyChar_allowance(PTRE.eleFltrProcessID, "1234");
+	}
+
+	//@Test(priority=7,description="Verify Special characters allowance in PROCESS LOV field")
+	public void VerifySpecialCharAllowanceinProcessID() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.openFilter();
+		VerifyChar_NotAllowance(PTRE.eleFltrProcessID, "@#$%");
+	}
+
+	//@Test(priority=8,description="Inquire with InvalidValue in PROCESS ID field")
+	public void InquireInvalidValueinProcessID() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.openFilter();
+		setFocus(PTRE.eleFltrProcessID);
+		PTRE.enterProcessID("abcd");
+		clickIcon(cloc.eleSearch, cloc.eleSearch);
+		verifyExactText(cloc.eleStatusBar, "Process ID :  Invalid Process Code");
+		verifyBorderColor(PTRE.eleFltrProcessID);
+
+	}
+
+	// HOLD	@Test(priority=9,description="Inquire with InvalidValue in PROCESS Description field")
+	public void InquireInvalidValueinProcessDescription() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.openFilter();
+		clickIcon(PTRE.eleFltrProcessLOV, PTRE.eleFltrProcessLOV);
+		PTRE.selectValueFromGrid("Case Assessment");
+		setFocus(PTRE.eleFltrProcessID);
+		PTRE.eleFltrProcessID.sendKeys(Keys.BACK_SPACE);
+		clickIcon(cloc.eleSearch, cloc.eleSearch);
+		verifyExactText(cloc.eleStatusBar, "Process ID :  Invalid Value");
+		verifyBorderColor(PTRE.eleFltrProcessID);
+
+	}
+
+	//@Test(priority=10,description="VerifyClearIcon in SelectFilters")
+	public void VerifyClearValueinFilter() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.openFilter();
+		PTRE.enterProcessID("AGDC");
+		PTRE.clickClear();
+		verifyFieldIsEmpty(PTRE.eleFltrProcessID);
+
+	}
+
+	//@Test(priority=10,description="VerifyClearIcon in SelectFilters")
+	public void InquireValidValue() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		PTRE.openFilter();
+		PTRE.enterProcessID("CASS");
+		PTRE.clickSearch();
+		Thread.sleep(3000);
+		PTRE.verifyInquiredGridResult("CASS");
+
+
+	}
+
+	//@Test(priority=10,description="Verify Grid Options")
+	public void VerifyGridOptions() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		clickIcon(PTRE.eleGridOptions, PTRE.eleGridOptions);
+		PTRE.verifyGridOptions("Show Filters","Show Columns","Download File");
+	}
+
+	@Test(priority=10,description="Verify ShowColumnOptions")
+	public void verifyShowColumoptions() throws Exception{
+
+		com.protech.nvkids.pages.ptre.ViewProcessDetails PTRE = new LoginPage().login().quickNavigation_PTRE();
+		clickIcon(PTRE.eleGridOptions, PTRE.eleGridOptions);
+		clickIcon(PTRE.eleShowColumn,PTRE.eleShowColumn);
+
+		//verify
+		for(WebElement display : PTRE.eleShowColumOptions){
+
+			if(display.getAttribute("class").contains("label-active")){
+
+				System.out.println(display.getText() + " is Selected ");
+			}
+			else{
+				System.out.println(display.getText() + " is not selected ");
+			}
+		}
+		//To UnCheck
+		for(WebElement show : PTRE.eleShowColumOptions){
+
+			if(show.getAttribute("class").contains("label-active") && show.getText().equals("expetedOption")){
+				clickIcon(show, show);
+				System.out.println(show.getText() + " is Un Checked ");
+
+			}
+			else{
+				System.out.println(show.getText() + " is not selected ");
+			}
+
+
+		}
+		//To Check
+		for(WebElement show : PTRE.eleShowColumOptions){
+
+			if(!(show.getAttribute("class")).contains("label-active") && show.getText().equals("expetedOption")){
+				clickIcon(show, show);
+				System.out.println(show.getText() + " is Checked ");
+			}
+			else{
+				System.out.println(show.getText() + " is not selected ");
+			}
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

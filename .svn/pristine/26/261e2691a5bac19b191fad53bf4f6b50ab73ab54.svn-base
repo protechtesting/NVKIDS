@@ -1,0 +1,12 @@
+<h2>Methods that were not run</h2><table>
+<tr><td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC23_verify_VerifySuccessfulInquiry<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>verify_VerifySuccessfulInquiry</i></td></tr>
+<tr><td>utils.Reporter.stopReport</td></tr>
+<tr><td>utils.Reporter.stopReport</td></tr>
+<tr><td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC22_verify_NoMatchingRecords<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>verify the fields with _NoMatchingRecords</i></td></tr>
+<tr><td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC15_verify_SuccessfulInquiry<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>verify whether the successful inquiry was happended</i></td></tr>
+<tr><td>utils.Reporter.Deleteimages</td></tr>
+<tr><td>utils.Reporter.Deleteimages</td></tr>
+<tr><td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC14_verify_NoMatchingRecords<br/>&nbsp;&nbsp;&nbsp;&nbsp;<i>verify the fields with _NoMatchingRecords</i></td></tr>
+<tr><td>utils.Reporter.startReport</td></tr>
+<tr><td>utils.Reporter.startReport</td></tr>
+</table>

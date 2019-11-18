@@ -1,0 +1,89 @@
+package com.protech.nvkids.testcases.refm;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import com.protech.nvkids.pages.login.LoginPage;
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class ViewReferenceCodesTestcase extends SeleniumBase
+{
+	@Test(priority=1,description="Navigate to View Reference Codes screen function")
+	public void navigateToViewReferenceCodes() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().verifyFieldsPresent();
+	}
+	
+	@Test(priority=2,description="Inquire with valid values")
+	public void inquireWithValidValues() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().inquireWithValidValues();
+	}
+	
+	@Test(priority=3,description="Verify the Accordion Section Fields")
+	public void verifyAccordionSectionFields() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().verifyAccordionSectionFields();
+	}
+	
+	@Test(priority=4,description="Inquire with Null Reference Entity")
+	public void inquireWithNullReferenceEntity() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().inquireWithNullReferenceEntity();
+	}
+	
+	@Test(priority=5,description="Inquire with Null Reference Attribute")
+	public void inquireWithNullReferenceAttribute() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().inquireWithNullReferenceAttribute();
+	}
+	
+	@Test(priority=6,description="Inquire with Invalid Reference Entity and Attribute")
+	public void inquireWithInvalidReferenceEntityAndAttribute() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().inquireWithInvalidReferenceEntityAndAttribute();
+	}
+	
+	@Test(priority=7,description="Inquire with Invalid From Date")
+	public void inquireWithInvalidFromDate() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().inquireWithInvalidFromDate();
+	}
+	
+	@Test(priority=8,description="Inquire with Invalid Through Date")
+	public void inquireWithInvalidThroughDate() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().inquireWithInvalidThroughDate();
+	}
+	
+	//@Test(priority=9,description="Inquire with Through Date Less than From Date")
+	public void inquireWithThroughDateLessThanFromDate() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().inquireWithThroughDateLessThanFromDate();
+	}
+	
+	@Test(priority=10,description="Verify the Maximum length of Reference Entity Field")
+	public void VerifyMaxLengthOfReferenceEntity() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().verifyMaxLengthOfReferenceEntity();
+	}
+	
+	@Test(priority=11,description="Verify the Maximum length of Reference Attribute Field")
+	public void VerifyMaxLengthOfReferenceAttribute() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().verifyMaxLengthOfReferenceAttribute();
+	}
+	
+	@Test(priority=12,description="Verify the Maximum length of From Date Field")
+	public void VerifyMaxLengthOfFromDate() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().verifyMaxLengthOfFromDate();
+	}
+	
+	@Test(priority=13,description="Verify the Maximum length of Through Date Field")
+	public void VerifyMaxLengthOfThroughDate() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_REFM().verifyMaxLengthOfThroughDate();
+	}
+}

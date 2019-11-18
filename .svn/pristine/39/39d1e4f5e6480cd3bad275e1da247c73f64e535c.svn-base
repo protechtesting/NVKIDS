@@ -1,0 +1,184 @@
+package com.protech.nvkids.pages.refm;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.protech.selenium.api.base.SeleniumBase;
+
+import utils.CommonLocators;
+
+public class ViewReferencePercentagesPage extends SeleniumBase
+{
+	public ViewReferencePercentagesPage()
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	CommonLocators cloc=new CommonLocators();
+	//Select Filter section
+	@FindBy(xpath="//label[text()='Percentage Code']") WebElement elelblPercentageCode;
+	@FindBy(xpath="//label[text()='Percentage Description']") WebElement elelblPercentageDescription;
+	@FindBy(xpath="//label[text()='From Date']") WebElement elelblFromDate;
+	@FindBy(xpath="//label[text()='Through Date']") WebElement elelblThroughDate;
+	@FindBy(xpath="//label[text()='User']") WebElement elelblUser;
+	@FindBy(xpath="//input[@id='percentageTypeCode']") WebElement eletxtPercentageCode;
+	@FindBy(xpath="//input[@id='percentageTypeDesc']") WebElement eletxtPercentageDescription;
+	@FindBy(xpath="//input[@id='fromDate']") WebElement eletxtFromDate;
+	@FindBy(xpath="//input[@id='toDate']") WebElement eletxtThroughDate;
+	@FindBy(xpath="//input[@id='updatedByName']") WebElement eletxtUser;
+	@FindBy(xpath="//label[text()='Percentage Code']/following::span[1]") WebElement eleicnPercentageCodeLOV;
+	@FindBy(xpath="//label[text()=' Code ']/following::td[2]") WebElement elePercentageCodeLOVValue;
+	@FindBy(xpath="//label[text()=' Percentage Description ']/following::td[2]/span") WebElement elegrdPercentageDescription;
+	
+	
+	
+	
+	//Grid Section
+	@FindBy(xpath="//label[text()=' Percentage Description ']") WebElement eledsoPercentageDescription;
+	@FindBy(xpath="//label[text()=' Percentage % ']") WebElement eledsoPercentage;
+	@FindBy(xpath="//label[text()=' Begin Date ']") WebElement eledsoBeginDate;
+	@FindBy(xpath="//label[text()=' End Date ']") WebElement eledsoEndDate;
+	@FindBy(xpath="//label[text()=' Updated On ']") WebElement eledsoUpdatedOn;
+	@FindBy(xpath="//label[text()=' Updated By ']") WebElement eledsoUpdatedBy;
+	@FindBy(xpath="//label[text()='Percentage Code']/preceding::div[1]") WebElement elechkPercentageCode;
+	
+	
+	//Accordion Grid Section
+	@FindBy(xpath="(//label[text()=' Percentage Code '])[2]") WebElement eleaccdnPercentageCode;
+	@FindBy(xpath="(//label[text()=' Percentage Description '])[2]") WebElement eleaccdnPercentageDescription;
+	@FindBy(xpath="(//label[text()=' Percentage % '])[2]") WebElement eleaccdnPercentage;
+	@FindBy(xpath="(//label[text()=' Begin Date '])[2]") WebElement eleaccdnBeginDate;
+	@FindBy(xpath="(//label[text()=' End Date '])[2]") WebElement eleaccdnEndDate;
+	@FindBy(xpath="(//label[text()=' Updated On '])[2]") WebElement eleaccdnUpdatedOn;
+	@FindBy(xpath="(//label[text()=' Updated By '])[2]") WebElement eleaccdnUpdatedBy;
+	
+	
+		
+	public ViewReferencePercentagesPage verifyViewReferencePercentagesFields() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		verifyDisplayed(elelblPercentageCode, eletxtPercentageCode);
+		verifyDisplayed(elelblPercentageDescription, eledsoPercentageDescription);
+		verifyDisplayed(elelblFromDate, eletxtFromDate);
+		verifyDisplayed(elelblThroughDate, eletxtThroughDate);
+		verifyDisplayed(elelblUser, eletxtUser);
+		return this;
+	}
+
+	public ViewReferencePercentagesPage verifyPercentageCodeColumnPresent() throws Exception
+	{
+		clickIcon(cloc.eleicnGridOptions, cloc.eleicnGridOptions);
+		clickIcon(cloc.eleicnShowColumns,cloc.eleicnShowColumns);
+		click(elechkPercentageCode);
+		verifyDisplayed(elelblPercentageCode, elelblPercentageCode);
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage verifyMaxLengthOfPercentageCode() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		verifyFieldLength(eletxtPercentageCode, "ABCDE", 4);
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage verifyMaxLengthOfFromDate() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		verifyFieldLength(eletxtFromDate, "01/01/2019", 10);
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage verifyMaxLengthOfThroughDate() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		verifyFieldLength(eletxtThroughDate, "01/01/2019", 10);
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage verifyMaxLengthOfUser() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		verifyFieldLength(eletxtUser, "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEF", 30);
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage inquireWithValidValues() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		clearAndType(eletxtPercentageCode, elelblPercentageCode, "PNA1");
+		pressEnterKey(eletxtPercentageCode);
+		verifyExactText(elegrdPercentageDescription, "PENALTY ON ARREARS"); 
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage verifyNoMatchingRecordsMessage() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		clearAndType(eletxtPercentageCode, elelblPercentageCode, "TEST");
+		clearAndType(eletxtFromDate, elelblFromDate, "01/01/2015");
+		clearAndType(eletxtThroughDate, elelblThroughDate, "02/01/2015");
+		pressEnterKey(eletxtThroughDate);
+		verifyExactText(cloc.eleErrStatusBar,"No Matching Records Found"); 
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage inquireWithNullPercentageCode() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		pressEnterKey(eletxtPercentageCode);
+		verifyExactText(cloc.eleErrStatusBar,"Percentage Code :  Enter Required Fields"); 
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage inquireWithInvalidFromDate() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		clearAndType(eletxtPercentageCode, elelblPercentageCode, "PNA1");
+		clearAndType(eletxtFromDate,elelblFromDate, "31/31/9999");
+		clickIcon(cloc.eleicnSearch, cloc.eleicnSearch);
+		verifyExactText(cloc.eleStatusBar, "From Date :  Invalid Date");
+		verifyBorderColor(eletxtFromDate);
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage inquireWithInvalidThroughDate() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		clearAndType(eletxtPercentageCode, elelblPercentageCode, "PNA1");
+		clearAndType(eletxtFromDate,elelblFromDate, "01/01/2019");
+		clearAndType(eletxtThroughDate,elelblThroughDate, "31/31/9999");
+		clickIcon(cloc.eleicnSearch, cloc.eleicnSearch);
+		verifyExactText(cloc.eleStatusBar, "Through Date :  Invalid Date");
+		verifyBorderColor(eletxtThroughDate);
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage inquireWithThroughDateLessThanFromDate() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		clearAndType(eletxtPercentageCode, elelblPercentageCode, "PNA1");
+		clearAndType(eletxtFromDate,elelblFromDate, "01/01/2019");
+		clearAndType(eletxtThroughDate,elelblThroughDate, "12/31/2018");
+		clickIcon(cloc.eleicnSearch, cloc.eleicnSearch);
+		verifyExactText(cloc.eleStatusBar, "Through Date :  Through Date Must be Greater than or Equal to From Date");
+		verifyBorderColor(eletxtThroughDate);
+		return this;
+	}
+	
+	public ViewReferencePercentagesPage inquireWithInvalidUser() throws Exception
+	{
+		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
+		clearAndType(eletxtPercentageCode, elelblPercentageCode, "PNA1");
+		clearAndType(eletxtUser, elelblUser, "TEST");
+		clickIcon(cloc.eleicnSearch, cloc.eleicnSearch);
+		verifyExactText(cloc.eleStatusBar, "No Matching Records Found");
+		return this;
+	}
+	
+	public AddReferencePercentagesPage navigatetoAddReferencePercentages() throws Exception
+	{
+		clickIcon(cloc.eleicnAddNew,cloc.eleicnAddNew);
+		return new AddReferencePercentagesPage();
+	}
+}

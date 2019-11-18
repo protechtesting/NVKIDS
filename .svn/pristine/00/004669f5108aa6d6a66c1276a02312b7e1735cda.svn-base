@@ -1,0 +1,281 @@
+package com.protech.nvkids.pages.bstl;
+
+
+import java.awt.AWTException;
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class PrintQueueErrorsPage extends SeleniumBase {
+	
+	public PrintQueueErrorsPage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	   //Filter Section
+		@FindBy(xpath="//span[text()='Batch Status Logs and Errors']") WebElement elelnkBSTL_batchstatuslogs;	
+		
+		@FindBy(xpath = "//span[@class='fa fa-angle-double-down downIcon']")  WebElement eleicnSelectFilter;	
+		@FindBy(xpath="//a[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted'][contains(text(),'Filter')]") WebElement elelblSelectFilter;
+		
+		@FindBy(id="effectiveRunDate") WebElement eledtPocessDate;
+		@FindBy(xpath="//label[text()='Process Date' ]") WebElement eledtlblProcessDate;
+		
+		@FindBy(id="caseId") WebElement eletxtCaseID;
+		@FindBy(xpath="//label[text()='Case ID']") WebElement elelblCaseID;
+		
+		@FindBy(id="documentIdc") WebElement eletxtNoticeID;
+		@FindBy(xpath="//label[text()='Notice ID']") WebElement elelblNoticeID;
+		
+		
+		@FindBy(xpath="//span[text()='Search']") WebElement elebtnSearch;
+		@FindBy(xpath="//span[text()='Clear']") WebElement elebtnClear;
+		
+		//Grid Section
+		@FindBy(xpath="//label[text()=' Process Date ']") WebElement elehdrProcessDate;
+		@FindBy(xpath="//label[text()=' Job ID ']") WebElement elehdrJobID;
+		@FindBy(xpath="//label[text()=' Job Description ']") WebElement elehdrJobDescription;
+		@FindBy(xpath="//label[text()=' Batch Name ']") WebElement elehdrBatchName;
+		@FindBy(xpath="//label[text()=' Message Type ']") WebElement elehdrMessageType;
+		@FindBy(xpath="//label[text()=' Create Date ']") WebElement elehdrCreateDate;
+		
+		//Grid Accordion section
+		@FindBy(xpath="//label[text()=' Key Values']") WebElement eledispKeyValues;
+		@FindBy(xpath="//label[text()=' Error Description ']") WebElement eledispErrorDescription;
+	
+		@FindBy(xpath = "//span[text()='Batch Errors']")
+		WebElement eleBatchErrors;
+
+		@FindBy(xpath = "//span[text()='Batch Status Logs']")
+		WebElement eleBatchStatusLogs;
+		
+		
+		//Error Panel
+	    @FindBy(xpath = "//div[@class='p-grid']/div/app-status-bar/div/span[2]")  public WebElement eleErrorPanel;	
+		@FindBy(xpath = "//app-core/app-layout//div/div/app-status-bar/div/span")  public WebElement eleErrorPanelNoMatch;
+		
+		
+		
+		//Filter and Accordion icon
+			@FindBy(xpath = "//span[@class='fa fa-angle-double-down downIcon']") WebElement EleicnOpenFilter;
+			@FindBy(xpath = "(//i[contains(@class,'pi pi-chevron-down')])[1]") WebElement Eleicnaccordion;
+		
+		
+		
+	// Grid Data
+		
+		@FindBy(xpath = "//table/tbody/tr/td/span") WebElement EleGridData;
+		
+		public void MakeWebElementsLis()
+		{
+			List<WebElement> list = null ;
+			
+			list.add(elehdrProcessDate);
+			list.add(elehdrJobID);
+			list.add(elehdrJobDescription);
+			list.add(elehdrBatchName);
+			list.add(elehdrMessageType);
+			list.add(elehdrCreateDate);
+			
+			list.add(eledispKeyValues);
+			list.add(elehdrCreateDate);
+		}
+		
+		
+		public BatchStatusLogsPage navigatetoBatchStatusLogs() throws InterruptedException {
+	           
+			clickLink(eleBatchStatusLogs);
+			Thread.sleep(3000);
+
+			return new BatchStatusLogsPage();
+
+		}
+		
+		public BatchErrorsPage navigatetoBatchErrors() throws InterruptedException {
+
+			clickLink(eleBatchErrors);
+			Thread.sleep(3000);
+
+			return new BatchErrorsPage();
+
+		}
+		
+		
+		public PrintQueueErrorsPage VerifyFieldspresent() throws Exception{
+			
+			verifyDisplayed(elehdrProcessDate);
+			verifyDisplayed(elehdrJobID);
+			verifyDisplayed(elebtnSearch);
+			verifyDisplayed(elebtnClear);
+			verifyDisplayed(elebtnClear);
+			
+			
+			verifyDisplayed(elehdrProcessDate);
+			verifyDisplayed(elehdrJobID);
+			verifyDisplayed(elehdrJobDescription);
+			verifyDisplayed(elehdrBatchName);
+			verifyDisplayed(elehdrMessageType);
+			verifyDisplayed(elehdrCreateDate);
+			
+			inquirewithProcessDate();		
+			clickElement(elebtnSearch);
+			
+			
+			verifyDisplayed(eledispKeyValues);
+			verifyDisplayed(eledispErrorDescription);
+		
+			
+			
+			return this;
+			
+		}
+		
+		
+		
+
+		public void verifyCharecterAllowancePositiveScenario(){
+			
+			clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			
+			VerifyChar_allowance(eledtPocessDate,"12526985");			
+			
+			VerifyChar_NotAllowance(elelblCaseID,"235235");
+			VerifyChar_NotAllowance(elelblNoticeID,"235235");
+			
+					
+			
+			
+			
+		}
+		
+		
+		public void verifyCharecterAllowanceNegativeScenario(){
+			
+			clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			VerifyChar_NotAllowance(eledtPocessDate,"abcd");
+			VerifyChar_NotAllowance(eledtPocessDate,"^*&&*^*");
+			
+			VerifyChar_NotAllowance(elelblCaseID,"sdfsdfsdf");
+			VerifyChar_NotAllowance(elelblCaseID,"&*%^*&*()");
+			VerifyChar_NotAllowance(elelblNoticeID,"sdfsdfsdf");
+			VerifyChar_NotAllowance(elelblNoticeID,"&*%^*&*()");
+			
+		}
+		
+		public void VerifyFieldLength(){
+			
+			verifyFieldLength(eledtPocessDate, "12345678", 8);
+			verifyFieldLength(eletxtCaseID, "12345678", 8);
+			verifyFieldLength(eletxtNoticeID, "12345678", 8);
+			
+			
+		}
+		
+		 public void VerifyCopyPasteAllowance() throws AWTException{
+				
+				copypaste(eledtPocessDate, "12345678", 8);
+				copypaste(eletxtCaseID, "12345678", 8);
+				copypaste(eletxtNoticeID, "12345678", 8);
+				
+			}
+		
+		
+	public void inquirewithProcessDate(){
+			
+		    clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			clearAndType(eledtPocessDate,eledtlblProcessDate, "09/16/2019");
+			
+			
+		}
+	
+		
+		
+		public PrintQueueErrorsPage VerifyError_NullProcessDate()
+		{
+			clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			clear(eledtPocessDate);
+			clickElement(elebtnSearch);
+			
+			verifyPartialText(eleErrorPanel, "Enter Required Fields");
+				
+			return this;
+		}
+		
+		
+		
+		public PrintQueueErrorsPage  VerifyInvalidProcessDate()
+		{
+			clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			clearAndType(eledtPocessDate,eledtlblProcessDate, "35299999");
+			clickElement(elebtnSearch);		
+			verifyPartialText(eleErrorPanel, "Invalid Date");
+			return this;
+			
+		}
+		
+		public PrintQueueErrorsPage VerifywithInvalidCaseID()
+		{
+			clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			setPastDate(eledtPocessDate);
+			clearAndType(eletxtCaseID,"12");
+			clickElement(elebtnSearch);		
+			verifyPartialText(eleErrorPanel, "Invalid Case ID");
+				
+			return this;
+		}
+		
+		public PrintQueueErrorsPage VerifyInvalidNoticeID()
+		{
+			clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			setPastDate(eledtPocessDate);
+			clearAndType(eletxtNoticeID,"12");
+			clickElement(elebtnSearch);		
+			verifyPartialText(eleErrorPanel, "Invalid Document ID");
+				
+			return this;
+		}
+		
+		
+	
+		
+		public PrintQueueErrorsPage VerifyFutureProcessdate()
+		{
+			clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			//clearAndType(elehdrProcessDate,eledtlblProcessDate, "321321");
+			setFutureDate(eledtPocessDate);
+			clickElement(elebtnSearch);		
+			verifyPartialText(eleErrorPanel, "Future Date is not Allowed");
+			return this;		
+			
+		}
+		
+		public PrintQueueErrorsPage VerifyNoMatchRecords() throws InterruptedException
+		{
+			clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			clearAndType(eledtPocessDate,eledtlblProcessDate, "10012019");
+			clickElement(elebtnSearch);	
+			Thread.sleep(2000);
+			verifyPartialText(eleErrorPanelNoMatch, "No Matching Records Found");
+			return this;	
+			
+		}
+		
+		public PrintQueueErrorsPage VerifySucessfulInquiry()
+		{
+			clickIcon(eleicnSelectFilter, elelblSelectFilter);
+			clearAndType(eledtPocessDate,eledtlblProcessDate, "10262019");
+			clickElement(elebtnSearch);		
+			VerifyGridHasData(EleGridData);
+			return this;	
+			
+		}
+		
+		
+		
+
+
+}

@@ -1,0 +1,18 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Default suite</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="85bdee">  <td>19/11/11 19:03:13</td>   <td>0</td> <td title="&gt;&gt;Reporter.startReport(org.testng.ITestContext)[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]">&gt;&gt;startReport</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@30610549</td>   <td></td> </tr>
+<tr bgcolor="85bdee">  <td>19/11/11 19:03:13</td>   <td>226</td> <td>&nbsp;</td><td title="&gt;&gt;Reporter.Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]">&gt;&gt;Deleteimages</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@30610549</td>   <td></td> </tr>
+<tr bgcolor="686d7f">  <td>19/11/11 19:03:13</td>   <td>236</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeclass()[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]">&gt;&gt;beforeclass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@30610549</td>   <td></td> </tr>
+<tr bgcolor="686d7f">  <td>19/11/11 19:03:13</td>   <td>248</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumBase.beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]">&gt;&gt;beforeMethod</td> 
+<td>&nbsp;</td>  <td>main@30610549</td>   <td></td> </tr>
+<tr bgcolor="8f8f71">  <td>19/11/11 19:03:24</td>   <td>10700</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="AddReferenceCodesTestcase.navigateToAddReferenceCodes()[pri:1, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]">navigateToAddReferenceCodes</td> 
+  <td>main@30610549</td>   <td></td> </tr>
+<tr bgcolor="686d7f">  <td>19/11/11 19:03:50</td>   <td>36989</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumBase.afterMethod()[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]">&lt;&lt;afterMethod</td> 
+<td>&nbsp;</td>  <td>main@30610549</td>   <td></td> </tr>
+<tr bgcolor="85bdee">  <td>19/11/11 19:03:52</td>   <td>39417</td> <td title="&lt;&lt;Reporter.stopReport()[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]">&lt;&lt;stopReport</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@30610549</td>   <td></td> </tr>
+</table>

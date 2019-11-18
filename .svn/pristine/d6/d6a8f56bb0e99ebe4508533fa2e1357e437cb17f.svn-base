@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="44297" started-at="2019-09-18T13:42:40Z" finished-at="2019-09-18T13:43:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="44297" started-at="2019-09-18T13:42:40Z" finished-at="2019-09-18T13:43:24Z">
+      <class name="com.protech.nvkids.testcases.logn.LoginTestcase">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]" name="startReport" is-config="true" duration-ms="223" started-at="2019-09-18T13:42:40Z" finished-at="2019-09-18T13:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]" name="Deleteimages" is-config="true" duration-ms="4" started-at="2019-09-18T13:42:40Z" finished-at="2019-09-18T13:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleteimages -->
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]" name="beforeclass" is-config="true" duration-ms="0" started-at="2019-09-18T13:42:40Z" finished-at="2019-09-18T13:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]" name="beforeMethod" is-config="true" duration-ms="39204" started-at="2019-09-18T13:42:40Z" finished-at="2019-09-18T13:43:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="VerifyLogin()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]" name="VerifyLogin" duration-ms="4920" started-at="2019-09-18T13:43:19Z" finished-at="2019-09-18T13:43:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]" name="afterMethod" is-config="true" duration-ms="146" started-at="2019-09-18T13:43:24Z" finished-at="2019-09-18T13:43:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.protech.nvkids.testcases.logn.LoginTestcase@dafa95]" name="stopReport" is-config="true" duration-ms="379" started-at="2019-09-18T13:43:24Z" finished-at="2019-09-18T13:43:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- com.protech.nvkids.testcases.logn.LoginTestcase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

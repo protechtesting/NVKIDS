@@ -1,0 +1,106 @@
+package com.protech.nvkids.testcases.bstl;
+
+import org.testng.annotations.Test;
+
+import com.protech.nvkids.pages.login.LoginPage;
+import com.protech.selenium.api.base.SeleniumBase;
+
+
+
+public class BatchErrorsTestcase extends SeleniumBase 
+{
+	
+	@Test(priority=13,description="verify the fields present in Batch Errors screen")
+	public void TC10_verifyfieldspresent() throws Exception
+	{
+		
+		
+		
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyFieldsPresent();
+		
+	}
+	
+	
+	@Test(priority=14,description="VerifyAlphaCharAllowanceFromDate")
+	public void VerifyCharAllowance_PositiveScenario() throws Exception
+	{
+			
+	
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyCharecterAllowancePositiveScenario();
+	
+	}
+	
+	@Test(priority=15,description="VerifyAlphaCharAllowanceFromDate")
+	public void VerifyCharAllowance_NegativeScenario() throws Exception
+	{
+			
+	
+			
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyCharecterAllowanceNegativeScenario();
+	
+	}
+	
+   @Test(priority=16,description="VerifyFieldslength")
+	public void VerifyFieldsLength() throws Exception
+	{
+			
+	
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().VerifyFieldLength();
+	
+	}
+	
+	
+	@Test(priority=17,description="verify the fnull process date")
+	public void TC11_verifyNullProcessDate() throws Exception
+	{
+		
+			
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyError_NullProcessDate();
+		
+	}
+	
+	@Test(priority=18,description="verify the fields with verifyInvalidToDate")
+	public void TC12_verifyInvalidProcessDate() throws Exception
+	{
+	
+		
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyInvalidProcessDate();
+	
+	}
+	
+	
+	@Test(priority=19,description="verifyValidation_VerifyFutureProcessDate")
+	public void TC13_verifyValidation_VerifyFutureProcessDate() throws Exception
+	{
+		
+	
+		
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyFutureProcessdate();
+	
+	}
+	
+	
+	@Test(priority=20,description="verify the fields with _NoMatchingRecords")
+	public void TC14_verify_NoMatchingRecords() throws Exception
+	{
+
+		
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyNoMatchRecords();
+	
+	}
+	
+	
+	@Test(priority=21,description="verify whether the successful inquiry was happended")
+	public void TC15_verify_SuccessfulInquiry() throws Exception
+	{
+		
+		
+		
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifySuccessfulInquiry();
+	
+	}
+	
+
+}
+
+

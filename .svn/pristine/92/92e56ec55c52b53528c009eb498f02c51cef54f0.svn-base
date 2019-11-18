@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39154" started-at="2019-11-11T13:33:13Z" finished-at="2019-11-11T13:33:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="39154" started-at="2019-11-11T13:33:13Z" finished-at="2019-11-11T13:33:52Z">
+      <class name="com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase">
+        <test-method status="PASS" signature="startReport(org.testng.ITestContext)[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]" name="startReport" is-config="true" duration-ms="229" started-at="2019-11-11T19:03:13Z" finished-at="2019-11-11T19:03:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1ab4aff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]" name="Deleteimages" is-config="true" duration-ms="6" started-at="2019-11-11T19:03:13Z" finished-at="2019-11-11T19:03:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleteimages -->
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]" name="beforeclass" is-config="true" duration-ms="3" started-at="2019-11-11T19:03:13Z" finished-at="2019-11-11T19:03:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]" name="beforeMethod" is-config="true" duration-ms="10452" started-at="2019-11-11T19:03:13Z" finished-at="2019-11-11T19:03:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase.navigateToAddReferenceCodes() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="navigateToAddReferenceCodes()[pri:1, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]" name="navigateToAddReferenceCodes" duration-ms="26285" started-at="2019-11-11T19:03:24Z" description="Navigate to Add Reference Codes screen function" finished-at="2019-11-11T19:03:50Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.clickIcon(SeleniumBase.java:335)
+	at com.protech.nvkids.pages.refm.ViewReferenceCodesPage.navigatetoAddReferenceCodes(ViewReferenceCodesPage.java:215)
+	at com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase.navigateToAddReferenceCodes(AddReferenceCodesTestcase.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAddReferenceCodes -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]" name="afterMethod" is-config="true" duration-ms="2387" started-at="2019-11-11T19:03:50Z" finished-at="2019-11-11T19:03:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase@1ebcd8]" name="stopReport" is-config="true" duration-ms="360" started-at="2019-11-11T19:03:52Z" finished-at="2019-11-11T19:03:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- com.protech.nvkids.testcases.refm.AddReferenceCodesTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

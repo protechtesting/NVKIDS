@@ -1,220 +1,1011 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="8" ignored="6" total="41" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10511" started-at="2019-09-04T12:21:45Z" finished-at="2019-09-04T12:21:55Z">
+  <suite name="BSTL" duration-ms="1326928" started-at="2019-11-18T06:00:53Z" finished-at="2019-11-18T06:23:00Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10511" started-at="2019-09-04T12:21:45Z" finished-at="2019-09-04T12:21:55Z">
-      <class name="com.protech.nvkids.testcases.BSTL_Testscript">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="startReport" is-config="true" duration-ms="78" started-at="2019-09-04T12:21:45Z" finished-at="2019-09-04T12:21:45Z">
+    <test name="Test" duration-ms="1326928" started-at="2019-11-18T06:00:53Z" finished-at="2019-11-18T06:23:00Z">
+      <class name="com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeclass" is-config="true" duration-ms="14" started-at="2019-11-18T11:45:28Z" finished-at="2019-11-18T11:45:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8564" started-at="2019-11-18T11:45:28Z" finished-at="2019-11-18T11:45:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC22_verifyfieldspresent() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC22_verifyfieldspresent()[pri:22, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC22_verifyfieldspresent" duration-ms="21788" started-at="2019-11-18T11:45:37Z" description="verify the fields present in Print Queue error Screen" finished-at="2019-11-18T11:45:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC22_verifyfieldspresent -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="2085" started-at="2019-11-18T11:45:58Z" finished-at="2019-11-18T11:46:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8597" started-at="2019-11-18T11:46:00Z" finished-at="2019-11-18T11:46:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC23_VerifyCharAllowance_PositiveScenario() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC23_VerifyCharAllowance_PositiveScenario()[pri:23, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC23_VerifyCharAllowance_PositiveScenario" duration-ms="29649" started-at="2019-11-18T11:46:09Z" description="Verify Alpha Charecter Allowance in the ProcessDate field" finished-at="2019-11-18T11:46:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC23_VerifyCharAllowance_PositiveScenario -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="98" started-at="2019-11-18T11:46:39Z" finished-at="2019-11-18T11:46:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8411" started-at="2019-11-18T11:46:39Z" finished-at="2019-11-18T11:46:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC24_VerifyCharAllowance_NegativeScenario() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC24_VerifyCharAllowance_NegativeScenario()[pri:24, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC24_VerifyCharAllowance_NegativeScenario" duration-ms="28345" started-at="2019-11-18T11:46:47Z" description="Verify Alpha Charecter Allowance in the ProcessDate field" finished-at="2019-11-18T11:47:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC24_VerifyCharAllowance_NegativeScenario -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="2044" started-at="2019-11-18T11:47:16Z" finished-at="2019-11-18T11:47:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8207" started-at="2019-11-18T11:47:18Z" finished-at="2019-11-18T11:47:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC25_VerifyFieldsLength() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC25_VerifyFieldsLength()[pri:25, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC25_VerifyFieldsLength" duration-ms="27006" started-at="2019-11-18T11:47:26Z" description="Verify field length allowance" finished-at="2019-11-18T11:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC25_VerifyFieldsLength -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="107" started-at="2019-11-18T11:47:53Z" finished-at="2019-11-18T11:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8280" started-at="2019-11-18T11:47:53Z" finished-at="2019-11-18T11:48:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC26_verifyNullProcessDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC26_verifyNullProcessDate()[pri:26, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC26_verifyNullProcessDate" duration-ms="26897" started-at="2019-11-18T11:48:01Z" description="verify the fields present in Batch Status Logs screen" finished-at="2019-11-18T11:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC26_verifyNullProcessDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="116" started-at="2019-11-18T11:48:28Z" finished-at="2019-11-18T11:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8890" started-at="2019-11-18T11:48:28Z" finished-at="2019-11-18T11:48:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC27_verifyInvalidProcessDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC27_verifyInvalidProcessDate()[pri:27, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC27_verifyInvalidProcessDate" duration-ms="27409" started-at="2019-11-18T11:48:37Z" description="verify the fields with verifyInvalidToDate" finished-at="2019-11-18T11:49:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC27_verifyInvalidProcessDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="2049" started-at="2019-11-18T11:49:05Z" finished-at="2019-11-18T11:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8854" started-at="2019-11-18T11:49:07Z" finished-at="2019-11-18T11:49:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC28_verifyValidation_VerifyFutureProcessDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC28_verifyValidation_VerifyFutureProcessDate()[pri:28, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC28_verifyValidation_VerifyFutureProcessDate" duration-ms="28470" started-at="2019-11-18T11:49:15Z" description="verify the NoMatchingRecords" finished-at="2019-11-18T11:49:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC28_verifyValidation_VerifyFutureProcessDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="2064" started-at="2019-11-18T11:49:44Z" finished-at="2019-11-18T11:49:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8819" started-at="2019-11-18T11:49:46Z" finished-at="2019-11-18T11:49:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC29_verifyInvalidCaseID() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC29_verifyInvalidCaseID()[pri:29, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC29_verifyInvalidCaseID" duration-ms="31655" started-at="2019-11-18T11:49:55Z" description="verify the fields with verifyInvalidToDate" finished-at="2019-11-18T11:50:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC29_verifyInvalidCaseID -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="97" started-at="2019-11-18T11:50:26Z" finished-at="2019-11-18T11:50:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8635" started-at="2019-11-18T11:50:27Z" finished-at="2019-11-18T11:50:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC30_verifyInvalidNoticeID() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC30_verifyInvalidNoticeID()[pri:30, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC30_verifyInvalidNoticeID" duration-ms="29714" started-at="2019-11-18T11:50:35Z" description="verify the fields with verifyInvalidNoticeID" finished-at="2019-11-18T11:51:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC30_verifyInvalidNoticeID -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="2068" started-at="2019-11-18T11:51:05Z" finished-at="2019-11-18T11:51:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8503" started-at="2019-11-18T11:51:07Z" finished-at="2019-11-18T11:51:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC31_verify_NoMatchingRecords() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC31_verify_NoMatchingRecords()[pri:31, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC31_verify_NoMatchingRecords" duration-ms="29824" started-at="2019-11-18T11:51:15Z" description="verify the fields with _NoMatchingRecords" finished-at="2019-11-18T11:51:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC31_verify_NoMatchingRecords -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="2114" started-at="2019-11-18T11:51:45Z" finished-at="2019-11-18T11:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8400" started-at="2019-11-18T11:51:47Z" finished-at="2019-11-18T11:51:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC32_verify_CopyPasteAllowance() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC32_verify_CopyPasteAllowance()[pri:32, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC32_verify_CopyPasteAllowance" duration-ms="26280" started-at="2019-11-18T11:51:56Z" description="verify copy paste allowance in Process Date, Case Id, Notice ID fields" finished-at="2019-11-18T11:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC32_verify_CopyPasteAllowance -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="114" started-at="2019-11-18T11:52:22Z" finished-at="2019-11-18T11:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="beforeMethod" is-config="true" duration-ms="8616" started-at="2019-11-18T11:52:22Z" finished-at="2019-11-18T11:52:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC32_verify_VerifySuccessfulInquiry() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC32_verify_VerifySuccessfulInquiry()[pri:32, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="TC32_verify_VerifySuccessfulInquiry" duration-ms="28561" started-at="2019-11-18T11:52:31Z" description="verify_VerifySuccessfulInquiry" finished-at="2019-11-18T11:52:59Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.VerifyGridHasData(SeleniumBase.java:2285)
+	at com.protech.nvkids.pages.bstl.PrintQueueErrorsPage.VerifySucessfulInquiry(PrintQueueErrorsPage.java:260)
+	at com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC32_verify_VerifySuccessfulInquiry(PrintQueueErrorsTestcase.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC32_verify_VerifySuccessfulInquiry -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26]" name="afterMethod" is-config="true" duration-ms="115" started-at="2019-11-18T11:52:59Z" finished-at="2019-11-18T11:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase -->
+      <class name="com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase">
+        <test-method status="PASS" signature="startReport(org.testng.ITestContext)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="startReport" is-config="true" duration-ms="199" started-at="2019-11-18T11:30:52Z" finished-at="2019-11-18T11:30:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@e6ef29]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="Deleteimages" is-config="true" duration-ms="0" started-at="2019-09-04T12:21:45Z" finished-at="2019-09-04T12:21:45Z">
+        <test-method status="PASS" signature="Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="Deleteimages" is-config="true" duration-ms="24" started-at="2019-11-18T11:30:53Z" finished-at="2019-11-18T11:30:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deleteimages -->
-        <test-method status="PASS" signature="beforeCLASS()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="beforeCLASS" is-config="true" duration-ms="0" started-at="2019-09-04T12:21:45Z" finished-at="2019-09-04T12:21:45Z">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeclass" is-config="true" duration-ms="16" started-at="2019-11-18T11:30:53Z" finished-at="2019-11-18T11:30:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeCLASS -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="beforeMethod" is-config="true" duration-ms="6917" started-at="2019-09-04T12:21:45Z" finished-at="2019-09-04T12:21:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="VerifyLogin()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="VerifyLogin" duration-ms="3515" started-at="2019-09-04T12:21:52Z" finished-at="2019-09-04T12:21:55Z">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Unexpected result for screenshot command: null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Unexpected result for screenshot command: null
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:304)
-at com.protech.selenium.api.base.SeleniumBase.takeSnap(SeleniumBase.java:432)
-at com.protech.selenium.api.base.SeleniumBase.click(SeleniumBase.java:145)
-at com.protech.nvkids.pages.LOGIN_Page.login(LOGIN_Page.java:32)
-at com.protech.nvkids.testcases.BSTL_Testscript.VerifyLogin(BSTL_Testscript.java:34)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLogin -->
-        <test-method status="FAIL" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="afterMethod" is-config="true" duration-ms="61" started-at="2019-09-04T12:21:55Z" finished-at="2019-09-04T12:21:55Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=76.0.3809.132)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PROIIDWS-01', ip: '192.168.111.150', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\IID_US~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a560d4d8f943af6286be410c6ac999e7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=76.0.3809.132)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PROIIDWS-01', ip: '192.168.111.150', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\IID_US~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a560d4d8f943af6286be410c6ac999e7
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at com.protech.selenium.api.base.SeleniumBase.afterMethod(SeleniumBase.java:62)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-09-04T12:21:55Z" finished-at="2019-09-04T12:21:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="verifyCURSORfocus_SET()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="verifyCURSORfocus_SET" duration-ms="0" started-at="2019-09-04T12:21:55Z" finished-at="2019-09-04T12:21:55Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=76.0.3809.132)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PROIIDWS-01', ip: '192.168.111.150', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\IID_US~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a560d4d8f943af6286be410c6ac999e7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=76.0.3809.132)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PROIIDWS-01', ip: '192.168.111.150', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\IID_US~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a560d4d8f943af6286be410c6ac999e7
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at com.protech.selenium.api.base.SeleniumBase.afterMethod(SeleniumBase.java:62)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCURSORfocus_SET -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-09-04T12:21:55Z" finished-at="2019-09-04T12:21:55Z">
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="9180" started-at="2019-11-18T11:30:53Z" finished-at="2019-11-18T11:31:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC1_verifyfieldspresent() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.protech.nvkids.testcases.BSTL_Testscript@37271612]" name="stopReport" is-config="true" duration-ms="235" started-at="2019-09-04T12:21:55Z" finished-at="2019-09-04T12:21:56Z">
+        <test-method status="FAIL" signature="TC1_verifyfieldspresent()[pri:1, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC1_verifyfieldspresent" duration-ms="44048" started-at="2019-11-18T11:31:02Z" description="Navigate to BSTL  - Batch Status Logs screen function and verify all the fields present" finished-at="2019-11-18T11:31:46Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The element is not accessible]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The element is not accessible
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.click(SeleniumBase.java:236)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyFieldsPresent(BatchStatusLogsPage.java:114)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC1_verifyfieldspresent(BatchStatusLogsTestcase.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_verifyfieldspresent -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2112" started-at="2019-11-18T11:31:46Z" finished-at="2019-11-18T11:31:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8165" started-at="2019-11-18T11:31:48Z" finished-at="2019-11-18T11:31:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC2_VerifyCharAllowance_PositiveScenario() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC2_VerifyCharAllowance_PositiveScenario()[pri:2, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC2_VerifyCharAllowance_PositiveScenario" duration-ms="21067" started-at="2019-11-18T11:31:56Z" description="Verify Alpha Charecter Allowance in the FromDate field" finished-at="2019-11-18T11:32:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2_VerifyCharAllowance_PositiveScenario -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2327" started-at="2019-11-18T11:32:17Z" finished-at="2019-11-18T11:32:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8672" started-at="2019-11-18T11:32:20Z" finished-at="2019-11-18T11:32:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC3_VerifyCharAllowance_NegativeScenario() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC3_VerifyCharAllowance_NegativeScenario()[pri:3, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC3_VerifyCharAllowance_NegativeScenario" duration-ms="22634" started-at="2019-11-18T11:32:28Z" description="Verify Alpha Charecter Allowance in the FromDate field" finished-at="2019-11-18T11:32:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3_VerifyCharAllowance_NegativeScenario -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2129" started-at="2019-11-18T11:32:51Z" finished-at="2019-11-18T11:32:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8215" started-at="2019-11-18T11:32:53Z" finished-at="2019-11-18T11:33:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC4_VerifyFieldsLength() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC4_VerifyFieldsLength()[pri:4, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC4_VerifyFieldsLength" duration-ms="20660" started-at="2019-11-18T11:33:01Z" description="verify fields length" finished-at="2019-11-18T11:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4_VerifyFieldsLength -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2061" started-at="2019-11-18T11:33:22Z" finished-at="2019-11-18T11:33:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8372" started-at="2019-11-18T11:33:24Z" finished-at="2019-11-18T11:33:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC5_Inquirewith_nullFromDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC5_Inquirewith_nullFromDate()[pri:5, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC5_Inquirewith_nullFromDate" duration-ms="22714" started-at="2019-11-18T11:33:32Z" description="verify the fields present in Batch Status Logs screen" finished-at="2019-11-18T11:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC5_Inquirewith_nullFromDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2074" started-at="2019-11-18T11:33:55Z" finished-at="2019-11-18T11:33:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8280" started-at="2019-11-18T11:33:57Z" finished-at="2019-11-18T11:34:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC6_Inquirewith_InvalidFromDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC6_Inquirewith_InvalidFromDate()[pri:6, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC6_Inquirewith_InvalidFromDate" duration-ms="22011" started-at="2019-11-18T11:34:05Z" description="verify the fields with verifyInvalidToDate" finished-at="2019-11-18T11:34:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC6_Inquirewith_InvalidFromDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2067" started-at="2019-11-18T11:34:27Z" finished-at="2019-11-18T11:34:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8704" started-at="2019-11-18T11:34:29Z" finished-at="2019-11-18T11:34:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC7_Inquirewith_InvalidToDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC7_Inquirewith_InvalidToDate()[pri:7, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC7_Inquirewith_InvalidToDate" duration-ms="24217" started-at="2019-11-18T11:34:38Z" description="verify the fields with verifyInvalidToDate" finished-at="2019-11-18T11:35:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC7_Inquirewith_InvalidToDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="137" started-at="2019-11-18T11:35:02Z" finished-at="2019-11-18T11:35:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8036" started-at="2019-11-18T11:35:03Z" finished-at="2019-11-18T11:35:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC8_InquireWith_FutureFromDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC8_InquireWith_FutureFromDate()[pri:8, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC8_InquireWith_FutureFromDate" duration-ms="22873" started-at="2019-11-18T11:35:11Z" description="verify the NoMatchingRecords" finished-at="2019-11-18T11:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC8_InquireWith_FutureFromDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2055" started-at="2019-11-18T11:35:33Z" finished-at="2019-11-18T11:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8169" started-at="2019-11-18T11:35:36Z" finished-at="2019-11-18T11:35:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC9_InquireWith_FutureThroughDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC9_InquireWith_FutureThroughDate()[pri:9, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC9_InquireWith_FutureThroughDate" duration-ms="25537" started-at="2019-11-18T11:35:44Z" description="InquireWith_FutureThroughDate" finished-at="2019-11-18T11:36:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC9_InquireWith_FutureThroughDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2067" started-at="2019-11-18T11:36:09Z" finished-at="2019-11-18T11:36:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8230" started-at="2019-11-18T11:36:11Z" finished-at="2019-11-18T11:36:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC10_verifyValidation_VerifygGreaterThroughDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC10_verifyValidation_VerifygGreaterThroughDate()[pri:10, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC10_verifyValidation_VerifygGreaterThroughDate" duration-ms="47749" started-at="2019-11-18T11:36:20Z" description="VerifyFuturetodate" finished-at="2019-11-18T11:37:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The expected text doesn't contain the actual Through Date Must be Greater than or Equal to From Date]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The expected text doesn't contain the actual Through Date Must be Greater than or Equal to From Date
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.verifyPartialText(SeleniumBase.java:1616)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyGreaterThroughDate(BatchStatusLogsPage.java:264)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC10_verifyValidation_VerifygGreaterThroughDate(BatchStatusLogsTestcase.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10_verifyValidation_VerifygGreaterThroughDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2354" started-at="2019-11-18T11:37:07Z" finished-at="2019-11-18T11:37:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8141" started-at="2019-11-18T11:37:10Z" finished-at="2019-11-18T11:37:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC11_verify_NoMatchingRecords() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC11_verify_NoMatchingRecords()[pri:11, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC11_verify_NoMatchingRecords" duration-ms="45676" started-at="2019-11-18T11:37:18Z" description="verify the fields with _NoMatchingRecords" finished-at="2019-11-18T11:38:03Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The expected text doesn't contain the actual No Matching Records Found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The expected text doesn't contain the actual No Matching Records Found
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.verifyPartialText(SeleniumBase.java:1616)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyNoMatchRecords(BatchStatusLogsPage.java:278)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC11_verify_NoMatchingRecords(BatchStatusLogsTestcase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC11_verify_NoMatchingRecords -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2088" started-at="2019-11-18T11:38:03Z" finished-at="2019-11-18T11:38:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8240" started-at="2019-11-18T11:38:06Z" finished-at="2019-11-18T11:38:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC12_verify_CopyPasteAllowance() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC12_verify_CopyPasteAllowance()[pri:12, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC12_verify_CopyPasteAllowance" duration-ms="20276" started-at="2019-11-18T11:38:14Z" description="verify copy paste allowance in From &amp; To Date field" finished-at="2019-11-18T11:38:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC12_verify_CopyPasteAllowance -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2110" started-at="2019-11-18T11:38:34Z" finished-at="2019-11-18T11:38:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="beforeMethod" is-config="true" duration-ms="8177" started-at="2019-11-18T11:38:36Z" finished-at="2019-11-18T11:38:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC12_verify_SuccesfulInquiry() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC12_verify_SuccesfulInquiry()[pri:12, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="TC12_verify_SuccesfulInquiry" duration-ms="26559" started-at="2019-11-18T11:38:44Z" description="verify the fields with _NoMatchingRecords" finished-at="2019-11-18T11:39:11Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.VerifyGridHasData(SeleniumBase.java:2285)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifySuccesfulInquiry(BatchStatusLogsPage.java:296)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC12_verify_SuccesfulInquiry(BatchStatusLogsTestcase.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC12_verify_SuccesfulInquiry -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="afterMethod" is-config="true" duration-ms="2086" started-at="2019-11-18T11:39:11Z" finished-at="2019-11-18T11:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321]" name="stopReport" is-config="true" duration-ms="445" started-at="2019-11-18T11:53:00Z" finished-at="2019-11-18T11:53:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopReport -->
-      </class> <!-- com.protech.nvkids.testcases.BSTL_Testscript -->
+      </class> <!-- com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase -->
+      <class name="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeclass" is-config="true" duration-ms="12" started-at="2019-11-18T11:39:13Z" finished-at="2019-11-18T11:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8252" started-at="2019-11-18T11:39:13Z" finished-at="2019-11-18T11:39:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC13_verifyfieldspresent() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC13_verifyfieldspresent()[pri:13, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC13_verifyfieldspresent" duration-ms="44257" started-at="2019-11-18T11:39:21Z" description="verify the fields present in Batch Errors screen" finished-at="2019-11-18T11:40:06Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The element is not accessible]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The element is not accessible
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.click(SeleniumBase.java:236)
+	at com.protech.nvkids.pages.bstl.BatchErrorsPage.verifyFieldsPresent(BatchErrorsPage.java:150)
+	at com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC13_verifyfieldspresent(BatchErrorsTestcase.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC13_verifyfieldspresent -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="2337" started-at="2019-11-18T11:40:06Z" finished-at="2019-11-18T11:40:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8224" started-at="2019-11-18T11:40:08Z" finished-at="2019-11-18T11:40:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC14_VerifyCharAllowance_PositiveScenario() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC14_VerifyCharAllowance_PositiveScenario()[pri:14, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC14_VerifyCharAllowance_PositiveScenario" duration-ms="25172" started-at="2019-11-18T11:40:16Z" description="VerifyAlphaCharAllowanceFromDate" finished-at="2019-11-18T11:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC14_VerifyCharAllowance_PositiveScenario -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="133" started-at="2019-11-18T11:40:41Z" finished-at="2019-11-18T11:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8111" started-at="2019-11-18T11:40:41Z" finished-at="2019-11-18T11:40:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC15_VerifyCharAllowance_NegativeScenario() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC15_VerifyCharAllowance_NegativeScenario()[pri:15, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC15_VerifyCharAllowance_NegativeScenario" duration-ms="25972" started-at="2019-11-18T11:40:50Z" description="VerifyAlphaCharAllowanceFromDate" finished-at="2019-11-18T11:41:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC15_VerifyCharAllowance_NegativeScenario -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="2079" started-at="2019-11-18T11:41:16Z" finished-at="2019-11-18T11:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8332" started-at="2019-11-18T11:41:18Z" finished-at="2019-11-18T11:41:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC16_VerifyFieldsLength() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC16_VerifyFieldsLength()[pri:16, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC16_VerifyFieldsLength" duration-ms="24715" started-at="2019-11-18T11:41:26Z" description="VerifyFieldslength" finished-at="2019-11-18T11:41:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC16_VerifyFieldsLength -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="2184" started-at="2019-11-18T11:41:51Z" finished-at="2019-11-18T11:41:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8432" started-at="2019-11-18T11:41:53Z" finished-at="2019-11-18T11:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC17_verifyNullProcessDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC17_verifyNullProcessDate()[pri:17, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC17_verifyNullProcessDate" duration-ms="18653" started-at="2019-11-18T11:42:01Z" description="verify the fnull process date" finished-at="2019-11-18T11:42:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Link not accessible]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Link not accessible
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.clickLink(SeleniumBase.java:312)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.navigatetoBatchErrors(BatchStatusLogsPage.java:80)
+	at com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC17_verifyNullProcessDate(BatchErrorsTestcase.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC17_verifyNullProcessDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="134" started-at="2019-11-18T11:42:20Z" finished-at="2019-11-18T11:42:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8019" started-at="2019-11-18T11:42:20Z" finished-at="2019-11-18T11:42:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC18_verifyInvalidProcessDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC18_verifyInvalidProcessDate()[pri:18, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC18_verifyInvalidProcessDate" duration-ms="27665" started-at="2019-11-18T11:42:28Z" description="verify the fields with verifyInvalidToDate" finished-at="2019-11-18T11:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_verifyInvalidProcessDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="99" started-at="2019-11-18T11:42:56Z" finished-at="2019-11-18T11:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8371" started-at="2019-11-18T11:42:56Z" finished-at="2019-11-18T11:43:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC19_verifyValidation_VerifyFutureProcessDate() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC19_verifyValidation_VerifyFutureProcessDate()[pri:19, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC19_verifyValidation_VerifyFutureProcessDate" duration-ms="28503" started-at="2019-11-18T11:43:04Z" description="verifyValidation_VerifyFutureProcessDate" finished-at="2019-11-18T11:43:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC19_verifyValidation_VerifyFutureProcessDate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="2067" started-at="2019-11-18T11:43:33Z" finished-at="2019-11-18T11:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8708" started-at="2019-11-18T11:43:35Z" finished-at="2019-11-18T11:43:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC20_verify_NoMatchingRecords() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC20_verify_NoMatchingRecords()[pri:20, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC20_verify_NoMatchingRecords" duration-ms="29700" started-at="2019-11-18T11:43:43Z" description="verify the fields with _NoMatchingRecords" finished-at="2019-11-18T11:44:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC20_verify_NoMatchingRecords -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="2038" started-at="2019-11-18T11:44:13Z" finished-at="2019-11-18T11:44:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8611" started-at="2019-11-18T11:44:15Z" finished-at="2019-11-18T11:44:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC21_verify_CopyPasteAllowance() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC21_verify_CopyPasteAllowance()[pri:21, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC21_verify_CopyPasteAllowance" duration-ms="24964" started-at="2019-11-18T11:44:24Z" description="verify copy paste allowance in Process Date field" finished-at="2019-11-18T11:44:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC21_verify_CopyPasteAllowance -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="135" started-at="2019-11-18T11:44:49Z" finished-at="2019-11-18T11:44:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="beforeMethod" is-config="true" duration-ms="8378" started-at="2019-11-18T11:44:49Z" finished-at="2019-11-18T11:44:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC21_verify_SuccessfulInquiry() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC21_verify_SuccessfulInquiry()[pri:21, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="TC21_verify_SuccessfulInquiry" duration-ms="28632" started-at="2019-11-18T11:44:57Z" description="verify whether the successful inquiry was happended" finished-at="2019-11-18T11:45:26Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.VerifyGridHasData(SeleniumBase.java:2285)
+	at com.protech.nvkids.pages.bstl.BatchErrorsPage.verifySuccessfulInquiry(BatchErrorsPage.java:206)
+	at com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC21_verify_SuccessfulInquiry(BatchErrorsTestcase.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC21_verify_SuccessfulInquiry -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c]" name="afterMethod" is-config="true" duration-ms="2050" started-at="2019-11-18T11:45:26Z" finished-at="2019-11-18T11:45:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- BSTL -->
 </testng-results>

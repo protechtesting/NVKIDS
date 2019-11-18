@@ -1,0 +1,4 @@
+<h2>Methods that were not run</h2><table>
+<tr><td>com.protech.nvkids.testcases.logn.LoginTestcase.VerifyLogin</td></tr>
+<tr><td>com.protech.nvkids.testcases.logn.LoginTestcase.verifyNullUsernameAndPassword</td></tr>
+</table>

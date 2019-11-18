@@ -1,0 +1,556 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 18 11:30:53 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>1326 seconds (1326928 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC10_verifyValidation_VerifygGreaterThroughDate()'><b>TC10_verifyValidation_VerifygGreaterThroughDate</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: VerifyFuturetodate</td>
+<td><div><pre>java.lang.AssertionError: The expected text doesn&apos;t contain the actual Through Date Must be Greater than or Equal to From Date
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.verifyPartialText(SeleniumBase.java:1616)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyGreaterThroughDate(BatchStatusLogsPage.java:264)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC10_verifyValidation_VerifygGreaterThroughDate(BatchStatusLogsTestcase.java:101)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace487639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace487639'><pre>java.lang.AssertionError: The expected text doesn&apos;t contain the actual Through Date Must be Greater than or Equal to From Date
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.verifyPartialText(SeleniumBase.java:1616)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyGreaterThroughDate(BatchStatusLogsPage.java:264)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC10_verifyValidation_VerifygGreaterThroughDate(BatchStatusLogsTestcase.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>47</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC11_verify_NoMatchingRecords()'><b>TC11_verify_NoMatchingRecords</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: verify the fields with _NoMatchingRecords</td>
+<td><div><pre>java.lang.AssertionError: The expected text doesn&apos;t contain the actual No Matching Records Found
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.verifyPartialText(SeleniumBase.java:1616)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyNoMatchRecords(BatchStatusLogsPage.java:278)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC11_verify_NoMatchingRecords(BatchStatusLogsTestcase.java:109)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19738402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19738402'><pre>java.lang.AssertionError: The expected text doesn&apos;t contain the actual No Matching Records Found
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.verifyPartialText(SeleniumBase.java:1616)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyNoMatchRecords(BatchStatusLogsPage.java:278)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC11_verify_NoMatchingRecords(BatchStatusLogsTestcase.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>45</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC12_verify_SuccesfulInquiry()'><b>TC12_verify_SuccesfulInquiry</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: verify the fields with _NoMatchingRecords</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.VerifyGridHasData(SeleniumBase.java:2285)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifySuccesfulInquiry(BatchStatusLogsPage.java:296)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC12_verify_SuccesfulInquiry(BatchStatusLogsTestcase.java:116)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25251132", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25251132'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.VerifyGridHasData(SeleniumBase.java:2285)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifySuccesfulInquiry(BatchStatusLogsPage.java:296)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC12_verify_SuccesfulInquiry(BatchStatusLogsTestcase.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>26</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC13_verifyfieldspresent()'><b>TC13_verifyfieldspresent</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: verify the fields present in Batch Errors screen</td>
+<td><div><pre>java.lang.AssertionError: The element is not accessible
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.click(SeleniumBase.java:236)
+	at com.protech.nvkids.pages.bstl.BatchErrorsPage.verifyFieldsPresent(BatchErrorsPage.java:150)
+	at com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC13_verifyfieldspresent(BatchErrorsTestcase.java:19)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30988514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30988514'><pre>java.lang.AssertionError: The element is not accessible
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.click(SeleniumBase.java:236)
+	at com.protech.nvkids.pages.bstl.BatchErrorsPage.verifyFieldsPresent(BatchErrorsPage.java:150)
+	at com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC13_verifyfieldspresent(BatchErrorsTestcase.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>44</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC17_verifyNullProcessDate()'><b>TC17_verifyNullProcessDate</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: verify the fnull process date</td>
+<td><div><pre>java.lang.AssertionError: Link not accessible
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.clickLink(SeleniumBase.java:312)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.navigatetoBatchErrors(BatchStatusLogsPage.java:80)
+	at com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC17_verifyNullProcessDate(BatchErrorsTestcase.java:58)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17727923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17727923'><pre>java.lang.AssertionError: Link not accessible
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.clickLink(SeleniumBase.java:312)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.navigatetoBatchErrors(BatchStatusLogsPage.java:80)
+	at com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC17_verifyNullProcessDate(BatchErrorsTestcase.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>18</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC1_verifyfieldspresent()'><b>TC1_verifyfieldspresent</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: Navigate to BSTL  - Batch Status Logs screen function and verify all the fields present</td>
+<td><div><pre>java.lang.AssertionError: The element is not accessible
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.click(SeleniumBase.java:236)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyFieldsPresent(BatchStatusLogsPage.java:114)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC1_verifyfieldspresent(BatchStatusLogsTestcase.java:29)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24403776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24403776'><pre>java.lang.AssertionError: The element is not accessible
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.protech.selenium.api.base.SeleniumBase.click(SeleniumBase.java:236)
+	at com.protech.nvkids.pages.bstl.BatchStatusLogsPage.verifyFieldsPresent(BatchStatusLogsPage.java:114)
+	at com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC1_verifyfieldspresent(BatchStatusLogsTestcase.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>44</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC21_verify_SuccessfulInquiry()'><b>TC21_verify_SuccessfulInquiry</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: verify whether the successful inquiry was happended</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.VerifyGridHasData(SeleniumBase.java:2285)
+	at com.protech.nvkids.pages.bstl.BatchErrorsPage.verifySuccessfulInquiry(BatchErrorsPage.java:206)
+	at com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC21_verify_SuccessfulInquiry(BatchErrorsTestcase.java:99)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15960783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15960783'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.VerifyGridHasData(SeleniumBase.java:2285)
+	at com.protech.nvkids.pages.bstl.BatchErrorsPage.verifySuccessfulInquiry(BatchErrorsPage.java:206)
+	at com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC21_verify_SuccessfulInquiry(BatchErrorsTestcase.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>28</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC32_verify_VerifySuccessfulInquiry()'><b>TC32_verify_VerifySuccessfulInquiry</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: verify_VerifySuccessfulInquiry</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.VerifyGridHasData(SeleniumBase.java:2285)
+	at com.protech.nvkids.pages.bstl.PrintQueueErrorsPage.VerifySucessfulInquiry(PrintQueueErrorsPage.java:260)
+	at com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC32_verify_VerifySuccessfulInquiry(PrintQueueErrorsTestcase.java:130)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27781118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27781118'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.protech.selenium.api.base.SeleniumBase.VerifyGridHasData(SeleniumBase.java:2285)
+	at com.protech.nvkids.pages.bstl.PrintQueueErrorsPage.VerifySucessfulInquiry(PrintQueueErrorsPage.java:260)
+	at com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC32_verify_VerifySuccessfulInquiry(PrintQueueErrorsTestcase.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>28</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC12_verify_CopyPasteAllowance()'><b>TC12_verify_CopyPasteAllowance</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: verify copy paste allowance in From & To Date field</td>
+<td></td>
+<td>20</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC14_VerifyCharAllowance_PositiveScenario()'><b>TC14_VerifyCharAllowance_PositiveScenario</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: VerifyAlphaCharAllowanceFromDate</td>
+<td></td>
+<td>25</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC15_VerifyCharAllowance_NegativeScenario()'><b>TC15_VerifyCharAllowance_NegativeScenario</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: VerifyAlphaCharAllowanceFromDate</td>
+<td></td>
+<td>25</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC16_VerifyFieldsLength()'><b>TC16_VerifyFieldsLength</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: VerifyFieldslength</td>
+<td></td>
+<td>24</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC18_verifyInvalidProcessDate()'><b>TC18_verifyInvalidProcessDate</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: verify the fields with verifyInvalidToDate</td>
+<td></td>
+<td>27</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC19_verifyValidation_VerifyFutureProcessDate()'><b>TC19_verifyValidation_VerifyFutureProcessDate</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: verifyValidation_VerifyFutureProcessDate</td>
+<td></td>
+<td>28</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC20_verify_NoMatchingRecords()'><b>TC20_verify_NoMatchingRecords</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: verify the fields with _NoMatchingRecords</td>
+<td></td>
+<td>29</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchErrorsTestcase.TC21_verify_CopyPasteAllowance()'><b>TC21_verify_CopyPasteAllowance</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchErrorsTestcase<br>Test method: verify copy paste allowance in Process Date field</td>
+<td></td>
+<td>24</td>
+<td>com.protech.nvkids.testcases.bstl.BatchErrorsTestcase@cd072c</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC22_verifyfieldspresent()'><b>TC22_verifyfieldspresent</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: verify the fields present in Print Queue error Screen</td>
+<td></td>
+<td>21</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC23_VerifyCharAllowance_PositiveScenario()'><b>TC23_VerifyCharAllowance_PositiveScenario</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: Verify Alpha Charecter Allowance in the ProcessDate field</td>
+<td></td>
+<td>29</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC24_VerifyCharAllowance_NegativeScenario()'><b>TC24_VerifyCharAllowance_NegativeScenario</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: Verify Alpha Charecter Allowance in the ProcessDate field</td>
+<td></td>
+<td>28</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC25_VerifyFieldsLength()'><b>TC25_VerifyFieldsLength</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: Verify field length allowance</td>
+<td></td>
+<td>27</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC26_verifyNullProcessDate()'><b>TC26_verifyNullProcessDate</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: verify the fields present in Batch Status Logs screen</td>
+<td></td>
+<td>26</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC27_verifyInvalidProcessDate()'><b>TC27_verifyInvalidProcessDate</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: verify the fields with verifyInvalidToDate</td>
+<td></td>
+<td>27</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC28_verifyValidation_VerifyFutureProcessDate()'><b>TC28_verifyValidation_VerifyFutureProcessDate</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: verify the NoMatchingRecords</td>
+<td></td>
+<td>28</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC29_verifyInvalidCaseID()'><b>TC29_verifyInvalidCaseID</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: verify the fields with verifyInvalidToDate</td>
+<td></td>
+<td>31</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC2_VerifyCharAllowance_PositiveScenario()'><b>TC2_VerifyCharAllowance_PositiveScenario</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: Verify Alpha Charecter Allowance in the FromDate field</td>
+<td></td>
+<td>21</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC30_verifyInvalidNoticeID()'><b>TC30_verifyInvalidNoticeID</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: verify the fields with verifyInvalidNoticeID</td>
+<td></td>
+<td>29</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC31_verify_NoMatchingRecords()'><b>TC31_verify_NoMatchingRecords</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: verify the fields with _NoMatchingRecords</td>
+<td></td>
+<td>29</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.TC32_verify_CopyPasteAllowance()'><b>TC32_verify_CopyPasteAllowance</b><br>Test class: com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase<br>Test method: verify copy paste allowance in Process Date, Case Id, Notice ID fields</td>
+<td></td>
+<td>26</td>
+<td>com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@1438d26</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC3_VerifyCharAllowance_NegativeScenario()'><b>TC3_VerifyCharAllowance_NegativeScenario</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: Verify Alpha Charecter Allowance in the FromDate field</td>
+<td></td>
+<td>22</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC4_VerifyFieldsLength()'><b>TC4_VerifyFieldsLength</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: verify fields length</td>
+<td></td>
+<td>20</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC5_Inquirewith_nullFromDate()'><b>TC5_Inquirewith_nullFromDate</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: verify the fields present in Batch Status Logs screen</td>
+<td></td>
+<td>22</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC6_Inquirewith_InvalidFromDate()'><b>TC6_Inquirewith_InvalidFromDate</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: verify the fields with verifyInvalidToDate</td>
+<td></td>
+<td>22</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC7_Inquirewith_InvalidToDate()'><b>TC7_Inquirewith_InvalidToDate</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: verify the fields with verifyInvalidToDate</td>
+<td></td>
+<td>24</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC8_InquireWith_FutureFromDate()'><b>TC8_InquireWith_FutureFromDate</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: verify the NoMatchingRecords</td>
+<td></td>
+<td>22</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+<tr>
+<td title='com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase.TC9_InquireWith_FutureThroughDate()'><b>TC9_InquireWith_FutureThroughDate</b><br>Test class: com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase<br>Test method: InquireWith_FutureThroughDate</td>
+<td></td>
+<td>25</td>
+<td>com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase@18c1321</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,1 @@
+powershell.exe -ExecutionPolicy Bypass D:\NVKIDS_V1 Workspace\NVKIDS_SeleniumFramework\Resources\CallBatch.ps1

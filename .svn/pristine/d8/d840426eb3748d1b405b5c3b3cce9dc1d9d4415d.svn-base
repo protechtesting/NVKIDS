@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35219" started-at="2019-10-29T14:00:08Z" finished-at="2019-10-29T14:00:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35219" started-at="2019-10-29T14:00:08Z" finished-at="2019-10-29T14:00:43Z">
+      <class name="com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@feb982]" name="startReport" is-config="true" duration-ms="203" started-at="2019-10-29T14:00:08Z" finished-at="2019-10-29T14:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="Deleteimages()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@feb982]" name="Deleteimages" is-config="true" duration-ms="16" started-at="2019-10-29T14:00:08Z" finished-at="2019-10-29T14:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleteimages -->
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@feb982]" name="beforeclass" is-config="true" duration-ms="0" started-at="2019-10-29T14:00:08Z" finished-at="2019-10-29T14:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@feb982]" name="beforeMethod" is-config="true" duration-ms="11024" started-at="2019-10-29T14:00:08Z" finished-at="2019-10-29T14:00:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase.verify_VerifySuccessfulInquiry() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verify_VerifySuccessfulInquiry()[pri:4, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@feb982]" name="verify_VerifySuccessfulInquiry" duration-ms="24164" started-at="2019-10-29T14:00:19Z" finished-at="2019-10-29T14:00:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_VerifySuccessfulInquiry -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase@feb982]" name="stopReport" is-config="true" duration-ms="333" started-at="2019-10-29T14:00:43Z" finished-at="2019-10-29T14:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

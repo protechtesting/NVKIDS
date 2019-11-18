@@ -1,0 +1,59 @@
+package com.protech.nvkids.testcases.rstr;
+
+import org.testng.annotations.Test;
+
+import com.protech.nvkids.pages.login.LoginPage;
+import com.protech.selenium.api.base.SeleniumBase;
+
+public class ViewFamilialRestrictedCaseTestCase extends SeleniumBase
+
+{
+	
+	@Test(priority=1,description="Navigate to View High Profile Restricted Cases screen function")
+		public void navigateToViewFamilialRestrictedCases() throws Exception 
+		{
+				new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().verifyFieldsPresent();
+		}
+	@Test(priority=2,description="Inquire with null values in CASE and PARTICIPANT fields present in the Select Filters")
+		public void InquirewithNull() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().InquirewithNull();
+		}
+		
+	@Test(priority=3,description="Inquire with values in CASE field present in the Select Filters. - Without Records")
+		public void InquirewithNoMatchingCase() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().InquirewithNoMatchingCase();
+		}
+		
+	@Test(priority=4,description="Inquire with values in PARTICIPANT field present in the Select Filters. - Without Records")
+		public void InquirewithNoMatchingParticipant() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().InquirewithNoMatchingParticipant();
+		}
+	@Test(priority=5,description="Inquire with values in USER field present in the Select Filters. - Without Records")
+	public void InquirewithNoMatchingUser() throws Exception 
+	{
+		new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().InquirewithNoMatchingUser();
+	}
+	
+		@Test(priority=6,description="Inquire with values in CASE field present in the Select Filters. - With Records")
+		public void InquirewithCase() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().InquirewithCase();
+		}
+		
+		@Test(priority=7,description="Inquire with values in PARTICIPANT field present in the Select Filters. - With Records")
+		public void InquirewithParticipant() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().InquirewithParticipant();
+		}
+		
+		@Test(priority=8,description="Inquire with values in USER field present in the Select Filters. - With Records")
+		public void InquirewithUser() throws Exception 
+		{
+			new LoginPage().login().quickNavigation_RSTR().NavigatetoFamilialScreenFunction().InquirewithUser();
+		}
+		
+		
+}
