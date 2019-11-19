@@ -2297,7 +2297,9 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		{
 			ArrayList<String> Headers = new ArrayList<String>();
 			ArrayList<String> expec = new ArrayList<String>();
-			List<WebElement> GridValues = driver.findElementsByXPath("//tr[@class='ng-star-inserted']/th");
+			//List<WebElement> GridValues = driver.findElementsByXPath("//tr[@class='ng-star-inserted']/th");
+			List<WebElement> GridValues = driver.findElementsByXPath("//tr[@class='ng-star-inserted']/th[not(contains(@class,'accordion-col'))]");
+			
 			for (WebElement col : GridValues){
 				if(col.getAttribute("class").contains("hidden") == true ){
 					continue;
@@ -2886,73 +2888,68 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 	@Override
 	public void verifyShowColumns(String... data) {
 		try{
-			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+			int count =0;
+			//List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+			WebElement GridOptionList = driver.findElementByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]/span[contains(text(),'Show Columns ')]");
 			wait =new WebDriverWait(driver, 10);
-			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+			wait.until(ExpectedConditions.visibilityOf(GridOptionList));
 
 			List<String> ShowColumnsListAll = null;
 			List<String> ShowColumnsListVisible = null;
 			List<String> ShowColumnsListHidden = null;
-			for(WebElement sel :GridOptionList ){
-
-				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
-				if(s.trim().equals("Show Columns")){
-					click(sel);
-					reportStep("Show Columns  is present and clicked", "pass");
-					List<WebElement> SelectCheckBox = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]/p-checkbox/label");
-					wait.until(ExpectedConditions.visibilityOfAllElements(SelectCheckBox));
-					for(WebElement col: SelectCheckBox){
-						String s1 = col.getText().trim().replaceAll("[^a-z A-Z]", "");
-						if(!(s1.trim().equals("Show Filters"))){
-							ShowColumnsListAll.add(s1);
-							if(!(col.getAttribute("class").contains("ui-label-active"))){
-								ShowColumnsListHidden.add(s1);
-
-							}
-							else if(col.getAttribute("class").contains("ui-label-active")){
-								ShowColumnsListVisible.add(s1);
-
-							}
-							else{
-								log.info("Show Column is not present");
-								reportStep("Show Column is not present", "fail");
-								Assert.fail("Show Column is not avaialbe");
-							}
-
-						}
-
-					}
-
-
-					if(data.equals(ShowColumnsListAll)){
-						for(String visible:ShowColumnsListVisible  ){
-							log.info(visible +" check box enabled");
-							reportStep(visible+" check box enabled", "pass");
-
-						}
-						for(String hidden:ShowColumnsListHidden  ){
-							log.info(hidden +" is hidden/unchecked");
-							reportStep(hidden+" is hidden/unchecked", "pass");
-						}
-
-					}
-					else{
-						log.info("Show Column values are not matching");
-						reportStep("Show Column values are not matching", "fail");
-						Assert.fail("Show Column values are not matching");
-
-					}
+			Actions action = new Actions(driver);
+			click(GridOptionList);
+		    action.clickAndHold(GridOptionList).build().perform();		
+			reportStep("Show Columns  is present and clicked", "pass");
+			List<WebElement> SelectCheckBox = driver.findElementsByXPath("//span[contains(text(),'Show Columns')]/following::p-checkbox/label");
+			wait =new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.visibilityOfAllElements(SelectCheckBox));
+			System.out.println("The size" + SelectCheckBox.size());
+			
+			for(WebElement col: SelectCheckBox){
+				
+				String s1 = col.getText().trim();
+				System.out.println("Class"+ col.getAttribute("class"));
+				
+				/*ShowColumnsListAll.add(s1);
+				if((col.getAttribute("class").contains("ui-label-active"))==false){
+					ShowColumnsListHidden.add(col.getText().trim());
+					count = count+1;
+					continue;
+					
 				}
-				else{
+				else if(col.getAttribute("class").contains("ui-label-active")==true){
+					ShowColumnsListVisible.add(col.getText().trim());
+					count = count+1;
+					continue;
 
-					log.info("Grid Options is not present");
-					reportStep("Show Column is not present", "fail");
-					Assert.fail("Show Column is not present");
 				}
+				else if(count ==(SelectCheckBox.size()-1)){
+					break;
+				}*/
+
 			}
 
-		}
 
+
+
+			if(data.equals(ShowColumnsListAll)){
+				for(String visible:ShowColumnsListVisible  ){
+					log.info(visible +" check box enabled");
+					reportStep(visible+" check box enabled", "pass");
+
+				}
+				for(String hidden:ShowColumnsListHidden  ){
+					log.info(hidden +" is hidden/unchecked");
+					reportStep(hidden+" is hidden/unchecked", "pass");
+				}
+			}
+			else{
+				log.info("Show Column values are not matching");
+				reportStep("Show Column values are not matching", "fail");
+				Assert.fail("Show Column values are not matching");
+			}
+		}
 		catch (Exception e) 
 		{
 			int position = e.toString().indexOf("Exception:");

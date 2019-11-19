@@ -9,31 +9,23 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.protech.selenium.api.base.SeleniumBase;
 
+import utils.CommonLocators;
+
 public class BatchErrorsPage extends SeleniumBase 
 {
 	public BatchErrorsPage() 
 	{
 		PageFactory.initElements(driver, this);
 	}
-	
-
-	
-	
+		
+	CommonLocators cloc=new CommonLocators();
 	//Screen functions
-	@FindBy(xpath="//span[text()='Batch Status Logs and Errors']") WebElement elelnkBSTL_batchstatuslogs;
-	@FindBy(xpath = "//span[text()='Print Queue Errors']") WebElement elePrintQueueErrors;
-	@FindBy(xpath = "//span[text()='Batch Status Logs']") WebElement eleBatchStatusLogs;
+	@FindBy(xpath = "//span[text()='Print Queue Errors']") WebElement elesfPrintQueueErrors;
+	@FindBy(xpath = "//span[text()='Batch Status Logs']") WebElement elesfBatchStatusLogs;
 	
 	//Filter Section
-	
-	@FindBy(xpath = "//span[@class='fa fa-angle-double-down downIcon']")  WebElement eleicnSelectFilter;	
-	@FindBy(xpath="//a[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted'][contains(text(),'Filter')]") WebElement elelblSelectFilter;
-	
-	@FindBy(id="effectiveRunDate") WebElement eledtProcessDate;
-	@FindBy(xpath="//label[text()='Process Date' ]") WebElement eledtlblProcessDate;
-	
-	@FindBy(xpath="//span[text()='Search']") WebElement elebtnSearch;
-	@FindBy(xpath="//span[text()='Clear']") WebElement elebtnClear;
+	@FindBy(id="effectiveRunDate") WebElement eletxtProcessDate;
+	@FindBy(xpath="//label[text()='Process Date' ]") WebElement elelblProcessDate;
 	
 	//Grid Section
 	@FindBy(xpath="//label[text()=' Process Date ']") WebElement elehdrProcessDate;
@@ -44,168 +36,120 @@ public class BatchErrorsPage extends SeleniumBase
 	@FindBy(xpath="//label[text()=' Create Date ']") WebElement elehdrCreateDate;
 	
 	//Grid Accordion section
-	@FindBy(xpath="//label[text()=' Key Values ']") WebElement eledispKeyValues;
-	@FindBy(xpath="//label[text()=' Error Description ']") WebElement eledispErrorDescription;
+	@FindBy(xpath="//label[text()=' Key Values ']") WebElement elealblKeyValues;
+	@FindBy(xpath="//label[text()=' Error Description ']") WebElement elealblErrorDescription;
 	
-	//Error Panel
-    @FindBy(xpath = "//div[@class='p-grid']/div/app-status-bar/div/span[2]")  public WebElement eleErrorPanel;	
-	@FindBy(xpath = "//app-core/app-layout//div/div/app-status-bar/div/span")  public WebElement eleErrorPanelNoMatch;
+			
+	// Grid Data
+	@FindBy(xpath = "//table/tbody/tr/td/span") WebElement EleGridData;
+		
+			
+	public void verifyCharacterAllowancePositiveScenario()
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		VerifyChar_allowance(eletxtProcessDate,"11/01/2019");
+	}
+		
+		
+	public void verifyCharacterAllowanceNegativeScenario()
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		VerifyChar_NotAllowance(eletxtProcessDate,"abcd");
+		VerifyChar_NotAllowance(eletxtProcessDate,"^*&&*^*");
+	}
 	
+	public void verifyFieldLength() throws AWTException
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		copypaste(eletxtProcessDate, "12345678", 8);
+	}
 	
+	public void verifyCopyPasteAllowance() throws AWTException
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		copypaste(eletxtProcessDate, "12345678", 8);
+	}
+		
+	public void inquirewithProcessDate()
+	{
+		clearAndType(eletxtProcessDate,elelblProcessDate, "11042019");
+		click(cloc.eleicnSearch);
+	}
 	
-	//Filter and Accordion icon
-		@FindBy(xpath = "//span[@class='fa fa-angle-double-down downIcon']") WebElement EleicnOpenFilter;
-		@FindBy(xpath = "(//i[contains(@class,'pi pi-chevron-down')])[1]") WebElement Eleicnaccordion;
+	public PrintQueueErrorsPage navigateToPrintQueueErrors() throws InterruptedException 
+	{
+		clickLink(elesfPrintQueueErrors);
+		Thread.sleep(3000);
+		return new PrintQueueErrorsPage();
+	}
 		
+	public BatchStatusLogsPage navigateToBatchStatusLogs() throws InterruptedException 
+	{
+		clickLink(elesfBatchStatusLogs);
+		Thread.sleep(3000);
+		return new BatchStatusLogsPage();
+	}
 		
-		// Grid Data
-		
-		@FindBy(xpath = "//table/tbody/tr/td/span") WebElement EleGridData;
-		
-		BatchStatusLogsPage b=new BatchStatusLogsPage();
-		
-		
-		public void verifyCharecterAllowancePositiveScenario(){
-			
-			clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-			
-			VerifyChar_allowance(eledtProcessDate,"11/01/2019");
-			
-			
-		}
-		
-		
-		public void verifyCharecterAllowanceNegativeScenario(){
-			
-			clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-			
-			
-			VerifyChar_NotAllowance(eledtProcessDate,"abcd");
-			VerifyChar_NotAllowance(eledtProcessDate,"^*&&*^*");
-			
-			
-		}
-		
-		public void VerifyFieldLength() throws AWTException{
-			
-			clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-			
-			copypaste(eledtProcessDate, "12345678", 8);
-			
-			
-		}
-		
-             public void VerifyCopyPasteAllowance() throws AWTException{
-            	 
-             clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-			
-			copypaste(eledtProcessDate, "12345678", 8);
-			
-			
-		}
-		
-		public void inquirewithProcessDate(){
-			
-			
-			clearAndType(eledtProcessDate,eledtlblProcessDate, "11042019");
-			click(elebtnSearch);
-			
-		}
-		
-		
-		
-		public PrintQueueErrorsPage navigateToPrintQueueErrors() throws InterruptedException 
-		{
-			clickLink(elePrintQueueErrors);
-			Thread.sleep(3000);
-			return new PrintQueueErrorsPage();
-		}
-		
-		public BatchStatusLogsPage navigateToBatchStatusLogs() throws InterruptedException 
-		{
-			clickLink(eleBatchStatusLogs);
-			Thread.sleep(3000);
-			return new BatchStatusLogsPage();
-		}
-	
-	
 	public BatchErrorsPage verifyFieldsPresent() throws Exception
 	{
-		clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-		verifyDisplayed(eledtProcessDate,eledtProcessDate);
-		//verifyDisplayed(elehdrJobID);
-		verifyDisplayed(elebtnSearch,elebtnSearch);
-		verifyDisplayed(elebtnClear,elebtnClear);
-	
-		
-		verifyDisplayed(elehdrProcessDate,elehdrProcessDate);
-		//verifyDisplayed(elehdrJobID);
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		verifyDisplayed(eletxtProcessDate,elelblProcessDate);
+		verifyDisplayed(cloc.eleicnSearch,cloc.eleicnSearch);
+		verifyDisplayed(cloc.eleicnClear,cloc.eleicnClear);
+		/*verifyDisplayed(elehdrProcessDate,elehdrProcessDate);
 		verifyDisplayed(elehdrJobDescription,elehdrJobDescription);
 		verifyDisplayed(elehdrBatchName,elehdrBatchName);
 		verifyDisplayed(elehdrMessageType,elehdrMessageType);
-		verifyDisplayed(elehdrCreateDate,elehdrCreateDate);
-		
-		
+		verifyDisplayed(elehdrCreateDate,elehdrCreateDate);*/
+		verifyGridHeaders("Process Date","Job Description","Batch Name","Message Type","Create Date");
 		inquirewithProcessDate();		
-		click(Eleicnaccordion);
-		
-		
-		verifyDisplayed(eledispKeyValues,eledispKeyValues);
-		verifyDisplayed(eledispErrorDescription,eledispErrorDescription);
-	
+		click(cloc.eleicnOpenAccordion);
+		verifyDisplayed(elealblKeyValues,elealblKeyValues);
+		verifyDisplayed(elealblErrorDescription,elealblErrorDescription);
 		return this;
-		
 	}
 	
 	
-
-	
-	
-	public void verifyError_NullProcessDate()
+	public void inquireWithNoProcessDate()
 	{
-		clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-		clear(eledtProcessDate);
-		click(elebtnSearch);
-		verifyPartialText(b.eleErrorPanel, "Enter Required Fields");
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		clear(eletxtProcessDate);
+		click(cloc.eleicnSearch);
+		verifyExactText(cloc.eleErrStatusBar, "Process Date :  Enter Required Fields");
 	}
-	
-	
 	
 	public void verifyInvalidProcessDate()
 	{
-		clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-		clearAndType(eledtProcessDate,eledtlblProcessDate, "321321");
-		click(elebtnSearch);		
-		verifyPartialText(b.eleErrorPanel, "Invalid Date");
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		clearAndType(eletxtProcessDate,elelblProcessDate, "321321");
+		click(cloc.eleicnSearch);		
+		verifyExactText(cloc.eleErrStatusBar, "Process Date :  Invalid Date");
 	}
 	
 	
-	public void verifyFutureProcessdate()
+	public void verifyFutureProcessDate()
 	{
-		clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-		//clearAndType(eledtProcessDate,eledtlblProcessDate, "321321");
-		setFutureDate(eledtProcessDate);
-		click(elebtnSearch);		
-		verifyPartialText(b.eleErrorPanel, "Future Date is not Allowed");
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		setFutureDate(eletxtProcessDate);
+		click(cloc.eleicnSearch);		
+		verifyExactText(cloc.eleErrStatusBar, "Process Date :  Future Date is not Allowed");
 	}
 	
 	public void verifyNoMatchRecords() throws InterruptedException
 	{
-		clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-		clearAndType(eledtProcessDate,eledtlblProcessDate, "10012019");
-		click(elebtnSearch);	
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		clearAndType(eletxtProcessDate,elelblProcessDate, "10012019");
+		click(cloc.eleicnSearch);	
 		Thread.sleep(2000);
-		verifyPartialText(b.eleErrorPanelNoMatch, "No Matching Records Found");
+		verifyExactText(cloc.eleErrStatusBar, "No Matching Records Found");
 	}
 	
 	public void verifySuccessfulInquiry()
 	{
-		clickIcon(b.eleicnSelectFilter, elelblSelectFilter);
-		clearAndType(eledtProcessDate,eledtlblProcessDate, "11042019");
-		click(elebtnSearch);		
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		clearAndType(eletxtProcessDate,elelblProcessDate, "11042019");
+		click(cloc.eleicnSearch);		
 		VerifyGridHasData(EleGridData);
 	}
-
-
 
 }

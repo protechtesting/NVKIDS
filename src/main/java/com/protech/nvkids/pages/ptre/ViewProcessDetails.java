@@ -236,16 +236,60 @@ public class ViewProcessDetails extends SeleniumBase
 		Thread.sleep(3000);
 		verifyInquiredGridResult("CASS");
 	}
-	public void VerifyGridOptionsValues() throws Exception{
+	/*public void VerifyGridOptionsValues() throws Exception{
 
 		Thread.sleep(3000);
 		click(eleGridOptions);
 		Thread.sleep(3000);
 		verifyGridOptions("Show Filters","Show Columns","Download File");
+	}*/
+	public void VerifyGridOptionsValues() throws Exception{
+
+		
+		click(eleGridOptions);
+		verifyGridOptions("Show Filters", "Show Columns" , "Download File");
+	}
+	
+	public void checkShowFiltersPTRE(){
+		click(eleGridOptions);
+		CheckShowFilters();
+	}
+	public void UnCheckShowFiltersPTRE(){
+		click(eleGridOptions);
+		UnCheckShowFilters();
+	}
+	public void clickResetFilterPTRE(){
+		click(eleGridOptions);
+		CheckShowFilters();
+		clickResetFilter();
+		
+	}
+	public void verifyShowColumnsPTRE(){
+		click(eleGridOptions);
+		verifyShowColumns("Process ID","Process","Category Code","Category","Manual Start Code","Manual Start","Updated On","Updated By");
+	}
+	
+	public void selectShowColumnPTRE(){
+		click(eleGridOptions);
+		selectShowColumn("Category Code");
+	}
+	public void UnselectShowColumnPTRE(){
+		click(eleGridOptions);
+		UnselectShowColumn("Process ID");
+	}
+	
+	public void verifyDownloadFileOptionsPTRE(){
+		click(eleGridOptions);
+		verifyDownloadFileOptions(" Download XLS "," Download PDF ");
+	}
+	
+	public void ClickAndDownloadFilePTRE(){
+		click(eleGridOptions);
+		ClickAndDownloadFile(" Download XLS ");
 	}
 
 
-	public void verifyGridOptions(String...data) {
+	/*public void verifyGridOptions(String...data) {
 		try 
 		{
 			ArrayList<String> GridOptions = new ArrayList<String>();
@@ -296,7 +340,7 @@ public class ViewProcessDetails extends SeleniumBase
 		}
 
 	}
-
+*/
 
 
 

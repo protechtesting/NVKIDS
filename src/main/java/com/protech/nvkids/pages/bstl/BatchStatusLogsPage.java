@@ -10,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.protech.selenium.api.base.SeleniumBase;
 
+import utils.CommonLocators;
+
 public class BatchStatusLogsPage extends SeleniumBase 
 {
 	public BatchStatusLogsPage() 
@@ -17,17 +19,16 @@ public class BatchStatusLogsPage extends SeleniumBase
 		PageFactory.initElements(driver, this);
 	}
 		
-	//Filter Section
-	@FindBy(xpath = "//a[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted']")  WebElement eleicnSelectFilter;	
-	@FindBy(xpath="//a[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted'][contains(text(),'Filter')]") WebElement elelblSelectFilter;	
-	@FindBy(xpath="//span[text()='Batch Status Logs and Errors']")  WebElement elelnkBSTL_batchstatuslogs;		
-	@FindBy(id="fromDate") WebElement eledtFromDate;	
-	@FindBy(xpath="//label[text()='From Date' ]") WebElement eledtlblFromDate;
-	@FindBy(id="toDate")  WebElement eledtToDate;	
-	@FindBy(xpath="//label[text()='Through Date' ]") WebElement eledtlblToDate;
-	@FindBy(xpath="//button/span[text()='Search']") WebElement elebtnSearch;
-	@FindBy(xpath="//button/span[text()='Clear']") WebElement elebtnClear;
+	CommonLocators cloc=new CommonLocators();
 	
+	//Filter Section
+			
+	@FindBy(xpath="//span[text()='Batch Status Logs and Errors']")  WebElement elelnkBSTL_batchstatuslogs;		
+	@FindBy(id="fromDate") WebElement eletxtFromDate;	
+	@FindBy(xpath="//label[text()='From Date' ]") WebElement elelblFromDate;
+	@FindBy(id="toDate")  WebElement eletxtThroughDate;	
+	@FindBy(xpath="//label[text()='Through Date' ]") WebElement elelblThroughDate;
+		
 	//Grid Section
 	@FindBy(xpath="//label[text()=' Process Date ']") WebElement elehdrProcessDate;	
 	@FindBy(xpath="//label[text()=' Job ID ']") WebElement elehdrJobID;	
@@ -40,44 +41,29 @@ public class BatchStatusLogsPage extends SeleniumBase
 	
 	
 	//Grid Accordion section
-	@FindBy(xpath="//label[text()=' Procedure Name ']") WebElement eledispProcedureName;
-	@FindBy(xpath="//label[text()=' Error/Seq ']") WebElement eledispErrorSEQ;
-	@FindBy(xpath="//label[text()=' Worker ']") WebElement eledispWorker;
-	@FindBy(xpath="//label[text()=' Cursor Location ']") WebElement eledispCursorLocation;
-	@FindBy(xpath="//label[text()=' Execution Location ']") WebElement eledispExecutionLocation;
-	@FindBy(xpath="//label[text()=' Key Values ']") WebElement eledispKeyValues;
-	@FindBy(xpath="//label[text()=' Error Description ']") WebElement eledispErrorDescription;
-	
-	//Error Panel
-	//@FindBy(xpath="//div[@class='messagetextrow'][2]/span") WebElement eleErrorPanel;	
-	@FindBy(xpath = "//span[@class='ng-star-inserted'][2]")  public WebElement eleErrorPanel;
-	
-	@FindBy(xpath = "//span[@class='ng-star-inserted']")  public WebElement eleErrorPanelNoMatch;
-	
+	@FindBy(xpath="//label[text()=' Procedure Name ']") WebElement elealblProcedureName;
+	@FindBy(xpath="//label[text()=' Error/Seq ']") WebElement elealblErrorSeq;
+	@FindBy(xpath="//label[text()=' Worker ']") WebElement elealblWorker;
+	@FindBy(xpath="//label[text()=' Cursor Location ']") WebElement elealblCursorLocation;
+	@FindBy(xpath="//label[text()=' Execution Location ']") WebElement elealblExecutionLocation;
+	@FindBy(xpath="//label[text()=' Key Values ']") WebElement elealblKeyValues;
+	@FindBy(xpath="//label[text()=' Error Description ']") WebElement elealblErrorDescription;
 	
 		
 	//Screen Functions
 	@FindBy(xpath = "//span[text()='Batch Status Logs and Errors']") WebElement eleBatchErrorsExpandLink;
-	@FindBy(xpath = "//span[text()='Batch Errors']") WebElement eleBatchErrors;	
-	@FindBy(xpath = "//span[text()='Print Queue Errors']") WebElement elePrintQueueErrors;
+	@FindBy(xpath = "//span[text()='Batch Errors']") WebElement elesfBatchErrors;	
+	@FindBy(xpath = "//span[text()='Print Queue Errors']") WebElement elesfPrintQueueErrors;
 	
-	//Filter and Accordion icon
-	@FindBy(xpath = "//span[@class='fa fa-angle-double-down downIcon']") WebElement EleicnOpenFilter;
-	
-	//@FindBy(xpath = "//span[@class='pull-right bold text-dark-blue selectFilterbtn ng-star-inserted']") WebElement EleicnOpenFilter;
-	
-	@FindBy(xpath = "(//i[contains(@class,'pi pi-chevron-down')])[1]") WebElement Eleicnaccordion;
 	
 	// Grid Data
-	
 	@FindBy(xpath = "//table/tbody/tr/td/span") WebElement EleGridData;
 	
-
 	
 	public BatchErrorsPage navigatetoBatchErrors() throws InterruptedException 
 	{
 		clickLink(eleBatchErrorsExpandLink);
-		clickLink(eleBatchErrors);
+		clickLink(elesfBatchErrors);
 		Thread.sleep(3000);
 		return new BatchErrorsPage();
 	}
@@ -86,221 +72,167 @@ public class BatchStatusLogsPage extends SeleniumBase
 	public PrintQueueErrorsPage navigatetoPrintQueueErrors() throws InterruptedException 
 	{
 		clickLink(eleBatchErrorsExpandLink);
-		clickLink(elePrintQueueErrors);
+		clickLink(elesfPrintQueueErrors);
 		Thread.sleep(3000);
 		return new PrintQueueErrorsPage();
 	}
 	
 	public BatchStatusLogsPage verifyFieldsPresent() throws Exception
 	{
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);
-		verifyDisplayed(eledtFromDate,eledtFromDate);
-		verifyDisplayed(eledtToDate,eledtToDate);
-		verifyDisplayed(elebtnSearch,elebtnSearch);
-		verifyDisplayed(elebtnClear,elebtnClear);
-		verifyDisplayed(eledtFromDate,eledtFromDate);
-		
-	
-		verifyDisplayed(elehdrProcessDate,elehdrProcessDate);
-		//verifyDisplayed(elehdrJobID);
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		verifyDisplayed(eletxtFromDate,elelblFromDate);
+		verifyDisplayed(eletxtThroughDate,elelblThroughDate);
+		verifyDisplayed(cloc.eleicnSearch,cloc.eleicnSearch);
+		verifyDisplayed(cloc.eleicnClear,cloc.eleicnClear);
+		/*verifyDisplayed(elehdrProcessDate,elehdrProcessDate);
 		verifyDisplayed(elehdrJobDescription,elehdrJobDescription);
 		verifyDisplayed(elehdrBatchName,elehdrBatchName);
 		verifyDisplayed(elehdrStartTime,elehdrStartTime);
 		verifyDisplayed(elehdrEndTime,elehdrEndTime);
 		verifyDisplayed(elehdrRecordCount,elehdrRecordCount);
-		verifyDisplayed(elehdrBatchStatus,elehdrBatchStatus);
-		
+		verifyDisplayed(elehdrBatchStatus,elehdrBatchStatus);*/
+		verifyGridHeaders("Process Date","Job Description","Batch Name","Start Time","End Time","Record Count","Batch Status");
 		inquirewithFromDate();
-		click(Eleicnaccordion);
-		
-		verifyDisplayed(eledispProcedureName,eledispProcedureName);
-		verifyDisplayed(eledispErrorSEQ,eledispErrorSEQ);
-		verifyDisplayed(eledispWorker,eledispWorker);
-		verifyDisplayed(eledispCursorLocation,eledispCursorLocation);
-		verifyDisplayed(eledispExecutionLocation,eledispExecutionLocation);
-		verifyDisplayed(eledispKeyValues,eledispKeyValues);
-		verifyDisplayed(eledispErrorDescription,eledispErrorDescription);
-		
+		click(cloc.eleicnOpenAccordion);
+		verifyDisplayed(elealblProcedureName,elealblProcedureName);
+		verifyDisplayed(elealblErrorSeq,elealblErrorSeq);
+		verifyDisplayed(elealblWorker,elealblWorker);
+		verifyDisplayed(elealblCursorLocation,elealblCursorLocation);
+		verifyDisplayed(elealblExecutionLocation,elealblExecutionLocation);
+		verifyDisplayed(elealblKeyValues,elealblKeyValues);
+		verifyDisplayed(elealblErrorDescription,elealblErrorDescription);
 		return this;
 	}
 	
-	public void verifyCharecterAllowancePositiveScenario(){
-		
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);		
-		VerifyChar_allowance(eledtFromDate,"11/01/2019");
-		VerifyChar_allowance(eledtToDate,"11/07/2019");
-		
-	}
-	
-	
-	public void verifyCharecterAllowanceNegativeScenario(){
-		
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);
-		
-		
-		VerifyChar_NotAllowance(eledtFromDate,"abcd");
-		VerifyChar_NotAllowance(eledtFromDate,"^*&&*^*");
-		VerifyChar_NotAllowance(eledtToDate,"abcd");
-		VerifyChar_NotAllowance(eledtToDate,"^*&&*^*");
-		
-		
-	}
-	
-	
-	
-	
-	
-	
-	public void VerifyFieldLength(){
-		
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);
-		
-		verifyFieldLength(eledtFromDate, "12345678", 10);
-		verifyFieldLength(eledtToDate, "12345678", 10);
-		
-	}
-	
-	public void VerifyCopyPasteAllowance() throws AWTException{
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);
-		copypaste(eledtFromDate, "11/01/2019", 8);
-		copypaste(eledtToDate, "11/07/2019", 8);
-		
-	}
-	
-	
-	
-	public void inquirewithFromDate(){
-		
-			
-		clearAndType(eledtFromDate,eledtlblFromDate, "10312019");
-		setPastDate(eledtToDate);
-		
-		//eledtToDate.sendKeys("09302019");
-		//selectDateFromCalendar(eledtToDate);
-		
-		
-		click(elebtnSearch);
-		
-	}
-	
-	
-	
-	public void verifyError_NullFromDate() throws InterruptedException
+	public BatchStatusLogsPage verifyCharacterAllowancePositiveScenario()
 	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);		
+		VerifyChar_allowance(eletxtFromDate,"11/01/2019");
+		VerifyChar_allowance(eletxtThroughDate,"11/07/2019");
+		return this;
+	}
+	
+	
+	public BatchStatusLogsPage verifyCharacterAllowanceNegativeScenario()
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		VerifyChar_NotAllowance(eletxtFromDate,"abcd");
+		VerifyChar_NotAllowance(eletxtFromDate,"^*&&*^*");
+		VerifyChar_NotAllowance(eletxtThroughDate,"abcd");
+		VerifyChar_NotAllowance(eletxtThroughDate,"^*&&*^*");
+		return this;
+	}
+	
+	
+	public BatchStatusLogsPage verifyFieldLength()
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		verifyFieldLength(eletxtFromDate, "12345678", 10);
+		verifyFieldLength(eletxtThroughDate, "12345678", 10);
+		return this;
+	}
+	
+	public BatchStatusLogsPage VerifyCopyPasteAllowance() throws AWTException
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		copypaste(eletxtFromDate, "11/01/2019", 8);
+		copypaste(eletxtThroughDate, "11/07/2019", 8);
+		return this;
+	}
+	
+	
+	
+	public BatchStatusLogsPage inquirewithFromDate()
+	{
+		clearAndType(eletxtFromDate,elelblFromDate, "10312019");
+		setPastDate(eletxtThroughDate);
+		click(cloc.eleicnSearch);
+		return this;
+	}
+	
 		
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);
-		clear(eledtFromDate);
+	public BatchStatusLogsPage verifyError_NullFromDate() throws InterruptedException
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		clear(eletxtFromDate);
 		Thread.sleep(1000);
-		click(elebtnSearch);
-			
-		verifyPartialText(eleErrorPanel, "Enter Required Fields");
-			
-		
+		click(cloc.eleicnSearch);
+		verifyExactText(cloc.eleErrStatusBar, "From Date :  Enter Required Fields");
+		return this;
 	}
 	
-	public void verifyInvalidFromDate()
+	public BatchStatusLogsPage verifyInvalidFromDate()
 	{
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);
-		clearAndType(eledtFromDate,eledtlblFromDate, "321321");
-		click(elebtnSearch);		
-		verifyPartialText(eleErrorPanel, "Invalid Date");
-			
-		
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		clearAndType(eletxtFromDate,elelblFromDate, "321321");
+		click(cloc.eleicnSearch);		
+		verifyExactText(cloc.eleErrStatusBar, "From Date :  Invalid Date");
+		return this;
 	}
-	
-	
-	public void verifyInvalidToDate()
+		
+	public BatchStatusLogsPage verifyInvalidThroughDate()
 	{
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
 		System.out.println("********1***************");
-		setPastDate(eledtFromDate);
-		
-		
-		clearAndType(eledtToDate,eledtlblToDate, "34/53/4534");
+		setPastDate(eletxtFromDate);
+		clearAndType(eletxtThroughDate,elelblThroughDate, "34/53/4534");
 		System.out.println("********2***************");
-		click(elebtnSearch);		
-		verifyPartialText(eleErrorPanel, "Invalid Date");
-			
-		
-	}
-	
-
-	
-	
-	public void verifyFutureFromDate()
-	{
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);		
-		setFutureDate(eledtFromDate);
-		click(elebtnSearch);		
-		verifyPartialText(eleErrorPanel, "Future Date is not Allowed");
-			
-		
-	}
-	
-	public void verifyFutureToDate()
-	{
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);	
-	
-		setPastDate(eledtFromDate);
-		setFutureDate(eledtToDate);
-		click(elebtnSearch);		
-		verifyPartialText(eleErrorPanel, "Future Date is not Allowed");
-			
-		
+		click(cloc.eleicnSearch);		
+		verifyExactText(cloc.eleErrStatusBar, "Through Date :  Invalid Date");
+		return this;
 	}
 	
 	
-	public void verifyGreaterThroughDate()
+	public BatchStatusLogsPage verifyFutureFromDate()
 	{
-		
-		
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);		
-		
-		
-		
-		setCurrentDate(eledtFromDate);
-		setPastDate(eledtToDate);	
-		click(elebtnSearch);		
-		verifyPartialText(eleErrorPanel, "Through Date Must be Greater than or Equal to From Date");
-			
-		
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);		
+		setFutureDate(eletxtFromDate);
+		click(cloc.eleicnSearch);		
+		verifyExactText(cloc.eleErrStatusBar, "From Date :  Future Date is not Allowed");
+		return this;
+	}
+	
+	public BatchStatusLogsPage verifyFutureToDate()
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);	
+		setPastDate(eletxtFromDate);
+		setFutureDate(eletxtThroughDate);
+		click(cloc.eleicnSearch);		
+		verifyExactText(cloc.eleErrStatusBar, "Through Date :  Future Date is not Allowed");
+		return this;
+	}
+	
+	
+	public BatchStatusLogsPage verifyEarlierThroughDate()
+	{
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);		
+		setCurrentDate(eletxtFromDate);
+		setPastDate(eletxtThroughDate);	
+		click(cloc.eleicnSearch);		
+		verifyExactText(cloc.eleErrStatusBar, "Through Date :  Through Date Must be Greater than or Equal to From Date");
+		return this;
 	}
 
-	public void verifyNoMatchRecords()
+	public BatchStatusLogsPage verifyNoMatchRecords()
 	{
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);
-
-			
-		setCurrentDate(eledtFromDate);
-		setCurrentDate(eledtToDate);
-
-		click(elebtnSearch);		
-		verifyPartialText(eleErrorPanelNoMatch, "No Matching Records Found");
-			
-		
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		setCurrentDate(eletxtFromDate);
+		setCurrentDate(eletxtThroughDate);
+		click(cloc.eleicnSearch);		
+		verifyExactText(cloc.eleErrStatusBar, "No Matching Records Found");
+		return this;
 	}
 	
 	
-	public void verifySuccesfulInquiry() throws InterruptedException
+	public BatchStatusLogsPage verifySuccesfulInquiry() throws InterruptedException
 	{
 		Thread.sleep(2000);
-		clickIcon(eleicnSelectFilter, elelblSelectFilter);
-	
-		
-		clearAndType(eledtFromDate,eledtlblFromDate, "10012019");
-		clearAndType(eledtToDate,eledtlblFromDate, "10312019");
-		
-	
-		click(elebtnSearch);
-		
+		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
+		clearAndType(eletxtFromDate,elelblFromDate, "11012019");
+		clearAndType(eletxtThroughDate,elelblThroughDate, "11192019");
+		click(cloc.eleicnSearch);
 		VerifyGridHasData(EleGridData);
-		
-			
-		
+		return this;
 	}
-	
-	
-	
-	
 
 }

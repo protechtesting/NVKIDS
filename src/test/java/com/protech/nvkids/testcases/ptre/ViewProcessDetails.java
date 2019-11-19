@@ -26,6 +26,8 @@ public class ViewProcessDetails extends SeleniumBase
 {   
 
 	CommonLocators  cloc = new CommonLocators();
+	
+	
 
 	//@Test(priority=1,description="NavigateToViewProcessDetails and Verify the fields in View Process Details screen")
 	public void VerifyScreenFields() throws Exception
@@ -106,10 +108,63 @@ public class ViewProcessDetails extends SeleniumBase
 		new LoginPage().login().quickNavigation_PTRE().InquirewithNoValue();
 	}
 
-	@Test(priority=12,description="Verify Grid Options")
+	
+
+	//@Test(priority=12,description="Verify Grid Options")
 	public void VerifyGridOptions() throws Exception{
 		new LoginPage().login().quickNavigation_PTRE().VerifyGridOptionsValues();
 	}
+	
+	//@Test(priority=13,description="Check Show Filters")
+	public void selShowFilters() throws Exception{
+		new LoginPage().login().quickNavigation_PTRE().checkShowFiltersPTRE();
+
+	}
+	//@Test(priority=14,description="UnCheck Show Filters")
+	public void unselShowFilters() throws Exception{
+		new LoginPage().login().quickNavigation_PTRE().UnCheckShowFiltersPTRE();
+
+	}
+	//@Test(priority=15,description="Click Reset")
+	public void selReset() throws Exception{
+		new LoginPage().login().quickNavigation_PTRE().clickResetFilterPTRE();
+
+	}
+	@Test(priority=16,description="Verify ShowColumns values", testName="showColumnValues")
+	public void verifyShowColumns() throws Exception{
+		new LoginPage().login().quickNavigation_PTRE().verifyShowColumnsPTRE();
+
+	}
+	/*@Test(priority=17,description="check show columns")
+	public void selaColumn() throws Exception{
+		new LoginPage().login().quickNavigation_PTRE().selectShowColumnPTRE();
+
+	}
+	@Test(priority=18,description="Uncheck show columns")
+	public void unselaColumn() throws Exception{
+		new LoginPage().login().quickNavigation_PTRE().UnselectShowColumnPTRE();
+
+	}
+	@Test(priority=19,description="Verify download options")
+	public void verifyDownloadFormatOptions() throws Exception{
+		new LoginPage().login().quickNavigation_PTRE().verifyDownloadFileOptionsPTRE();
+
+	}
+	@Test(priority=20,description="Download File")
+	public void selFormatAndDownload() throws Exception{
+		new LoginPage().login().quickNavigation_PTRE().ClickAndDownloadFilePTRE();
+
+	}
+	*/
+	
+	
+	
+	
+
+	
+
+
+
 
 
 

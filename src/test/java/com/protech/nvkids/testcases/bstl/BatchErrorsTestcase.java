@@ -10,104 +10,67 @@ import com.protech.selenium.api.base.SeleniumBase;
 public class BatchErrorsTestcase extends SeleniumBase 
 {
 	
-	@Test(priority=13,description="verify the fields present in Batch Errors screen")
-	public void TC13_verifyfieldspresent() throws Exception
+	@Test(testName="TC14_Navigate and Verify Fields",priority=14,description="Navigate to Batch Errors screen and verify the fields present")
+	public void verifyfieldspresent() throws Exception
 	{
-		
-		
-		
 		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyFieldsPresent();
-		
 	}
 	
-	
-	@Test(priority=14,description="VerifyAlphaCharAllowanceFromDate")
-	public void TC14_VerifyCharAllowance_PositiveScenario() throws Exception
+	@Test(testName="TC15_Verify alpha char allowance",priority=15,description="Verify Alphachar allowed in From Date Field")
+	public void verifyCharAllowance_PositiveScenario() throws Exception
 	{
-			
-	
-		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyCharecterAllowancePositiveScenario();
-	
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyCharacterAllowancePositiveScenario();
 	}
 	
-	@Test(priority=15,description="VerifyAlphaCharAllowanceFromDate")
-	public void TC15_VerifyCharAllowance_NegativeScenario() throws Exception
+	@Test(testName="TC16_Verify alpha char not allowed",priority=16,description="Verify Alphachar not allowed in From Date Field")
+	public void verifyCharAllowance_NegativeScenario() throws Exception
 	{
-			
-	
-			
-		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyCharecterAllowanceNegativeScenario();
-	
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyCharacterAllowanceNegativeScenario();
 	}
 	
-   @Test(priority=16,description="VerifyFieldslength")
-	public void TC16_VerifyFieldsLength() throws Exception
+    @Test(testName="TC17_Verify Field Lengths",priority=17,description="Verify Field length")
+	public void verifyFieldsLength() throws Exception
 	{
-			
-	
-		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().VerifyFieldLength();
-	
+    	new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyFieldLength();
 	}
 	
-	
-	@Test(priority=17,description="verify the fnull process date")
-	public void TC17_verifyNullProcessDate() throws Exception
+	@Test(testName="TC18_Inquire With No Process Date",priority=18,description="Inquire With No Process Date")
+	public void verifyNullProcessDate() throws Exception
 	{
-		
-			
-		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyError_NullProcessDate();
-		
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().inquireWithNoProcessDate();
 	}
 	
-	@Test(priority=18,description="verify the fields with verifyInvalidToDate")
-	public void TC18_verifyInvalidProcessDate() throws Exception
+	@Test(testName="TC19_Inquire With Invalid Process Date",priority=19,description="Inquire With Invalid Process Date")
+	public void verifyInvalidProcessDate() throws Exception
 	{
-	
-		
 		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyInvalidProcessDate();
-	
 	}
 	
 	
-	@Test(priority=19,description="verifyValidation_VerifyFutureProcessDate")
-	public void TC19_verifyValidation_VerifyFutureProcessDate() throws Exception
+	@Test(testName="TC20_Inquire With Future Process Date",priority=20,description="Inquire With Future Date in Process Date Field")
+	public void InquireWithFutureProcessDate() throws Exception
 	{
-		
-	
-		
-		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyFutureProcessdate();
-	
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyFutureProcessDate();
 	}
 	
-	
-	@Test(priority=20,description="verify the fields with _NoMatchingRecords")
-	public void TC20_verify_NoMatchingRecords() throws Exception
+	@Test(testName="TC21_Inquire With Date having no data",priority=21,description="Verify No Matching Records Found Message")
+	public void verifyNoMatchingRecords() throws Exception
 	{
-
-		
 		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyNoMatchRecords();
-	
 	}
 	
-	
-	@Test(priority=21,description="verify whether the successful inquiry was happended")
-	public void TC21_verify_SuccessfulInquiry() throws Exception
+	@Test(testName="TC22_Perform Successful Inquiry",priority=22,description="Verify Successful inquiry is done")
+	public void verifySuccessfulInquiry() throws Exception
 	{
-		
-		
-		
 		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifySuccessfulInquiry();
-	
 	}
 	
-	@Test(priority=21,description="verify copy paste allowance in Process Date field")
-	public void TC21_verify_CopyPasteAllowance() throws Exception
+	@Test(testName="TC22_Verify Copy Paste allowed",priority=23,description="Verify copy paste allowance in Process Date field")
+	public void verifyCopyPasteAllowance() throws Exception
 	{
-		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().VerifyCopyPasteAllowance();
-		
+		new LoginPage().login().quickNavigation_BSTL().navigatetoBatchErrors().verifyCopyPasteAllowance();
 	}
 	
-
 }
 
 
