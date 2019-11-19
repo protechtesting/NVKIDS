@@ -19,7 +19,7 @@ public class EditFamilialRestrictedCasesPage extends SeleniumBase
 	CommonLocators cloc = new CommonLocators();
 	//Screen functions
 	
-	@FindBy(xpath = "//span[text()='Edit Familial Restricted Cases Status']") WebElement eleEditScreenName;
+	@FindBy(xpath = "//span[text()='Edit Familial Restricted Cases Status']") WebElement elesfEditFamilialRestrictedCasesStatus;
 	@FindBy(xpath = "//label[text()=' Case ']") WebElement elelblCase;
 	@FindBy(xpath = "//label[text()=' Participant ']") WebElement elelblParticipant;
 	@FindBy(xpath = "//label[text()=' User ']") WebElement elelblUser;
@@ -29,8 +29,8 @@ public class EditFamilialRestrictedCasesPage extends SeleniumBase
 	@FindBy(xpath = "//label[text()='Active']") WebElement elelblActive;
 	@FindBy(xpath = "//label[text()='Inactive']") WebElement elelblInactive;
 	
-	@FindBy(xpath = "//label[text()='Active']/preceding::span[1][contains(@class,'radiobutton')]")  WebElement eleActiveRadio;
-	@FindBy(xpath = "//label[text()='Inactive']/preceding::span[1][contains(@class,'radiobutton')]")  WebElement eleInactiveRadio;
+	@FindBy(xpath = "//label[text()='Active']/preceding::span[1][contains(@class,'radiobutton')]")  WebElement elerbActive;
+	@FindBy(xpath = "//label[text()='Inactive']/preceding::span[1][contains(@class,'radiobutton')]")  WebElement elerbInactive;
 	
 	
 	
@@ -39,7 +39,7 @@ public class EditFamilialRestrictedCasesPage extends SeleniumBase
 		
 		
 
-		verifyDisplayed(eleEditScreenName,eleEditScreenName);
+		verifyDisplayed(elesfEditFamilialRestrictedCasesStatus,elesfEditFamilialRestrictedCasesStatus);
 		
 		verifyDisplayed(elelblCase,elelblCase);
 		verifyDisplayed(elelblParticipant,elelblParticipant);
@@ -47,8 +47,8 @@ public class EditFamilialRestrictedCasesPage extends SeleniumBase
 		verifyDisplayed(elelblReason,elelblReason);
 		verifyDisplayed(elelblStatus,elelblStatus);
 		verifyDisplayed(elelblUser,elelblUser);
-		verifyDisplayed(elelblActive,eleActiveRadio);
-		verifyDisplayed(elelblInactive,eleInactiveRadio);
+		verifyDisplayed(elelblActive,elerbActive);
+		verifyDisplayed(elelblInactive,elerbInactive);
 		
 		
 		return this;
@@ -59,7 +59,7 @@ public class EditFamilialRestrictedCasesPage extends SeleniumBase
 	{
 		
 	
-    click(eleInactiveRadio);
+    click(elerbInactive);
     clickIcon(cloc.eleicnSave, cloc.eleicnSave);
     verifyExactText(cloc.eleErrStatusBar, "Saved Successfully.");
 

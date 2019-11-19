@@ -20,31 +20,27 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 	
 	CommonLocators cloc = new CommonLocators();
 	//Screen functions
-	@FindBy(xpath="//h5[text()='High Profile Restricted Cases']") WebElement eleHighProfileRestrictedCasesScreenFunction;
+	@FindBy(xpath="//h5[text()='High Profile Restricted Cases']") WebElement elesfHighProfileRestrictedCases;
 	
 	
 	//Filter Section
-	@FindBy(xpath ="//label[text()='Case']") WebElement elelblCaseID;
-	@FindBy(id="caseId") WebElement eleFilterCaseID;
-	@FindBy(xpath ="//label[text()='Participant']") WebElement elelblParticipantID;
-	@FindBy(id="personId") WebElement eleFilterParticipantID;
+	@FindBy(xpath ="//label[text()='Case']") WebElement elelblCase;
+	@FindBy(id="caseId") WebElement eletxtCaseID;
+	@FindBy(xpath ="//label[text()='Participant']") WebElement elelblParticipant;
+	@FindBy(id="personId") WebElement eletxtParticipantID;
 	
-	
-	//AddScreenFunction
-	@FindBy(xpath = "//span[text()='Add']") WebElement EleAddicon;
-	
-	
+
 	//edit double click
 	@FindBy(xpath = "//tr[1]/td[1]/div/div") WebElement elegridrow;
 	
 	//Navigate to Familial Restricted Cases
 	
-	@FindBy(xpath = "//span[text()='Familial Restricted Cases']") WebElement NavigatetoFamilialSF;
+	@FindBy(xpath = "//span[text()='Familial Restricted Cases']") WebElement elelinkFamilialRestrictedCase;
 
 	public ViewHighProfileRestrictedCasesPage verifyFieldsPresent() throws Exception
 	{
 
-		verifyDisplayed(eleHighProfileRestrictedCasesScreenFunction,eleHighProfileRestrictedCasesScreenFunction);
+		verifyDisplayed(elesfHighProfileRestrictedCases,elesfHighProfileRestrictedCases);
 		verifyGridHeaders(" Case "," Participant "," Reason "," Status ");
 		verifyAssociatedScreens("Note Processor");
 		
@@ -55,8 +51,8 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 	{
 		
 		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
-		clear(eleFilterCaseID);
-		clear(eleFilterParticipantID);
+		clear(eletxtCaseID);
+		clear(eletxtParticipantID);
 
 		clickIcon(cloc.eleicnSearch,cloc.eleicnSearch);
 		verifyPartialText(cloc.eleStatusBar, "Done");
@@ -68,7 +64,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 	{
 		
 		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
-		clearAndType(eleFilterCaseID,elelblCaseID, "3123678901");
+		clearAndType(eletxtCaseID,elelblCase, "3123678901");
 		
 		clickIcon(cloc.eleicnSearch,cloc.eleicnSearch);
 		verifyPartialText(cloc.eleStatusBar, "Done");
@@ -81,7 +77,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 	{
 		
 		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
-		clearAndType(eleFilterParticipantID,elelblParticipantID, "1000000022");
+		clearAndType(eletxtParticipantID,elelblParticipant, "1000000022");
 		
 		clickIcon(cloc.eleicnSearch,cloc.eleicnSearch);
 		verifyPartialText(cloc.eleStatusBar, "Done");
@@ -94,7 +90,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 	{
 		
 		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
-		verifyFieldLength(eleFilterCaseID, "3123678901", 10);
+		verifyFieldLength(eletxtCaseID, "3123678901", 10);
 		
 		return this;
 		
@@ -104,7 +100,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 	{
 		
 		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
-		verifyFieldLength(eleFilterParticipantID, "1000000022", 10);
+		verifyFieldLength(eletxtParticipantID, "1000000022", 10);
 		
 		return this;
 		
@@ -116,7 +112,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 
         
 		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
-		clearAndType(eleFilterCaseID,elelblCaseID, "3200000001");
+		clearAndType(eletxtCaseID,elelblCase, "3200000001");
 		
 		clickIcon(cloc.eleicnSearch,cloc.eleicnSearch);
 		verifyPartialText(cloc.eleErrStatusBar, "No Matching Records Found");
@@ -129,7 +125,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 
         
 		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
-		clearAndType(eleFilterParticipantID,elelblParticipantID, "1000000003");
+		clearAndType(eletxtParticipantID,elelblParticipant, "1000000003");
 		
 		clickIcon(cloc.eleicnSearch,cloc.eleicnSearch);
 		verifyPartialText(cloc.eleErrStatusBar, "No Matching Records Found");
@@ -142,7 +138,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 
         
 		clickIcon(cloc.eleicnFilter, cloc.eleicnFilter);
-		clearAndType(eleFilterCaseID,elelblCaseID, "3200000001");
+		clearAndType(eletxtCaseID,elelblCase, "3200000001");
 		
 		clickIcon(cloc.eleicnSearch,cloc.eleicnSearch);
 		verifyPartialText(cloc.eleStatusBar, "Done");
@@ -155,7 +151,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 
         
 		clickIcon(cloc.eleicnFilter,cloc.eleicnFilter);
-		clearAndType(eleFilterParticipantID,elelblParticipantID, "1000000002");
+		clearAndType(eletxtParticipantID,elelblParticipant, "1000000002");
 		
 		clickIcon(cloc.eleicnSearch,cloc.eleicnSearch);
 		verifyPartialText(cloc.eleStatusBar, "Done");
@@ -165,7 +161,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 	
 	public AddHighProfileRestrictedCasesPage NavigatetoAddHighRSTR() throws Exception
 	{
-		clickIcon(EleAddicon,EleAddicon);
+		clickIcon(cloc.eleicnAdd,cloc.eleicnAdd);
 		return new AddHighProfileRestrictedCasesPage();
 	}
 	
@@ -177,7 +173,7 @@ public class ViewHighProfileRestrictedCasesPage extends SeleniumBase
 	
 	public ViewFamilialRestrictedCasesPage NavigatetoFamilialScreenFunction() throws Exception
 	{
-		clickIcon(NavigatetoFamilialSF,NavigatetoFamilialSF);
+		clickIcon(elelinkFamilialRestrictedCase,elelinkFamilialRestrictedCase);
 		return new ViewFamilialRestrictedCasesPage();
 	}
 	

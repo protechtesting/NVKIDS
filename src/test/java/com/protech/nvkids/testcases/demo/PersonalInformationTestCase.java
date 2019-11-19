@@ -13,6 +13,6 @@ public class PersonalInformationTestCase extends SeleniumBase
 	
 	public void UploadButton() throws Exception 
 	{
-		new LoginPage().login().quickNavigation_DEMOV2().Upload();
+		new LoginPage().login().quickNavigation_DEMO().Upload();
 	}
 }

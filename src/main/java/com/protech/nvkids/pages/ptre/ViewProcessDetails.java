@@ -53,7 +53,7 @@ public class ViewProcessDetails extends SeleniumBase
 	@FindBy(xpath="//span[text()='Download File']") public WebElement eleDownloadFile;
 	@FindAll(value = { @FindBy(xpath="//div[@class='ui-overlaypanel-content']/div/child::p-checkbox//child::label") }) public List <WebElement> eleShowColumOptions;
 	@FindAll(value = { @FindBy(xpath="//div[@class='ui-overlaypanel-content']/div[@class='filterItems']") }) public List <WebElement> eleDownloadFileOptions;
-	@FindBy(xpath="//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]/descendant::span") public List <WebElement> eleGridOptionsPanel;
+	@FindBy(xpath="//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]") public List <WebElement> eleGridOptionsPanel;
 	@FindBy(xpath="//div[contains(@class,'errorContainer')]/div/span") public WebElement eleStatusBarInfo;
 
 	//Status Bar:
@@ -241,7 +241,7 @@ public class ViewProcessDetails extends SeleniumBase
 		Thread.sleep(3000);
 		click(eleGridOptions);
 		Thread.sleep(3000);
-		verifyGridOptions("Show Columns","Download File");
+		verifyGridOptions("Show Filters","Show Columns","Download File");
 	}
 
 
@@ -252,12 +252,10 @@ public class ViewProcessDetails extends SeleniumBase
 			ArrayList<String> expec = new ArrayList<String>();
 			List<WebElement> GridValues = eleGridOptionsPanel;
 			for (WebElement col : GridValues){
-				if(col.getText().contains("Download") == true ){
-					break;
-				}
-				else{
-					GridOptions.add(col.getText().trim());
-					//System.out.println(col.findElement(By.tagName("label")).getText());
+				String s = col.getText().trim().replaceAll("[^a-z A-Z]", "");
+				GridOptions.add(s.trim());
+
+					
 				}
 
 				for(String exp : data ){
@@ -279,8 +277,9 @@ public class ViewProcessDetails extends SeleniumBase
 
 					log.info("Grid Options is not present");
 					reportStep("Grid Options is not present", "fail");
+					Assert.fail("Grid Options is not present");
 				}
-			}
+			
 		}
 		catch (Exception e) 
 		{

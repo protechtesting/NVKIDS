@@ -30,15 +30,6 @@ public class HomePage extends SeleniumBase{
 	@FindBy(xpath = "//span[@title='Quick Navigation']") WebElement eleQuickNavigation;
 	@FindBy(xpath = "(//input[@type='text'])[2]") WebElement eletxtQuickNavigationText;
 	
-	@FindBy(xpath = "//span[text()='Participant']") WebElement elelnkParticpant;
-	
-	@FindBy(xpath = "//span[text()='Participant Demographics']") WebElement ElelnkPartdemo;
-	
-	@FindBy(xpath = "//span[text()='Personal Information']") WebElement ElelnkPersonalInformation;
-	
-	
-	
-	
 	
 	public  BatchStatusLogsPage quickNavigation_BSTL() throws IOException
 	{
@@ -78,17 +69,6 @@ public class HomePage extends SeleniumBase{
 		clickIcon(eleQuickNavigation, eleQuickNavigation);
 		clearAndType(eletxtQuickNavigationText, eletxtQuickNavigationText, "DEMO");
 		pressEnterKey(eletxtQuickNavigationText);
-		return  new PersonalInformationPage();
-	}
-	
-	public PersonalInformationPage quickNavigation_DEMOV2() throws IOException
-	{
-		
-		
-		
-		clickIcon(elelnkParticpant, elelnkParticpant);
-		clickIcon(ElelnkPartdemo, ElelnkPartdemo);
-		clickIcon(ElelnkPersonalInformation, ElelnkPersonalInformation);
 		return  new PersonalInformationPage();
 	}
 	

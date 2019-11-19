@@ -124,7 +124,8 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 
 
 		Test testClass = m.getAnnotation(Test.class); 
-		testcaseName = m.getName();                    // Returns the method name - LeftPanel TC name in Report
+		//testcaseName = m.getName();                    
+		testcaseName = testClass.testName(); // Returns the method name - LeftPanel TC name in Report
 		testcaseDec= testClass.description();        // Returns description which is exist inside the @Test (attributes)
 		String[] group = new String[testClass.groups().length];
 
@@ -139,7 +140,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		else 
 			category="";
 
-		startApp("chrome", "http://192.168.111.183:81/login/");
+		startApp("chrome", "http://192.168.111.156:81/");
 		report();
 
 	}
@@ -362,7 +363,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 				log.info("The data " +data+ " is entered into the field Successfully");
 				reportStep("The Data '" + data + "' entered Successfully in the '"+label.getText()+"' field", "pass");
 			}
-			
+
 		} 
 		catch (Exception e) 
 		{   
@@ -385,7 +386,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		try 
 		{  
 			wait = new WebDriverWait(driver, 10);
-		    wait.until(ExpectedConditions.elementToBeClickable(ele));
+			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			new Select(ele).selectByVisibleText(value);
 			log.info("The dropdownvalue " + value + " is successfully selected");
 			reportStep("The dropdownvalue " + value + " is successfully selected", "pass");
@@ -460,19 +461,19 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 			{
 				for(int i=0;i<options.size();i++)
 				{
-				    if(options.get(i).getText().equals(value))
-				    {
-				        options.get(i).click();
-				        reportStep("The dropdowntext '" + options.get(i).getText() + "'is successfully selected", "pass");
-				        break;
-				    }
-				    else
+					if(options.get(i).getText().equals(value))
+					{
+						options.get(i).click();
+						reportStep("The dropdowntext '" + options.get(i).getText() + "'is successfully selected", "pass");
+						break;
+					}
+					else
 					{
 						reportStep("The dropdowntext '" + options.get(i).getText() + "'is not selected", "fail");
 						Assert.fail();				
 					}
 				}
-				
+
 			}
 		}
 		catch (Exception e) 
@@ -512,7 +513,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 				reportStep("The dropdowntext '" + options.get(randnMumber).getText() + "'is not selected", "fail");
 				Assert.fail();				
 			}
-			
+
 		}
 		catch (Exception e) 
 		{
@@ -529,7 +530,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		}
 
 	}
-	
+
 	@Override
 	public void switchToAlert() 
 	{
@@ -785,8 +786,9 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 	}
 
 	@Override
-	public void setFutureDate(WebElement ele) 
+	public String setFutureDate(WebElement ele) 
 	{
+		String futuredate="";
 		try 
 		{
 			DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
@@ -796,17 +798,19 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 			Calendar c = Calendar.getInstance();
 			c.setTime(currentDate);
 			c.add(Calendar.DATE, 1);
-			String futuredate = dateFormat.format(c.getTime());
+			futuredate = dateFormat.format(c.getTime());
 			futuredate=futuredate.replace("/", "");
 			clear(ele);
 			ele.sendKeys(futuredate);
 			log.info("Future date " +futuredate+ " successfully entered");
-			reportStep("future date successfully entered in '"+ele.getAttribute("id")+"'field", "pass");
+			reportStep("Future date successfully entered in '"+ele.getAttribute("id")+"'field", "pass");
+
 		}
 		catch (Exception e) 
 		{
 			e.printStackTrace();
-			reportStep("failed to enter future date in '"+ele.getAttribute("id")+"'field", "fail");
+			reportStep("Failed to enter future date in '"+ele.getAttribute("id")+"'field", "fail");
+			Assert.fail();
 			log.error("Failed to enter future date");
 		}
 		finally 
@@ -814,6 +818,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 			takeSnap();
 			log.info("Screenshot taken");
 		}
+		return futuredate;
 	}
 
 	@Override
@@ -1571,7 +1576,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		try 
 		{
 			wait = new WebDriverWait(driver, 15);
-			wait.until(ExpectedConditions.textToBePresentInElement(ele, expectedText));
+			wait.until(ExpectedConditions.visibilityOf(ele));
 			if(ele.getText().equals(expectedText))
 			{
 				reportStep("The expected text contains the actual '" + expectedText +"'", "pass");
@@ -1581,7 +1586,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 			{
 				reportStep("The expected text does not contains the actual '" + expectedText +"'", "fail");
 				log.info("The expected text does not contains the actual '" + expectedText +"'");
-				Assert.fail();
+				Assert.fail("The expected text does not contains the actual '" + expectedText +"'");
 			}
 		}
 		catch (Exception e) 
@@ -1589,7 +1594,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 			e.printStackTrace();
 			reportStep("Unable to access the element ", "fail");
 			log.error("Unable to access the element ");
-			Assert.fail();
+			Assert.fail("Unable to access the element");
 		}
 	}
 
@@ -1599,7 +1604,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		try
 		{
 			wait = new WebDriverWait(driver, 20);
-			wait.until(ExpectedConditions.textToBePresentInElement(ele, expectedText));
+			wait.until(ExpectedConditions.visibilityOf(ele));
 			if(ele.getText().contains(expectedText)){
 				System.out.println("Actual text is"+ele.getText());
 				log.info("The expected text contains the actual " + expectedText);
@@ -1608,7 +1613,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 			else
 			{
 				reportStep("The expected text doesn't contain the actual " + expectedText, "fail");
-				Assert.fail("The expected text contains the actual " + expectedText);
+				Assert.fail("The expected text doesn't contains the actual " + expectedText);
 				log.error("The expected text doesn't contain the actual - " + expectedText);
 
 			}
@@ -1617,7 +1622,6 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		{
 			int position = e.toString().indexOf("Exception:");
 			String error = e.toString().substring(0, position + 10);
-			System.out.println(error);
 			reportStep("Unable to Access the Element", "fail");
 			Assert.fail("The expected text doesn't contain the actual " + expectedText);
 			log.error("The expected text doesn't contain the actual - " + expectedText);
@@ -1910,46 +1914,18 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 	}
 
 	@Override
-	public void verifyOptionalField(WebElement ele) 
+	public void verifyOptionalField(WebElement label) 
 	{
 		try 
 		{
-			if (!ele.getAttribute("span").equals("*")) 
+			if (!label.getText().contains("*")) 
 			{
-				log.info("Element " + ele + " is optional field");
-				reportStep("Element " + ele + " is optional field", "pass");
-				System.out.println("The verified field " + ele + " is a optional field");
-			}
-			/*else 
-			{
-				reportStep("Element " + ele + " is not a optional field", "pass");
-				System.err.println("Element " + ele + "is not optional");
-			}*/
-		} 
-		catch (Exception e) 
-		{
-			int position = e.toString().indexOf("Exception:");
-			String error = e.toString().substring(0, position + 10);
-			reportStep("Element " + ele + " is not a optional field", "fail");
-			log.error("Element " + ele + " is not a optional field");
-			System.err.println("Element " + ele + " is not a optional field");
-			throw new RuntimeException();
-		}
-	}
-
-	@Override
-	public void verifyRequiredField(WebElement ele,WebElement label) 
-	{
-		try 
-		{
-			if (ele.getText().equals("*")) 
-			{
-				reportStep("Element " +label.getText()+ " is a required field", "pass");
-				log.info("Element " + label.getText() + " is a required field");
+				log.info("Element " + label.getText() + " is optional field");
+				reportStep("Element "+"'" + label.getText() + "'" + " is an optional field", "pass");
 			}
 			else 
 			{
-				reportStep("Element " + label.getText() + " is not a required field, Asterisk(*) missing", "fail");
+				reportStep("Element "+"'" + label.getText() + "'" + "is not an optional field", "fail");
 				Assert.fail();
 			}
 		} 
@@ -1957,8 +1933,34 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		{
 			int position = e.toString().indexOf("Exception:");
 			String error = e.toString().substring(0, position + 10);
-			reportStep("Element " + label.getText() + " is not a required field, Asterisk(*) missing" + error, "fail");
-			log.error("Element " + label.getText() + " is not a required field, Asterisk(*) missing");
+			reportStep("Element "+"'" + label.getText() + "'" + "is not an optional field", "fail");
+			log.error("Element " +"'"+ label.getText() + "'" + "is not an optional field");
+			Assert.fail();
+		}
+	}
+
+	@Override
+	public void verifyRequiredField(WebElement label) 
+	{
+		try 
+		{
+			if (label.getText().contains("*")) 
+			{
+				reportStep("Element "+"'" + label.getText()+ "'" + "is a required field", "pass");
+				log.info("Element "+"'" + label.getText() + "'" + "is a required field");
+			}
+			else 
+			{
+				reportStep("Element "+"'" + label.getText() + "'" + "is not a required field, Asterisk(*) missing", "fail");
+				Assert.fail();
+			}
+		} 
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Element "+"'" + label.getText() + "'" + "is not a required Field, Asterisk(*) missing" + error, "fail");
+			log.error("Element "+"'" + label.getText() + "'" + "is not a required field, Asterisk(*) missing");
 			Assert.fail();
 		}
 	}
@@ -2110,11 +2112,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 
 	}
 
-	public String getErrorMessage()
-	{
-		return getElementText(new BatchStatusLogsPage().eleErrorPanel);
-	}
-
+	
 	@Override
 	//@Test
 	public void createHubforGrid() 
@@ -2348,12 +2346,12 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 
 
 	}
-	
+
 	@Override
 	public void verifyInnerGridHeaders(String...expected) {
 		try 
 		{
-			
+
 			ArrayList<String> Headers = new ArrayList<String>();
 			ArrayList<String> expec = new ArrayList<String>();
 			List<WebElement> InnerGridHeaders = driver.findElementsByXPath("(//thead[@class='ui-table-thead'])[2]/tr[1]/th/label");
@@ -2410,7 +2408,6 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 	{
 
 		try{
-			ele.clear();
 			ele.sendKeys(data);
 			if (ele.getAttribute("value").equals(data))
 			{
@@ -2433,7 +2430,6 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 	{
 
 		try{
-			ele.clear();
 			ele.sendKeys(data);
 			if (ele.getAttribute("value").length()==0)
 			{
@@ -2520,7 +2516,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		//Closing DB Connection
 		con.close();
 	}
-	
+
 	public void verifyInquiredGridResult( String data) {
 		try 
 		{
@@ -2569,7 +2565,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 			takeSnap();
 		}
 	}
-	
+
 	public void doubleClickGridResult( String data) {
 		try 
 		{
@@ -2620,27 +2616,27 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 	}
 
 	public void verifyErrorsInPanel(String... errors) 
-    {
-            try 
-            {
-            		Map<String,String> expMap=new LinkedHashMap<>();
-            		for(int i=0;i<errors.length;i=i+2)
-            		{
-            			expMap.put(errors[i],errors[i+1]);
-            		}
-            		System.out.println(expMap);
-                    Map<String,String> actMap=new LinkedHashMap<>();
-            		List<WebElement> allPanelMessages = driver.findElementByXPath("//div[contains(@class,'errorInfoPanel')]").findElements(By.tagName("div"));
-                    List<WebElement> indivPanelMsgs = driver.findElementsByXPath("//div[contains(@class,'errorInfoPanelItem')]//div[contains(@class,'p-col-12 no-pad')]");
-            		for(int i=0;i<indivPanelMsgs.size();i=i+2)
-            		{
-            			for(int j=1;j<indivPanelMsgs.size();j=j+2)
-							{	
-            				actMap.put(indivPanelMsgs.get(i).getText().substring(7),indivPanelMsgs.get(j).getText().substring(7));
-							}
-            		}
-            		System.out.println(actMap);
-            		/*if(expMap.equals(actMap))
+	{
+		try 
+		{
+			Map<String,String> expMap=new LinkedHashMap<>();
+			for(int i=0;i<errors.length;i=i+2)
+			{
+				expMap.put(errors[i],errors[i+1]);
+			}
+			System.out.println(expMap);
+			Map<String,String> actMap=new LinkedHashMap<>();
+			List<WebElement> allPanelMessages = driver.findElementByXPath("//div[contains(@class,'errorInfoPanel')]").findElements(By.tagName("div"));
+			List<WebElement> indivPanelMsgs = driver.findElementsByXPath("//div[contains(@class,'errorInfoPanelItem')]//div[contains(@class,'p-col-12 no-pad')]");
+			for(int i=0;i<indivPanelMsgs.size();i=i+2)
+			{
+				for(int j=1;j<indivPanelMsgs.size();j=j+2)
+				{	
+					actMap.put(indivPanelMsgs.get(i).getText().substring(7),indivPanelMsgs.get(j).getText().substring(7));
+				}
+			}
+			System.out.println(actMap);
+			/*if(expMap.equals(actMap))
             		{
             			reportStep("Expected error messages are shown in the error panel", "pass");
             		}
@@ -2649,35 +2645,726 @@ public class SeleniumBase extends Reporter implements Browser, Element {
             			reportStep("Expected error messages are not shown in the error panel", "fail");
             			Assert.fail();
             		}*/
-            		for (Entry<String,String> data : expMap.entrySet()) 
-            		{
-						if(!actMap.containsKey(data.getKey()) || !actMap.containsValue(data.getValue()))
-						{
-							reportStep("'"+data.getKey()+" : " +data.getValue()+"'"+ " --> missing in error panel","fail");
-							Assert.fail();	
+			for (Entry<String,String> data : expMap.entrySet()) 
+			{
+				if(!actMap.containsKey(data.getKey()) || !actMap.containsValue(data.getValue()))
+				{
+					reportStep("'"+data.getKey()+" : " +data.getValue()+"'"+ " --> missing in error panel","fail");
+					Assert.fail();	
+				}
+				else if(actMap.containsKey(data.getKey()) && actMap.containsValue(data.getValue()))
+				{
+					reportStep("'"+data.getKey()+" : " +data.getValue()+"'"+ " --> is present in error panel","pass");
+				}
+			}
+		}
+
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable to access the error panel --> " + error, "fail");
+			log.error("Unable to access the error panel  --> " + error);
+			Assert.fail();
+		}
+		finally 
+		{
+			takeSnap();
+		}
+	}
+
+	@Override
+	public void verifyGridOptions(String... data) {
+
+		try 
+		{   
+
+			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+			wait =new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+			ArrayList<String> GridOptions = new ArrayList<String>();
+			ArrayList<String> expec = new ArrayList<String>();
+			List<WebElement> GridValues = GridOptionList;
+			for (WebElement col : GridValues){
+				String s = col.getText().trim().replaceAll("[^a-z A-Z]", "");
+				GridOptions.add(s.trim());
+
+			}
+
+			for(String exp : data ){
+				expec.add(exp.trim());
+				//System.out.println(exp);
+			}
+
+			if (expec.equals(GridOptions)) 
+			{
+				log.info("Grid Options present");
+				for(String display : data){
+					System.out.println(display);
+					reportStep("Grid Options "+ display  +" is present", "pass");
+				}
+
+
+			}
+			else{
+
+				log.info("Grid Options is not present");
+				reportStep("Grid Options is not present", "fail");
+			}
+		}
+
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+
+	}
+
+	@Override
+	public void CheckShowFilters() {
+		try 
+		{   
+			List<WebElement> SelectCheckBox = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]/p-checkbox/label");
+			wait =new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(SelectCheckBox));
+			for(WebElement sel :SelectCheckBox ){
+
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				if(s.trim().equals("Show Filters")){
+					reportStep("Grid Options "+ s.trim()  +" is present", "pass");
+
+					if(!(sel.getAttribute("class").contains("ui-label-active"))){
+						click(sel);
+						log.info("Show Filter is selected");
+						reportStep("Show Filter is selected", "pass");
+					}
+					else if(sel.getAttribute("class").contains("ui-label-active")){
+						log.info("Show Filter is already selected");
+						reportStep("Show Filter is already selected", "pass");
+					}
+					else{
+						log.info("Grid Options is not present");
+						reportStep("Grid Options is not present", "fail");
+						Assert.fail("Grid options is not avaialbe");
+					}
+
+				}
+
+				else{
+
+					log.info("Grid Options is not present");
+					reportStep("Grid Options is not present", "fail");
+					Assert.fail("Grid options is not avaialbe");
+				}
+			}
+		}
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+
+	}
+
+	@Override
+	public void UnCheckShowFilters() {
+		try 
+		{   
+			List<WebElement> SelectCheckBox = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]/p-checkbox/label");
+			wait =new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(SelectCheckBox));
+			for(WebElement sel :SelectCheckBox ){
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				if(s.trim().equals("Show Filters")){
+					reportStep("Grid Options "+ s.trim()  +" is present", "pass");
+
+					if(!(sel.getAttribute("class").contains("ui-label-active"))){
+
+						log.info("Show Filter is  already not selected");
+						reportStep("Show Filter is already not selected", "pass");
+					}
+					else if(sel.getAttribute("class").contains("ui-label-active")){
+						click(sel);
+						log.info("Show Filter is unchecked sucessfully");
+						reportStep("Show Filter is unchecked sucessfully", "pass");
+					}
+					else{
+						log.info("Grid Options is not present");
+						reportStep("Grid Options is not present", "fail");
+						Assert.fail("Grid options is not avaialbe");
+					}
+
+				}
+
+				else{
+
+					log.info("Grid Options is not present");
+					reportStep("Grid Options is not present", "fail");
+					Assert.fail("Grid options is not avaialbe");
+				}
+			}
+		}
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+	}
+
+	@Override
+	public void clickResetFilter() {
+		try{
+			int count = 0;
+			wait =new WebDriverWait(driver, 10);
+			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]/span");
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+			for(WebElement sel :GridOptionList ){
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				System.out.println(s);
+				if(s.equals("Reset Filter")){
+					click(sel);
+					reportStep("Grid Options "+ s.trim()  +" is present and Clicked", "pass");
+					break;
+				}
+				else if(count == (GridOptionList.size()-1)){
+					log.info("Reset Filter is not present");
+					reportStep("Reset Filter is not present", "fail");
+					Assert.fail("Reset Filter is not avaialbe");
+
+				}
+				else{
+					count = count + 1;
+					continue;
+				}
+			}
+		}
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+
+	}
+
+	@Override
+	public void verifyShowColumns(String... data) {
+		try{
+			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+			wait =new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+
+			List<String> ShowColumnsListAll = null;
+			List<String> ShowColumnsListVisible = null;
+			List<String> ShowColumnsListHidden = null;
+			for(WebElement sel :GridOptionList ){
+
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				if(s.trim().equals("Show Columns")){
+					click(sel);
+					reportStep("Show Columns  is present and clicked", "pass");
+					List<WebElement> SelectCheckBox = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]/p-checkbox/label");
+					wait.until(ExpectedConditions.visibilityOfAllElements(SelectCheckBox));
+					for(WebElement col: SelectCheckBox){
+						String s1 = col.getText().trim().replaceAll("[^a-z A-Z]", "");
+						if(!(s1.trim().equals("Show Filters"))){
+							ShowColumnsListAll.add(s1);
+							if(!(col.getAttribute("class").contains("ui-label-active"))){
+								ShowColumnsListHidden.add(s1);
+
+							}
+							else if(col.getAttribute("class").contains("ui-label-active")){
+								ShowColumnsListVisible.add(s1);
+
+							}
+							else{
+								log.info("Show Column is not present");
+								reportStep("Show Column is not present", "fail");
+								Assert.fail("Show Column is not avaialbe");
+							}
+
 						}
-						else if(actMap.containsKey(data.getKey()) && actMap.containsValue(data.getValue()))
-						{
-							reportStep("'"+data.getKey()+" : " +data.getValue()+"'"+ " --> is present in error panel","pass");
+
+					}
+
+
+					if(data.equals(ShowColumnsListAll)){
+						for(String visible:ShowColumnsListVisible  ){
+							log.info(visible +" check box enabled");
+							reportStep(visible+" check box enabled", "pass");
+
+						}
+						for(String hidden:ShowColumnsListHidden  ){
+							log.info(hidden +" is hidden/unchecked");
+							reportStep(hidden+" is hidden/unchecked", "pass");
+						}
+
+					}
+					else{
+						log.info("Show Column values are not matching");
+						reportStep("Show Column values are not matching", "fail");
+						Assert.fail("Show Column values are not matching");
+
+					}
+				}
+				else{
+
+					log.info("Grid Options is not present");
+					reportStep("Show Column is not present", "fail");
+					Assert.fail("Show Column is not present");
+				}
+			}
+
+		}
+
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+	}
+
+	@Override
+	public void selectShowColumn(String data) {
+		try{
+			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+			List<WebElement> SelectCheckBox = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]/p-checkbox/label");
+			wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(SelectCheckBox));
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+			for(WebElement sel :GridOptionList ){
+
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				if(s.trim().equals("Show Columns")){
+					click(sel);
+					reportStep("Show Columns  is present", "pass");
+
+					for(WebElement col: SelectCheckBox){
+						String s1 = col.getText().trim().replaceAll("[^a-z A-Z]", "");
+						if(s1.trim().equals(data)){
+							if(!(col.getAttribute("class").contains("ui-label-active"))){
+								click(sel);
+								log.info("Show Filter is selected");
+								reportStep("Show Filter is selected", "pass");
+
+							}
+							else if(col.getAttribute("class").contains("ui-label-active")){
+
+								log.info("Show Filter is already selected");
+								reportStep("Show Filter is already selected", "pass");
+
+							}
+							else{
+								log.info(data + " column is not present");
+								reportStep(data + " column is not present", "fail");
+								Assert.fail(data + " column is not present");
+							}
 						}
 					}
-            }
+				}
+			}
+		}
 
-            catch (Exception e) 
-            {
-                    int position = e.toString().indexOf("Exception:");
-                    String error = e.toString().substring(0, position + 10);
-                    reportStep("Unable to access the error panel --> " + error, "fail");
-                    log.error("Unable to access the error panel  --> " + error);
-                    Assert.fail();
-            }
-            finally 
-            {
-                    takeSnap();
-            }
-    }
 
-	
+
+
+
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+	}
+
+	@Override
+	public void UnselectShowColumn(String data) {
+		try{
+			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+
+			wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+
+			for(WebElement sel :GridOptionList ){
+
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				if(s.trim().equals("Show Columns")){
+					click(sel);
+					reportStep("Show Columns  is present", "pass");
+					List<WebElement> SelectCheckBox = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]/p-checkbox/label");
+					wait.until(ExpectedConditions.visibilityOfAllElements(SelectCheckBox));
+					for(WebElement col: SelectCheckBox){
+						String s1 = col.getText().trim().replaceAll("[^a-z A-Z]", "");
+						if(s1.trim().equals(data)){
+							if(!(col.getAttribute("class").contains("ui-label-active"))){
+
+								log.info("Show Filter is already not selected");
+								reportStep("Show Filter is already not selected", "pass");
+
+							}
+							else if(col.getAttribute("class").contains("ui-label-active")){
+								click(sel);
+								log.info("Show Filter is unselected");
+								reportStep("Show Filter is unselected", "pass");
+
+							}
+							else{
+								log.info(data + " column is not present");
+								reportStep(data + " column is not present", "fail");
+								Assert.fail(data + " column is not present");
+							}
+						}
+					}
+				}
+			}
+		}
+
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+	}
+
+	@Override
+	public void ClickExpandAll() {
+		try{
+			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+			wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+			for(WebElement sel :GridOptionList ){
+
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				if(s.trim().equals("Expand All")){
+					click(sel);
+					reportStep("Grid Expanded Sucessfully", "pass");
+				}
+				else if(s.trim().equals("Collapse All")){
+					reportStep("Grid Already Expanded", "pass");
+				}
+				else{
+					log.info("Could not expand the Grid");
+					reportStep("Could not expand the Grid", "fail");
+					Assert.fail("Could not expand the Grid");
+				}
+			}
+		}
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+
+	}
+
+	@Override
+	public void ClickCollapseAll() {
+		try{
+			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+			wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+			for(WebElement sel :GridOptionList ){
+
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				if(s.trim().equals("Collapse All")){
+					click(sel);
+					reportStep("Grid Collapsed Sucessfully", "pass");
+				}
+				else if(s.trim().equals("Expand All")){
+					reportStep("Grid Already Collapsed", "pass");
+				}
+				else{
+					log.info("Could not collpase the Grid");
+					reportStep("Could not collpase the Grid", "fail");
+					Assert.fail("Could not collpase the Grid");
+				}
+			}
+		}
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+	}
+
+	@Override
+	public void verifyDownloadFileOptions(String... data) {
+		try{
+			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+			wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+			List<String> ShowColumnsListAll = null;
+			for(WebElement sel :GridOptionList ){
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				if(s.trim().equals("Download File")){
+					click(sel);
+					reportStep("Download File  is present", "pass");
+
+					for(WebElement col: GridOptionList){
+						String s1 = col.getText().trim().replaceAll("[^a-z A-Z]", "");
+						if(s1.trim().equals("Download XLS") || s1.trim().equals("Download PDF") ){
+							ShowColumnsListAll.add(s1);
+
+						}
+						else{
+							continue;
+						}
+
+					}
+
+					if(data.equals(ShowColumnsListAll)){
+						for(String s2: ShowColumnsListAll){
+							log.info(s2 + " Optional is available");
+							reportStep(s2 + " Optional is available", "pass");
+
+						}
+					}
+					else{
+						log.info("Show Column values are not matching");
+						reportStep("Show Column values are not matching", "fail");
+						Assert.fail("Show Column values are not matching");
+
+					}
+				}
+				else{
+
+					log.info("Download File is not present");
+					reportStep("Download File is not present", "fail");
+					Assert.fail("Download File is not present");
+				}
+			}
+		}
+
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+	}
+
+	@Override
+	public void ClickAndDownloadFile(String data) {
+		try{
+			List<WebElement> GridOptionList = driver.findElementsByXPath("//div[@class='ui-overlaypanel-content']/div[contains(@class,'filterItems')]");
+			wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+			int count =0 ;
+			for(WebElement sel :GridOptionList ){
+
+				String s = sel.getText().trim().replaceAll("[^a-z A-Z]", "");
+				if(s.trim().equals("Download File")){
+					click(sel);
+					reportStep("Download File  is present", "pass");
+
+					for(WebElement col: GridOptionList){
+						wait.until(ExpectedConditions.visibilityOfAllElements(GridOptionList));
+						String s1 = col.getText().trim().replaceAll("[^a-z A-Z]", "");
+						if(s1.trim().equals(data)){
+							click(col);
+							log.info(data + " is clicked to downlaod");
+							reportStep(data + " is clicked to downlaod", "pass");
+							count = count ++;
+							break;
+
+						}
+						else if(count == (GridOptionList.size()-1)){
+							log.info(data + " is not found");
+							reportStep(data + " is not found", "fail");
+							Assert.fail(data + " is not found");
+						}
+						else{
+							count = count ++;
+							continue;
+						}
+
+					}
+				}
+
+				else{
+
+					log.info("Download File is not present");
+					reportStep("Download File is not present", "fail");
+					Assert.fail("Download File is not present");
+				}
+			}
+		}
+
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find grid options --> " + error, "fail");
+			log.error("Unable to find grid options --> " + error);
+			System.err.println("Unable to find grid options");
+			Assert.fail("Unable to find grid options");
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+	}
+
+	@Override
+	public void VerifyAssociatedScreensNavigatoin(String ScreenName, String SFName) {
+		try 
+		{
+			int count=0;
+			List<WebElement> GridValues = driver.findElementsByXPath("//li[contains(@class,'associatedMenuItem ')]/a/span[2]");
+			wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOfAllElements(GridValues));
+			for (WebElement col : GridValues){
+				if(col.getText().equals(ScreenName)){
+					click(col);
+					log.info(ScreenName + " is clicked to Navigate");
+					reportStep(ScreenName + " is clicked to Navigate", "pass");
+					verifyCurrenScreen(SFName);
+					break;
+				}
+
+				else if(count == (GridValues.size()-1)){
+					log.info(ScreenName + " is not found");
+					reportStep(ScreenName + " is not found", "fail");
+					Assert.fail(ScreenName + " is not found");
+
+				}
+				else {
+					count = count++;
+					continue;
+				}
+
+			}
+
+		}
+		catch (Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find Associated Screens --> " + error, "fail");
+			log.error("Unable to fid Associated Screens --> " + error);
+			Assert.fail();
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+	}
+
+	@Override
+	public void verifyCurrenScreen(String SFName) {
+		try{
+			WebElement eleScreen = driver.findElementByXPath("//p-breadcrumb/descendant::a/span[text()='"+SFName+"']");
+			wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOf(eleScreen));
+
+			verifyExactText(eleScreen, SFName);
+		}
+		catch(Exception e) 
+		{
+			int position = e.toString().indexOf("Exception:");
+			String error = e.toString().substring(0, position + 10);
+			reportStep("Unable find Associated Screens --> " + error, "fail");
+			log.error("Unable to fid Associated Screens --> " + error);
+			Assert.fail();
+		}
+		finally 
+		{
+			takeSnap();
+		}
+
+	}
+
+
 
 
 

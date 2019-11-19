@@ -18,7 +18,7 @@ public class EditHighProfileRestrictedCasesPage extends SeleniumBase
 	CommonLocators cloc = new CommonLocators();
 	//Screen functions
 	
-	@FindBy(xpath = "//span[text()='Edit High Profile Restricted Cases Status']") WebElement eleEditScreenName;
+	@FindBy(xpath = "//span[text()='Edit High Profile Restricted Cases Status']") WebElement elesfEditHighProfileRestrictedCasesStatus;
 	@FindBy(xpath = "//label[text()=' Case ']") WebElement elelblCase;
 	@FindBy(xpath = "//label[text()=' Participant ']") WebElement elelblParticipant;
 	@FindBy(xpath = "//label[text()=' Reason Code ']") WebElement elelblReasonCode;
@@ -27,8 +27,8 @@ public class EditHighProfileRestrictedCasesPage extends SeleniumBase
 	@FindBy(xpath = "//label[text()='Active']") WebElement elelblActive;
 	@FindBy(xpath = "//label[text()='Inactive']") WebElement elelblInactive;
 	
-	@FindBy(xpath = "//label[text()='Active']/preceding::span[1][contains(@class,'radiobutton')]")  WebElement eleActiveRadio;
-	@FindBy(xpath = "//label[text()='Inactive']/preceding::span[1][contains(@class,'radiobutton')]")  WebElement eleInactiveRadio;
+	@FindBy(xpath = "//label[text()='Active']/preceding::span[1][contains(@class,'radiobutton')]")  WebElement elerbActive;
+	@FindBy(xpath = "//label[text()='Inactive']/preceding::span[1][contains(@class,'radiobutton')]")  WebElement elerbInactive;
 	
 	
 	
@@ -37,15 +37,15 @@ public class EditHighProfileRestrictedCasesPage extends SeleniumBase
 		
 		
 
-		verifyDisplayed(eleEditScreenName,eleEditScreenName);
+		verifyDisplayed(elesfEditHighProfileRestrictedCasesStatus,elesfEditHighProfileRestrictedCasesStatus);
 		
 		verifyDisplayed(elelblCase,elelblCase);
 		verifyDisplayed(elelblParticipant,elelblParticipant);
 		verifyDisplayed(elelblReasonCode,elelblReasonCode);
 		verifyDisplayed(elelblReason,elelblReason);
 		verifyDisplayed(elelblStatus,elelblStatus);
-		verifyDisplayed(elelblActive,eleActiveRadio);
-		verifyDisplayed(elelblInactive,eleInactiveRadio);
+		verifyDisplayed(elelblActive,elerbActive);
+		verifyDisplayed(elelblInactive,elerbInactive);
 		
 		
 		return this;
@@ -56,7 +56,7 @@ public class EditHighProfileRestrictedCasesPage extends SeleniumBase
 	{
 		
 	
-    click(eleInactiveRadio);
+    click(elerbInactive);
     clickIcon(cloc.eleicnSave, cloc.eleicnSave);
     verifyExactText(cloc.eleErrStatusBar, "Saved Successfully.");
     

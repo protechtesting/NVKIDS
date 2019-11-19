@@ -16,7 +16,7 @@ public class PersonalInformationPage extends SeleniumBase
 	}
 	
 	@FindBy(xpath = "//label[@for='personId']") WebElement elelblParticipantID;
-	@FindBy(xpath = "//label[@for='personId']/span/following::input") WebElement eletxtParticipantID;
+	@FindBy(xpath = "//lib-input[@class='allignCenter ng-pristine ng-valid ng-touched']//div[@class='paddingBottom0']//div//input[@type='text']") WebElement eletxtParticipantID;
 	@FindBy(xpath = "//a[contains(@id,'ui-accordiontab-')]/span[contains(text(),'Participant Demographics')]") WebElement ParticipantDemographicsTab;
 	@FindBy(xpath = "//span[@icon='pi pi-plus']") WebElement UploadBtn;
 	
@@ -31,9 +31,6 @@ public class PersonalInformationPage extends SeleniumBase
 		clickIcon(cloc.eleicnSearch,cloc.eleicnSearch);
 		clickIcon(cloc.eleicnEdit,cloc.eleicnEdit);
 		clickIcon(UploadBtn,UploadBtn);
-		uploadFile("D:\\MY STUDY\\Selenium Concepts\\FileUpload\\AUTOIT\\AUTOIT\\1.exe");
-		
-		Thread.sleep(10000);
 		
 		return this;
 		

@@ -14,7 +14,7 @@ public class AddHighProfileRestrictedCasesTestCase extends SeleniumBase
 		new LoginPage().login().quickNavigation_RSTR().NavigatetoAddHighRSTR().verifyFieldsPresent();
 	}
 	
-    @Test(priority=8,description="Add without entering the required fields")
+    //@Test(priority=8,description="Add without entering the required fields")
 	
 	public void Addwithnullfields() throws Exception 
 	{
@@ -57,7 +57,7 @@ public class AddHighProfileRestrictedCasesTestCase extends SeleniumBase
 		
 	}
 	
-  @Test(priority=14,description="Add with PARTICIPANT and Multiple CASE's")
+  //@Test(priority=14,description="Add with PARTICIPANT and Multiple CASE's")
 
    public void AddwithMultiCase() throws Exception 
    {

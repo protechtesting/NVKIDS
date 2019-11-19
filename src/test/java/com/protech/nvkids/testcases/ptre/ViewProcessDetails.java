@@ -27,7 +27,7 @@ public class ViewProcessDetails extends SeleniumBase
 
 	CommonLocators  cloc = new CommonLocators();
 
-	@Test(priority=1,description="NavigateToViewProcessDetails and Verify the fields in View Process Details screen")
+	//@Test(priority=1,description="NavigateToViewProcessDetails and Verify the fields in View Process Details screen")
 	public void VerifyScreenFields() throws Exception
 	{
 		new LoginPage().login().quickNavigation_PTRE().VerifyScreenFields();
@@ -36,42 +36,42 @@ public class ViewProcessDetails extends SeleniumBase
 
 
 
-	@Test(priority=2,description = "Navigate to the PTRE screen while on the PTRE screenn")
+	//@Test(priority=2,description = "Navigate to the PTRE screen while on the PTRE screenn")
 	public void RenavigationtoPTRE() throws Exception{
 
 		new LoginPage().login().quickNavigation_PTRE().RenavigationtoPTRE();
 
 	}
 
-	@Test(priority=3,description="Undock Filter Section and verify fields")
+	//@Test(priority=3,description="Undock Filter Section and verify fields")
 	public void VerifySelectFilters() throws Exception{
 
 		new LoginPage().login().quickNavigation_PTRE().VerifySelectFilters();
 	}
-	@Test(priority=4,description="Verify field size allowance in PROCESS LOV field")
+	//@Test(priority=4,description="Verify field size allowance in PROCESS LOV field")
 	public void VerifySizeAllowanceinProcessID() throws Exception{
 
 		new LoginPage().login().quickNavigation_PTRE().VerifySizeAllowanceinProcessID();
 
 	}
 
-	@Test(priority=5,description="Verify alpha characters allowance in PROCESS LOV field")
+	//@Test(priority=5,description="Verify alpha characters allowance in PROCESS LOV field")
 	public void VerifyAlphaCharAllowanceinProcessID() throws Exception{
 		new LoginPage().login().quickNavigation_PTRE().VerifyAlphaCharAllowanceinProcessID();
 	}
 
 
-	@Test(priority=6,description="Verify numeric characters allowance in PROCESS LOV field")
+	//@Test(priority=6,description="Verify numeric characters allowance in PROCESS LOV field")
 	public void VerifyNumericCharAllowanceinProcessID() throws Exception{
 		new LoginPage().login().quickNavigation_PTRE().VerifyNumericCharAllowanceinProcessID();
 	}
 
-	@Test(priority=7,description="Verify Special characters allowance in PROCESS LOV field")
+	//@Test(priority=7,description="Verify Special characters allowance in PROCESS LOV field")
 	public void VerifySpecialCharAllowanceinProcessID() throws Exception{
 		new LoginPage().login().quickNavigation_PTRE().VerifySpecialCharAllowanceinProcessID();
 	}
 
-	@Test(priority=8,description="Inquire with InvalidValue in PROCESS ID field")
+	//@Test(priority=8,description="Inquire with InvalidValue in PROCESS ID field")
 	public void InquireInvalidValueinProcessID() throws Exception{
 
 		new LoginPage().login().quickNavigation_PTRE().InquireInvalidValueinProcessID();
@@ -79,7 +79,7 @@ public class ViewProcessDetails extends SeleniumBase
 	}
 
 
-	@Test(priority=9,description="Inquire with InvalidValue in PROCESS Description field")
+	//@Test(priority=9,description="Inquire with InvalidValue in PROCESS Description field")
 	public void InquireInvalidValueinProcessDescription() throws Exception{
 
 		new LoginPage().login().quickNavigation_PTRE().InquireInvalidValueinProcessDescription();
@@ -87,21 +87,21 @@ public class ViewProcessDetails extends SeleniumBase
 	}
 
 
-	@Test(priority=10,description="VerifyClearIcon in SelectFilters")
+	//@Test(priority=10,description="VerifyClearIcon in SelectFilters")
 	public void VerifyClearValueinFilter() throws Exception{
 
 		new LoginPage().login().quickNavigation_PTRE().VerifyClearValueinFilter();
 
 	}
 
-	@Test(priority=10,description="Inquiry with records. in SelectFilters")
+	//@Test(priority=10,description="Inquiry with records. in SelectFilters")
 	public void InquireValidValue() throws Exception{
 
 		new LoginPage().login().quickNavigation_PTRE().InquireValidValue();
 
 	}
 
-	@Test(priority=11,description="Inquiry with records. in SelectFilters")
+	//@Test(priority=11,description="Inquiry with records. in SelectFilters")
 	public void InquirewithNoValue() throws Exception{
 		new LoginPage().login().quickNavigation_PTRE().InquirewithNoValue();
 	}

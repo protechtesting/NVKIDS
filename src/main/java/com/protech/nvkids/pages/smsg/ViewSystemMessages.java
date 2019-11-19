@@ -15,7 +15,7 @@ public class ViewSystemMessages extends SeleniumBase{
 	}
 	
 	// Screen Functions
-	@FindBy(xpath = "//a[contains(@title,'SMSG')]") WebElement eleSMSG_SystemMessage;
+	@FindBy(xpath = "//a[contains(@title,'SMSG')]") WebElement eleSMSG_SystemMessages;
 	@FindBy(xpath = "(//span[text()='System Messages'])[2]/preceding-sibling::span/parent::a") WebElement eleSMSG_Sub_SystemMessages;
 	@FindBy(xpath = "(//span[text()='Broadcast Messages'])[1]/preceding-sibling::span/parent::a") WebElement eleSMSG_Sub_BroadcastMessages;
 	
@@ -43,6 +43,8 @@ public class ViewSystemMessages extends SeleniumBase{
 	@FindBy(xpath = "//label[text()='Message Type Code']/parent::p-checkbox") WebElement ele_SC_MessageTypeCode;
 	@FindBy(xpath = "//label[text()='Updated On']/parent::p-checkbox") WebElement ele_SC_UpdatedOn;
 	@FindBy(xpath = "//label[text()='Updated By']/parent::p-checkbox") WebElement ele_SC_UpdatedBy;	
+	@FindBy(xpath = "//span[contains(text(),'Download File')]/parent::div") WebElement ele_DownloadFile;
+	@FindBy(xpath = "//div[contains(text(),' Download XLS ')]") WebElement ele_Download_XLS;
 	
 	/*public void inquire(){
 		

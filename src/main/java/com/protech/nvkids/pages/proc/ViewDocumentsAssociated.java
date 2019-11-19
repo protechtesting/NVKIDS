@@ -19,8 +19,8 @@ public class ViewDocumentsAssociated extends SeleniumBase
 		
 	//Grid section
 	@FindBy(xpath="//label[text()='  ']") WebElement elehdrDeleteCheckbox;
-	@FindBy(xpath="//label[text()='  ']") WebElement elehdrDocumentID;
-	@FindBy(xpath="//label[text()='  ']") WebElement elehdrDocumentDescription;
+	@FindBy(xpath="//label[text()=' Document ID ']") WebElement elehdrDocumentID;
+	@FindBy(xpath="//label[text()=' Document Description ']") WebElement elehdrDocumentDescription;
 	
 
 	//Accordion icon
@@ -29,9 +29,9 @@ public class ViewDocumentsAssociated extends SeleniumBase
 	
 	//Accordion Section
 	@FindBy(xpath="//label[text()='  ']") WebElement elehdrDeleteCheckboxAcc;
-	@FindBy(xpath="//label[text()='  ']") WebElement elehdrRecipientType;
-	@FindBy(xpath="//label[text()='  ']") WebElement elehdrPrintMethod;
-	@FindBy(xpath="//label[text()='  ']") WebElement elehdrDeliveryMethod;
+	@FindBy(xpath="//label[text()=' Recipient Type ']") WebElement elehdrRecipientType;
+	@FindBy(xpath="//label[text()=' Print Method ']") WebElement elehdrPrintMethod;
+	@FindBy(xpath="//label[text()=' Delivery Method ']") WebElement elehdrDeliveryMethod;
 	
 	
 	//Error Panel

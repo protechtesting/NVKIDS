@@ -61,7 +61,7 @@ public abstract class Reporter {
 		String screenName=this.getClass().getName().substring(29, 33).toUpperCase() +" Tests";
 		String rptName="h5{font-size: 0px;}h5::after{content:\'"+screenName+"\';font-size: 1.64rem; line-height: 110%;margin: 0.82rem 0 0.656rem 0;}";
 			
-		 try
+		 /*try
 	        { 
 	            Files.deleteIfExists(Paths.get("C:/NVLogo.jpg")); 
 	            File source = new File("./logo/NVLogo.jpg");
@@ -74,7 +74,7 @@ public abstract class Reporter {
 	        	  System.out.println("some error in logo");
 	            System.out.println("No such file/directory exists"); 
 	          
-	        }
+	        }*/
 		
 		
         

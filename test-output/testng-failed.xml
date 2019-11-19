@@ -1,40 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [BSTL]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.protech.nvkids.testcases.bstl.BatchErrorsTestcase">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="TC21_verify_SuccessfulInquiry"/>
-          <include name="beforeclass"/>
-          <include name="TC13_verifyfieldspresent"/>
-          <include name="beforeMethod"/>
-          <include name="TC17_verifyNullProcessDate"/>
-        </methods>
-      </class> <!-- com.protech.nvkids.testcases.bstl.BatchErrorsTestcase -->
-      <class name="com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase">
+      <class name="com.protech.nvkids.testcases.refm.AddReferenceAmountsTestcase">
         <methods>
           <include name="stopReport"/>
-          <include name="TC1_verifyfieldspresent"/>
-          <include name="TC10_verifyValidation_VerifygGreaterThroughDate"/>
           <include name="Deleteimages"/>
           <include name="afterMethod"/>
           <include name="startReport"/>
           <include name="beforeclass"/>
-          <include name="TC11_verify_NoMatchingRecords"/>
-          <include name="beforeMethod"/>
-          <include name="TC12_verify_SuccesfulInquiry"/>
-        </methods>
-      </class> <!-- com.protech.nvkids.testcases.bstl.BatchStatusLogsTestcase -->
-      <class name="com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="TC32_verify_VerifySuccessfulInquiry"/>
-          <include name="beforeclass"/>
+          <include name="navigateToViewReferenceCodes"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.protech.nvkids.testcases.bstl.PrintQueueErrorsTestcase -->
+      </class> <!-- com.protech.nvkids.testcases.refm.AddReferenceAmountsTestcase -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [BSTL] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

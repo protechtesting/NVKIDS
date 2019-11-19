@@ -19,8 +19,7 @@ public class AddReferenceAmountsPage extends SeleniumBase
 
 	public AddReferenceAmountsPage selectfreqdropdownvalue()
 	{
-		clickIcon(eleicnDropdown, elelblFrequency);
-		selectRandomDropdownValue();
+		selectRandomDropdownValue(eleicnDropdown);
 		return this;
 	}
 }
